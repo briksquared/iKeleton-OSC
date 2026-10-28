@@ -1,0 +1,1147 @@
+﻿{
+    "generated":  "2026-10-27T14:11:21.0005208-05:00",
+    "source":  "C:\\Users\\briks\\Desktop\\GitHub\\audio\\ableton\\SOURCES.md harvest",
+    "counts":  {
+                   "amxd":  512,
+                   "other":  1553,
+                   "tox":  531,
+                   "als":  47,
+                   "adg":  35,
+                   "toe":  268
+               },
+    "totalIndexed":  2946,
+    "brikvjPriorityCount":  235,
+    "priorityPicks":  [
+                          {
+                              "root":  "sweep2",
+                              "repo":  "ableton",
+                              "file":  "DC Sample Player.adv",
+                              "ext":  ".adv",
+                              "rel":  "ableton\\DC Sample Player.adv",
+                              "bytes":  1271,
+                              "roles":  "layer_mixer"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "brioch-audio-reactive-vjing",
+                              "file":  "briochSceno.beta.13.toe",
+                              "ext":  ".toe",
+                              "rel":  "brioch-audio-reactive-vjing\\briochSceno.beta.13.toe",
+                              "bytes":  823632,
+                              "roles":  [
+                                            "audio_reactive",
+                                            "px_visuals"
+                                        ]
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "brioch-audio-reactive-vjing",
+                              "file":  "briochSceno.beta.toe",
+                              "ext":  ".toe",
+                              "rel":  "brioch-audio-reactive-vjing\\briochSceno.beta.toe",
+                              "bytes":  823632,
+                              "roles":  [
+                                            "audio_reactive",
+                                            "px_visuals"
+                                        ]
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "brioch-audio-reactive-vjing",
+                              "file":  "meshExhibitDeformed.2.tox",
+                              "ext":  ".tox",
+                              "rel":  "brioch-audio-reactive-vjing\\toxes\\meshExhibitDeformed.2.tox",
+                              "bytes":  11350,
+                              "roles":  [
+                                            "audio_reactive",
+                                            "generative",
+                                            "px_visuals"
+                                        ]
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "brioch-audio-reactive-vjing",
+                              "file":  "meshExhibitDeformed.tox",
+                              "ext":  ".tox",
+                              "rel":  "brioch-audio-reactive-vjing\\toxes\\meshExhibitDeformed.tox",
+                              "bytes":  4278,
+                              "roles":  [
+                                            "audio_reactive",
+                                            "generative",
+                                            "px_visuals"
+                                        ]
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "brioch-audio-reactive-vjing",
+                              "file":  "stroboscope.tox",
+                              "ext":  ".tox",
+                              "rel":  "brioch-audio-reactive-vjing\\toxes\\stroboscope.tox",
+                              "bytes":  1646,
+                              "roles":  [
+                                            "audio_reactive",
+                                            "post_fx",
+                                            "px_visuals"
+                                        ]
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "HydraTD",
+                              "file":  "HydraTD.tox",
+                              "ext":  ".tox",
+                              "rel":  "HydraTD\\HydraTD.tox",
+                              "bytes":  75158,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "HydraTD",
+                              "file":  "hydraTD-example-audio.toe",
+                              "ext":  ".toe",
+                              "rel":  "HydraTD\\hydraTD-example-audio.toe",
+                              "bytes":  164538,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "HydraTD",
+                              "file":  "hydraTD-example-folder-spammer.toe",
+                              "ext":  ".toe",
+                              "rel":  "HydraTD\\hydraTD-example-folder-spammer.toe",
+                              "bytes":  82858,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "HydraTD",
+                              "file":  "hydraTD-example-mouse.toe",
+                              "ext":  ".toe",
+                              "rel":  "HydraTD\\hydraTD-example-mouse.toe",
+                              "bytes":  78626,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "CrashAutoSave.Examples.28.toe",
+                              "ext":  ".toe",
+                              "rel":  "ojack-hydra-td\\CrashAutoSave.Examples.28.toe",
+                              "bytes":  849328,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "Examples.20.toe",
+                              "ext":  ".toe",
+                              "rel":  "ojack-hydra-td\\Examples.20.toe",
+                              "bytes":  119186,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "Examples.21_Back.toe",
+                              "ext":  ".toe",
+                              "rel":  "ojack-hydra-td\\Examples.21_Back.toe",
+                              "bytes":  134906,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "Examples.28.toe",
+                              "ext":  ".toe",
+                              "rel":  "ojack-hydra-td\\Examples.28.toe",
+                              "bytes":  437550,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "Examples.33.toe",
+                              "ext":  ".toe",
+                              "rel":  "ojack-hydra-td\\Examples.33.toe",
+                              "bytes":  1803432,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "Examples.toe",
+                              "ext":  ".toe",
+                              "rel":  "ojack-hydra-td\\Examples.toe",
+                              "bytes":  1803432,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "Examples_Back.toe",
+                              "ext":  ".toe",
+                              "rel":  "ojack-hydra-td\\Examples_Back.toe",
+                              "bytes":  134906,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "Hydra.toe",
+                              "ext":  ".toe",
+                              "rel":  "ojack-hydra-td\\Hydra.toe",
+                              "bytes":  43274,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\hydra.tox",
+                              "bytes":  41694,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_a.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\color\\hydra_a.tox",
+                              "bytes":  9854,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_add.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\blend\\hydra_add.tox",
+                              "bytes":  9766,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_b.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\color\\hydra_b.tox",
+                              "bytes":  9854,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_blend.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\blend\\hydra_blend.tox",
+                              "bytes":  9758,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_brightness.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\color\\hydra_brightness.tox",
+                              "bytes":  9734,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_color.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\color\\hydra_color.tox",
+                              "bytes":  10214,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_colorama.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\color\\hydra_colorama.tox",
+                              "bytes":  10470,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_contrast.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\color\\hydra_contrast.tox",
+                              "bytes":  9766,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_coords.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\source\\hydra_coords.tox",
+                              "bytes":  1654,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_diff.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\blend\\hydra_diff.tox",
+                              "bytes":  9854,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_fft.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\audio\\hydra_fft.tox",
+                              "bytes":  3574,
+                              "roles":  [
+                                            "audio_reactive",
+                                            "generative"
+                                        ]
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_g.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\color\\hydra_g.tox",
+                              "bytes":  9854,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_gradient.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\source\\hydra_gradient.tox",
+                              "bytes":  9806,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_hue.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\color\\hydra_hue.tox",
+                              "bytes":  10438,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_invert.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\color\\hydra_invert.tox",
+                              "bytes":  9750,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_kaleid.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\geometry\\hydra_kaleid.tox",
+                              "bytes":  9926,
+                              "roles":  [
+                                            "post_fx",
+                                            "generative"
+                                        ]
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_layer.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\blend\\hydra_layer.tox",
+                              "bytes":  9878,
+                              "roles":  [
+                                            "layer_mixer",
+                                            "generative"
+                                        ]
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_luma.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\color\\hydra_luma.tox",
+                              "bytes":  10182,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_mask.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\blend\\hydra_mask.tox",
+                              "bytes":  10054,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_modulate.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\modulate\\hydra_modulate.tox",
+                              "bytes":  9822,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_modulatehue.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\modulate\\hydra_modulatehue.tox",
+                              "bytes":  9910,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_modulatekaleid.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\modulate\\hydra_modulatekaleid.tox",
+                              "bytes":  10022,
+                              "roles":  [
+                                            "post_fx",
+                                            "generative"
+                                        ]
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_modulatepixelate.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\modulate\\hydra_modulatepixelate.tox",
+                              "bytes":  10062,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_modulaterepeat.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\modulate\\hydra_modulaterepeat.tox",
+                              "bytes":  10310,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_modulaterepeatx.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\modulate\\hydra_modulaterepeatx.tox",
+                              "bytes":  10102,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_modulaterepeaty.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\modulate\\hydra_modulaterepeaty.tox",
+                              "bytes":  10102,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_modulaterotate.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\modulate\\hydra_modulaterotate.tox",
+                              "bytes":  10126,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_modulatescale.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\modulate\\hydra_modulatescale.tox",
+                              "bytes":  10070,
+                              "roles":  [
+                                            "generative",
+                                            "midi_fx"
+                                        ]
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_modulatescrollx.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\modulate\\hydra_modulatescrollx.tox",
+                              "bytes":  10158,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_modulatescrolly.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\modulate\\hydra_modulatescrolly.tox",
+                              "bytes":  10158,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_mult.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\blend\\hydra_mult.tox",
+                              "bytes":  9758,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_noise.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\source\\hydra_noise.tox",
+                              "bytes":  12406,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_osc.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\source\\hydra_osc.tox",
+                              "bytes":  10278,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_pixelate.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\geometry\\hydra_pixelate.tox",
+                              "bytes":  9902,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_posterize.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\color\\hydra_posterize.tox",
+                              "bytes":  10014,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_prev.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\source\\hydra_prev.tox",
+                              "bytes":  9494,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_r.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\color\\hydra_r.tox",
+                              "bytes":  9846,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_repeat.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\geometry\\hydra_repeat.tox",
+                              "bytes":  10206,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_repeatx.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\geometry\\hydra_repeatx.tox",
+                              "bytes":  9998,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_repeaty.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\geometry\\hydra_repeaty.tox",
+                              "bytes":  9998,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_rotate.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\geometry\\hydra_rotate.tox",
+                              "bytes":  10142,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_saturate.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\color\\hydra_saturate.tox",
+                              "bytes":  9846,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_scale.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\geometry\\hydra_scale.tox",
+                              "bytes":  10366,
+                              "roles":  [
+                                            "generative",
+                                            "midi_fx"
+                                        ]
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_scroll.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\geometry\\hydra_scroll.tox",
+                              "bytes":  10310,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_scrollx.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\geometry\\hydra_scrollx.tox",
+                              "bytes":  10054,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_scrolly.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\geometry\\hydra_scrolly.tox",
+                              "bytes":  10046,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_shape.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\source\\hydra_shape.tox",
+                              "bytes":  10326,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_shift.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\color\\hydra_shift.tox",
+                              "bytes":  10102,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_solid.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\source\\hydra_solid.tox",
+                              "bytes":  9942,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_src.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\source\\hydra_src.tox",
+                              "bytes":  9598,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_sub.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\blend\\hydra_sub.tox",
+                              "bytes":  9766,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_sum.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\color\\hydra_sum.tox",
+                              "bytes":  9758,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_thresh.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\color\\hydra_thresh.tox",
+                              "bytes":  10174,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "ojack-hydra-td",
+                              "file":  "hydra_voronoi.tox",
+                              "ext":  ".tox",
+                              "rel":  "ojack-hydra-td\\components\\hydra\\source\\hydra_voronoi.tox",
+                              "bytes":  11006,
+                              "roles":  "generative"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "analogueWarmthFXStack.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\fxStacks\\analogueWarmthFXStack.tox",
+                              "bytes":  2494,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "audioAnalysis.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\Stand Alone UI Components\\audioAnalysis.tox",
+                              "bytes":  16086,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "audioMixer.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\Stand Alone UI Components\\audioMixer.tox",
+                              "bytes":  9950,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "buttons.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\Stand Alone UI Components\\buttons.tox",
+                              "bytes":  11910,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "chaser.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\oldFX\\chaser.tox",
+                              "bytes":  4294,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "colorizer.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\oldFX\\colorizer.tox",
+                              "bytes":  3302,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "compositor.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\fxStacks\\compositor.tox",
+                              "bytes":  4862,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "constructOutputMap.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\Mapping\\constructOutputMap.tox",
+                              "bytes":  3798,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "createInputMap.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\Mapping\\createInputMap.tox",
+                              "bytes":  4046,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "decimate.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\oldFX\\decimate.tox",
+                              "bytes":  6862,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "displace_fx.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\oldFX\\displace_fx.tox",
+                              "bytes":  2166,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "displacementFXStack.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\fxStacks\\displacementFXStack.tox",
+                              "bytes":  9542,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "dither.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\oldFX\\dither.tox",
+                              "bytes":  2046,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "ditherDirt.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\fxStacks\\ditherDirt.tox",
+                              "bytes":  68502,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "dome_preview.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\Mapping\\domeTools\\dome_preview.tox",
+                              "bytes":  76166,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "Domify2DContent.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\Mapping\\domeTools\\Domify2DContent.tox",
+                              "bytes":  5934,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "feedback_fx.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\oldFX\\feedback_fx.tox",
+                              "bytes":  3646,
+                              "roles":  [
+                                            "post_fx",
+                                            "px_visuals"
+                                        ]
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "feedbackFXStack.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\fxStacks\\feedbackFXStack.tox",
+                              "bytes":  4878,
+                              "roles":  [
+                                            "post_fx",
+                                            "px_visuals"
+                                        ]
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "fluidLike.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\imagFX\\fluidLike.tox",
+                              "bytes":  12790,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "glitchFXStack.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\fxStacks\\glitchFXStack.tox",
+                              "bytes":  17742,
+                              "roles":  [
+                                            "post_fx",
+                                            "px_visuals"
+                                        ]
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "gridify.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\oldFX\\gridify.tox",
+                              "bytes":  2710,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "halftone.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\oldFX\\halftone.tox",
+                              "bytes":  5966,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "hsv_strip.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\oldFX\\hsv_strip.tox",
+                              "bytes":  2118,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "huePicker.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\Stand Alone UI Components\\huePicker.tox",
+                              "bytes":  10326,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "inputMapStrober.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\Mapping\\inputMapStrober.tox",
+                              "bytes":  6590,
+                              "roles":  [
+                                            "post_fx",
+                                            "px_visuals"
+                                        ]
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "jumpFloodFX.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\imagFX\\jumpFloodFX.tox",
+                              "bytes":  6886,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "knobs.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\Stand Alone UI Components\\knobs.tox",
+                              "bytes":  12638,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "label.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\Stand Alone UI Components\\label.tox",
+                              "bytes":  6734,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "mix3.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\oldFX\\mix3.tox",
+                              "bytes":  3398,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "multi_recolor.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\oldFX\\multi_recolor.tox",
+                              "bytes":  12198,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "multiRecolor.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\fxStacks\\multiRecolor.tox",
+                              "bytes":  3902,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "multiRecolor.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\oldFX\\multiRecolor.tox",
+                              "bytes":  3862,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "notes.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\Stand Alone UI Components\\notes.tox",
+                              "bytes":  7798,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "nvidiaBGRemove.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\imagFX\\nvidiaBGRemove.tox",
+                              "bytes":  1366,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "okVJ_autoSaver.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\devToolkit\\okVJ_autoSaver.tox",
+                              "bytes":  2454,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "okVJ_sceneChanger.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\Generators\\sceneChanger\\okVJ_sceneChanger.tox",
+                              "bytes":  42966,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "okVJ_UI.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\okVJ_UI.tox",
+                              "bytes":  250670,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "opViewer.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\Stand Alone UI Components\\opViewer.tox",
+                              "bytes":  7070,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "paletteGenerator.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\Stand Alone UI Components\\paletteGenerator.tox",
+                              "bytes":  15934,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "particlize.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\imagFX\\particlize.tox",
+                              "bytes":  6638,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "pixel_push.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\oldFX\\pixel_push.tox",
+                              "bytes":  1766,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "pixel_sort.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\oldFX\\pixel_sort.tox",
+                              "bytes":  3022,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "proximity_trace.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\oldFX\\proximity_trace.tox",
+                              "bytes":  1774,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "pxlSorter.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\imagFX\\pxlSorter.tox",
+                              "bytes":  7766,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "radioButtons.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\Stand Alone UI Components\\radioButtons.tox",
+                              "bytes":  20214,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "rgb_fx.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\fxRack\\oldFX\\rgb_fx.tox",
+                              "bytes":  2750,
+                              "roles":  "px_visuals"
+                          },
+                          {
+                              "root":  "td_sweep3",
+                              "repo":  "okVJ-Shared",
+                              "file":  "shaderChanger.tox",
+                              "ext":  ".tox",
+                              "rel":  "okVJ-Shared\\Generators\\shaderChanger\\shaderChanger.tox",
+                              "bytes":  35710,
+                              "roles":  "px_visuals"
+                          }
+                      ],
+    "allEntries":  {
+
+                   }
+}

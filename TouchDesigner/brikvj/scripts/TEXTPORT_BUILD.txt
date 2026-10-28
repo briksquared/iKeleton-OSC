@@ -1,0 +1,5 @@
+# Paste into TouchDesigner Textport (one line) after opening BRIKVJ.toe:
+
+exec(compile(open(r'C:\Users\briks\Documents\TouchDesigner\BRIKVJ\scripts\old_brik_vj_all_in_one.py',encoding='utf-8').read(), r'C:\Users\briks\Documents\TouchDesigner\BRIKVJ\scripts\old_brik_vj_all_in_one.py', 'exec'), globals())
+
+# Then File → Save project.

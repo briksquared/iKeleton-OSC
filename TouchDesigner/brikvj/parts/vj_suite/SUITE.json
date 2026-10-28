@@ -1,0 +1,26 @@
+﻿{
+    "suite":  "vj_suite",
+    "generated":  "2026-10-27T14:09:17.9075675-05:00",
+    "files":  [
+                  "okvj_glitch_stack.tox",
+                  "okvj_strobe_stack.tox",
+                  "okvj_feedback_stack.tox",
+                  "okvj_displace_stack.tox",
+                  "okvj_compositor.tox",
+                  "okvj_dither_dirt.tox",
+                  "okvj_pixel_sort.tox",
+                  "okvj_halftone.tox",
+                  "okvj_audio_analysis.tox",
+                  "okvj_shader_changer.tox",
+                  "scene_wispy_tunnel.tox",
+                  "scene_paint_marbling.tox",
+                  "scene_wheels.tox",
+                  "audio_crossover.tox",
+                  "clip_image_loaders.tox",
+                  "projection_cubemap.tox",
+                  "fx_spectral_blur.tox",
+                  "fx_pixel_sorter_pop.tox",
+                  "fx_glass_pass.tox"
+              ],
+    "count":  19
+}

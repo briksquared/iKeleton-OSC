@@ -1,0 +1,31 @@
+﻿{
+    "generated":  "2026-10-27T14:09:18.2539263-05:00",
+    "pack":  "glitch_fluid",
+    "files":  [
+                  "strobe_fx.tox",
+                  "chaser.tox",
+                  "pixel_push.tox",
+                  "decimate.tox",
+                  "gridify.tox",
+                  "dither.tox",
+                  "feedback_fx.tox",
+                  "displace_fx.tox",
+                  "fluid_like.tox",
+                  "particlize.tox",
+                  "toon_fx_stack.tox",
+                  "input_map_strober.tox",
+                  "fluid_2d_solver.tox",
+                  "fluid_3d_grid.tox",
+                  "fluid_2d_simple.tox",
+                  "flow_field.tox",
+                  "particle_life.tox",
+                  "strange_trig.tox",
+                  "lysergiq_fluid.tox",
+                  "fluid_sim.tox",
+                  "tdx_crt.tox",
+                  "tdx_modulation.tox",
+                  "tdx_datamosh_alt.tox",
+                  "scene_wispy_tunnel_root.tox"
+              ],
+    "count":  24
+}

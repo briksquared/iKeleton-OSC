@@ -1,0 +1,18 @@
+﻿{
+    "generated":  "2026-10-27T14:13:42.4098571-05:00",
+    "files":  [
+                  "bloom.tox",
+                  "stutter.tox",
+                  "echo.tox",
+                  "codev2.tox",
+                  "colorshift.tox",
+                  "audiobandanalysis.tox",
+                  "presetslot.tox",
+                  "presetslotui.tox",
+                  "outputrecording2.tox",
+                  "scene_mesh_exhibit_v2.tox",
+                  "fulldome_sim.tox",
+                  "hydra_td.tox"
+              ],
+    "tier":  "extra"
+}
