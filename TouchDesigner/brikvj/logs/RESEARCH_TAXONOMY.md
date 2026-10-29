@@ -1,4 +1,4 @@
-﻿# BRIKVJ unwired taxonomy (generated 2026-10-29T09:08:50.3735065-05:00)
+﻿# BRIKVJ unwired taxonomy (generated 2026-10-29T09:11:00.1502463-05:00)
 
 **Total unwired:** 123 — do **not** bulk-wire; use [RESEARCH_PASS_PLAN_DEEPER.md](../RESEARCH_PASS_PLAN_DEEPER.md) scoring.
 
@@ -6,7 +6,7 @@
 |----------|------:|---------------|
 | hydra_lab | 56 | brikvj_research_lab.py lazy RB-004 |
 | okvj_shared | 55 | FX_DEFS / SCENE_DEFS / td2023 |
-| other_generative | 7 | score §6 DEEPER |
+| other_generative | 7 | score DEEPER section 6 |
 | brioch_pick | 3 | dedupe SCENE_DEFS first |
 | mapping_output | 1 | F5 / broadcast / kantan |
 | audio_reactive | 1 | audio COMP or bind |

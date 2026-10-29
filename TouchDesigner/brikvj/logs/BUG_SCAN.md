@@ -1,4 +1,4 @@
-﻿# BRIKVJ bug scan (generated 2026-10-29T09:08:49.9967400-05:00)
+﻿# BRIKVJ bug scan (generated 2026-10-29T09:10:58.6550430-05:00)
 
 Run: `scripts/brikvj_bug_scan.ps1`. Full registry: [BUG_REGISTRY.md](../BUG_REGISTRY.md).
 

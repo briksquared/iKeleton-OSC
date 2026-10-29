@@ -2,6 +2,8 @@
 
 **Agents:** [AGENT_TD_POLICY.md](AGENT_TD_POLICY.md) — do not launch TouchDesigner without an explicit user ask.
 
+**Consolidated roadmap:** [BRIKVJ_ROADMAP.md](BRIKVJ_ROADMAP.md) → `logs/ROADMAP_STATUS.md`
+
 **Single command for the next chat:**
 
 ```powershell

@@ -18,6 +18,7 @@ $megaRaw = Get-Content (Join-Path $Kit "scripts\old_brik_vj_mega.py") -Raw
 $megaBlock = [regex]::Match($megaRaw, 'STEPS = \((.*?)\n\)', 'Singleline').Groups[1].Value
 $megaN = ([regex]::Matches($megaBlock, '"brikvj_[^"]+\.py"')).Count
 & "$PSScriptRoot\brikvj_research_taxonomy.ps1" | Out-Null
+& "$PSScriptRoot\brikvj_roadmap_status.ps1" | Out-Null
 $tax = Get-Content (Join-Path $Kit "logs\RESEARCH_TAXONOMY.md") -Raw -ErrorAction SilentlyContinue
 $taxRows = if ($tax) { [regex]::Matches($tax, '\|\s+\w+\S*\s+\|\s+\d+\s+\|').Count } else { 0 }
 

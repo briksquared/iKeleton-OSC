@@ -1,0 +1,152 @@
+﻿{
+    "generated_at":  "2026-10-29T09:11:00.5561654-05:00",
+    "next_step":  1,
+    "integration_queue":  [
+                              {
+                                  "rank":  1,
+                                  "tox":  "okVJ-Shared_colorizer.tox",
+                                  "action":  "FX_DEFS after td2023 check",
+                                  "category":  "okvj_shared"
+                              },
+                              {
+                                  "rank":  2,
+                                  "tox":  "okVJ-Shared_analogueWarmthFXStack.tox",
+                                  "action":  "FX_DEFS",
+                                  "category":  "okvj_shared"
+                              },
+                              {
+                                  "rank":  3,
+                                  "tox":  "okVJ-Shared_dome_preview.tox",
+                                  "action":  "F5 eval",
+                                  "category":  "mapping_output"
+                              },
+                              {
+                                  "rank":  4,
+                                  "tox":  "brioch-audio-reactive-vjing_stroboscope.tox",
+                                  "action":  "dedupe scene_stroboscope",
+                                  "category":  "brioch_pick"
+                              },
+                              {
+                                  "rank":  5,
+                                  "tox":  "(56 hydra modules)",
+                                  "action":  "RB-004 lazy — no scene_switch bulk",
+                                  "category":  "hydra_lab"
+                              },
+                              {
+                                  "rank":  6,
+                                  "tox":  "parts/vj_suite/audio_crossover.tox",
+                                  "action":  "audio bridge",
+                                  "category":  "audio_reactive"
+                              }
+                          ],
+    "steps":  [
+                  {
+                      "done":  false,
+                      "name":  "One mega save",
+                      "id":  1,
+                      "test":  "build_clean"
+                  },
+                  {
+                      "done":  false,
+                      "name":  "Quiet open user check",
+                      "id":  2,
+                      "test":  "manual"
+                  },
+                  {
+                      "done":  false,
+                      "name":  "MOTU 3-4 td_errors down",
+                      "id":  3,
+                      "test":  "td_errors"
+                  },
+                  {
+                      "done":  false,
+                      "name":  "td2023 resave batch (5 used)",
+                      "id":  4,
+                      "test":  "manual"
+                  },
+                  {
+                      "done":  false,
+                      "name":  "Integrate colorizer OR warmth",
+                      "id":  5,
+                      "test":  "manual"
+                  },
+                  {
+                      "done":  false,
+                      "name":  "Integrate 2 harvest scenes",
+                      "id":  6,
+                      "test":  "manual"
+                  },
+                  {
+                      "done":  false,
+                      "name":  "RB-004 lazy Hydra spec",
+                      "id":  7,
+                      "test":  "manual"
+                  },
+                  {
+                      "done":  false,
+                      "name":  "RB-004 lazy Hydra impl",
+                      "id":  8,
+                      "test":  "manual"
+                  },
+                  {
+                      "done":  false,
+                      "name":  "KEYBOARD_MAP vs scene_switch",
+                      "id":  9,
+                      "test":  "manual"
+                  },
+                  {
+                      "done":  true,
+                      "name":  "FEATURE_MATRIX synced",
+                      "id":  10,
+                      "test":  "manual"
+                  },
+                  {
+                      "done":  false,
+                      "name":  "dome_preview eval",
+                      "id":  11,
+                      "test":  "manual"
+                  },
+                  {
+                      "done":  false,
+                      "name":  "TDA mapper RB-005",
+                      "id":  12,
+                      "test":  "manual"
+                  },
+                  {
+                      "done":  false,
+                      "name":  "Ableton link RB-006",
+                      "id":  13,
+                      "test":  "manual"
+                  },
+                  {
+                      "done":  false,
+                      "name":  "preset_bank + hub",
+                      "id":  14,
+                      "test":  "manual"
+                  },
+                  {
+                      "done":  false,
+                      "name":  "OSC + mapper doc",
+                      "id":  15,
+                      "test":  "manual"
+                  },
+                  {
+                      "done":  false,
+                      "name":  "Taxonomy review",
+                      "id":  16,
+                      "test":  "manual"
+                  },
+                  {
+                      "done":  false,
+                      "name":  "BUG_REGISTRY clean",
+                      "id":  17,
+                      "test":  "manual"
+                  },
+                  {
+                      "done":  false,
+                      "name":  "Optional repo split RB-008",
+                      "id":  18,
+                      "test":  "manual"
+                  }
+              ]
+}
