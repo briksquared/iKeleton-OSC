@@ -1,6 +1,10 @@
 # BRIKVJ — next session plan (start here in a new chat)
 
-Purpose: any new Cursor chat (or agent) can **verify state → discover gaps → finish work** without re-deriving context. Read this file first, then [AGENTS_HANDOFF.md](AGENTS_HANDOFF.md) and [WORKLOG.md](WORKLOG.md).
+Purpose: any new Cursor chat (or agent) can **verify state → discover gaps → finish work** without re-deriving context.
+
+- **Deep playbook (architecture, research protocol, backlog):** [NEXT_SESSION_PLAN_DEEP.md](NEXT_SESSION_PLAN_DEEP.md)
+- **Backlog table:** [RESEARCH_BACKLOG.md](RESEARCH_BACKLOG.md)
+- Also: [AGENTS_HANDOFF.md](AGENTS_HANDOFF.md), [WORKLOG.md](WORKLOG.md)
 
 ---
 
