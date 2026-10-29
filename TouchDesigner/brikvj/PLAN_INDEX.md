@@ -18,6 +18,7 @@ Then open **`logs/SESSION_BRIEF.md`** (kit or Documents).
 | 1 | [NEXT_SESSION_PLAN.md](NEXT_SESSION_PLAN.md) | Quick triage only |
 | 2 | [NEXT_SESSION_PLAN_DEEP.md](NEXT_SESSION_PLAN_DEEP.md) | Understand system + research protocol |
 | 3 | [NEXT_SESSION_OPERATIONS.md](NEXT_SESSION_OPERATIONS.md) | **Execute work** (sprints, commands) |
+| 4 | [NEXT_SESSION_PLAN_DEEPER.md](NEXT_SESSION_PLAN_DEEPER.md) | **Meta loop** — discover unknown work, closure graph, end ritual |
 | — | [RESEARCH_BACKLOG.md](RESEARCH_BACKLOG.md) | RB-xxx queue |
 | — | [WORKLOG.md](WORKLOG.md) | What already happened |
 | — | [USER_REQUESTS.md](USER_REQUESTS.md) | User intent |
@@ -30,6 +31,7 @@ Then open **`logs/SESSION_BRIEF.md`** (kit or Documents).
 | [logs/SESSION_BRIEF.md](logs/SESSION_BRIEF.md) | `brikvj_session_start.ps1` |
 | [logs/GAPS_REPORT.md](logs/GAPS_REPORT.md) | `brikvj_gap_report.ps1` |
 | [logs/RESEARCH_DIFF.md](logs/RESEARCH_DIFF.md) | `brikvj_research_diff.ps1` |
+| [logs/CONTINUITY.json](logs/CONTINUITY.json) | `brikvj_session_start.ps1` (schema: [logs/CONTINUITY.schema.md](logs/CONTINUITY.schema.md)) |
 
 ## Human / live paths
 

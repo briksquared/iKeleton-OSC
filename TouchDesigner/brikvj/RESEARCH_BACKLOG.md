@@ -2,7 +2,7 @@
 
 Living queue for **discover → evaluate → integrate**. Agent updates status when work completes.
 
-**Protocol:** [NEXT_SESSION_PLAN_DEEP.md](NEXT_SESSION_PLAN_DEEP.md) §5.
+**Protocol:** [NEXT_SESSION_PLAN_DEEP.md](NEXT_SESSION_PLAN_DEEP.md) §5. **Scoring / discovery:** [NEXT_SESSION_PLAN_DEEPER.md](NEXT_SESSION_PLAN_DEEPER.md) §4–§6.
 
 | ID | Item | Status | Notes |
 |----|------|--------|-------|

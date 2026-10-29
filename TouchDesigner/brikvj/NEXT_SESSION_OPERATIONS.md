@@ -8,7 +8,9 @@
 | 1 | [NEXT_SESSION_PLAN.md](NEXT_SESSION_PLAN.md) | 5-minute triage |
 | 2 | [NEXT_SESSION_PLAN_DEEP.md](NEXT_SESSION_PLAN_DEEP.md) | Architecture + research protocol |
 | 3 | **This file** | Exact commands, sprints, milestones |
+| 4 | [NEXT_SESSION_PLAN_DEEPER.md](NEXT_SESSION_PLAN_DEEPER.md) | Discovery engine, sprint picker, closure graph, end ritual |
 | Queue | [RESEARCH_BACKLOG.md](RESEARCH_BACKLOG.md) | Track RB-xxx status |
+| State | [logs/CONTINUITY.json](logs/CONTINUITY.json) | Machine snapshot after bootstrap |
 
 ---
 

@@ -25,7 +25,61 @@ if (Test-Path $Repo) {
 $toeLen = if (Test-Path "$Live\BRIKVJ.toe") { (Get-Item "$Live\BRIKVJ.toe").Length } else { 0 }
 $tdRun = [bool](Get-Process TouchDesigner -ErrorAction SilentlyContinue)
 
-$sprint = if ($gapExit -ne 0) { "Sprint P0 (OPERATIONS.md §C) — fix GAPS_REPORT first" } else { "Sprint R — integrate from RESEARCH_DIFF + RESEARCH_BACKLOG open items" }
+$gapCount = 0
+if ($gap -match '## Gaps \((\d+)\)') { $gapCount = [int]$Matches[1] }
+
+$unwiredCount = 0
+$newerCount = 0
+if ($diff -match '## Unwired \.tox \((\d+)\)') { $unwiredCount = [int]$Matches[1] }
+if ($diff -match '## Newer than host \((\d+)\)') { $newerCount = [int]$Matches[1] }
+
+$buildLog = Join-Path $Live "logs\build.log"
+$megaSaveOk = $false
+$buildTraceback = $false
+if (Test-Path $buildLog) {
+    $bl = Get-Content $buildLog -Raw -ErrorAction SilentlyContinue
+    if ($bl -match '\[BRIKVJ mega\] project\.save\(\) OK') { $megaSaveOk = $true }
+    if ($bl -match 'Traceback') { $buildTraceback = $true }
+}
+
+$sprint = if ($gapExit -ne 0) { "Sprint P0" }
+elseif (-not $megaSaveOk -or $toeLen -lt 2000000) { "Sprint P0" }
+elseif ($buildTraceback) { "Sprint P0" }
+elseif ($tdRun) { "Sprint D or capture-only (TD running)" }
+else { "Sprint R" }
+
+$milestones = @{
+    M1_stable_open = ($gapCount -eq 0 -or ($gap -notmatch 'dialog|Error dialogs' -and $gap -notmatch 'td_errors'))
+    M2_stack_saved = $megaSaveOk
+    M3_show_bus    = ($toeLen -ge 4000000)
+    M4_harvest     = ($unwiredCount -lt 120)
+    M5_live        = $false
+    M6_kit_clean   = ($gitLine -notmatch '\?\?| M ')
+}
+
+$continuity = @{
+    generated_at           = (Get-Date -Format o)
+    live_toe_bytes         = $toeLen
+    touchdesigner_running  = $tdRun
+    git_branch_status      = $gitLine
+    git_head               = $gitLog
+    gap_report_exit        = $gapExit
+    gap_count              = $gapCount
+    unwired_tox_count      = $unwiredCount
+    newer_tox_count        = $newerCount
+    open_rb_count          = $openRb
+    mega_save_ok           = $megaSaveOk
+    build_traceback        = $buildTraceback
+    recommended_sprint     = $sprint
+    milestones             = $milestones
+    read_next              = @(
+        "logs/SESSION_BRIEF.md",
+        "logs/CONTINUITY.json",
+        "NEXT_SESSION_OPERATIONS.md",
+        "NEXT_SESSION_PLAN_DEEPER.md"
+    )
+}
+$continuityJson = $continuity | ConvertTo-Json -Depth 5
 
 $brief = @"
 # BRIKVJ SESSION BRIEF (generated $(Get-Date -Format o))
@@ -45,15 +99,28 @@ $brief = @"
 
 ## Recommended sprint
 
-**$sprint**
+**$sprint** — see NEXT_SESSION_PLAN_DEEPER.md §3 picker.
+
+## CONTINUITY snapshot
+
+| Field | Value |
+|-------|-------|
+| mega_save_ok | $megaSaveOk |
+| build_traceback | $buildTraceback |
+| unwired tox | $unwiredCount |
+| newer tox | $newerCount |
+| gaps | $gapCount |
+
+Full JSON: ``logs/CONTINUITY.json``
 
 ## Plans (full stack)
 
 1. NEXT_SESSION_PLAN.md — short  
 2. NEXT_SESSION_PLAN_DEEP.md — architecture + protocol  
 3. NEXT_SESSION_OPERATIONS.md — commands + sprints  
-4. RESEARCH_BACKLOG.md — RB-xxx queue  
-5. PLAN_INDEX.md — master TOC  
+4. NEXT_SESSION_PLAN_DEEPER.md — **meta loop, discovery, closure graph**  
+5. RESEARCH_BACKLOG.md — RB-xxx queue  
+6. PLAN_INDEX.md — master TOC  
 
 ## Auto reports (detail)
 
@@ -68,13 +135,14 @@ $(if ($diff) { ($diff -split "`n" | Select-Object -First 35) -join "`n" } else {
 ## New-chat prompt
 
 ``````text
-BRIKVJ: Read logs/SESSION_BRIEF.md and NEXT_SESSION_OPERATIONS.md. Execute recommended sprint with evidence. Push fork. SSOT Documents\TouchDesigner\BRIKVJ. No Textport asks.
+BRIKVJ: session_start done. Read logs/SESSION_BRIEF.md, logs/CONTINUITY.json, NEXT_SESSION_PLAN_DEEPER.md §1–3. Execute recommended sprint (OPERATIONS §C). One closure-graph node minimum. WORKLOG + push fork. SSOT Documents\TouchDesigner\BRIKVJ. No Textport asks.
 ``````
 "@
 
 foreach ($dir in @((Join-Path $Kit "logs"), (Join-Path $Live "logs"))) {
     New-Item -ItemType Directory -Force -Path $dir | Out-Null
     $brief | Set-Content (Join-Path $dir "SESSION_BRIEF.md") -Encoding utf8
+    $continuityJson | Set-Content (Join-Path $dir "CONTINUITY.json") -Encoding utf8
 }
 Write-Host "SESSION_BRIEF.md written (sprint: $sprint)"
 exit $gapExit

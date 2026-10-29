@@ -1,6 +1,8 @@
 # Agent handoff — BRIKVJ
 
-Read first: **[NEXT_SESSION_PLAN.md](NEXT_SESSION_PLAN.md)** (verify → discover → finish), then [WORKLOG.md](WORKLOG.md), [USER_REQUESTS.md](USER_REQUESTS.md), [ERRORS.md](ERRORS.md), [WHERE_IS_BRIKVJ.md](WHERE_IS_BRIKVJ.md).
+Run **`scripts/brikvj_session_start.ps1`** → read **`logs/SESSION_BRIEF.md`** + **`logs/CONTINUITY.json`**.
+
+Read: [NEXT_SESSION_PLAN_DEEPER.md](NEXT_SESSION_PLAN_DEEPER.md) (meta loop), [NEXT_SESSION_OPERATIONS.md](NEXT_SESSION_OPERATIONS.md) (commands), [WORKLOG.md](WORKLOG.md), [USER_REQUESTS.md](USER_REQUESTS.md), [ERRORS.md](ERRORS.md), [WHERE_IS_BRIKVJ.md](WHERE_IS_BRIKVJ.md).
 
 ## One-line state
 

@@ -2,6 +2,13 @@
 
 Chronological record of what was built for **Old Brik V J** on TouchDesigner **2023.12370**, with runtime SSOT in `Documents\TouchDesigner\BRIKVJ\` (see [WHERE_IS_BRIKVJ.md](WHERE_IS_BRIKVJ.md), [REPO_POLICY.md](REPO_POLICY.md)).
 
+## 2026-10-29 — DEEPER continuity layer
+
+- Added [NEXT_SESSION_PLAN_DEEPER.md](NEXT_SESSION_PLAN_DEEPER.md): autonomous loop, 7-channel discovery engine, closure graph, candidate scoring, end-of-session ritual, anti-patterns.
+- `brikvj_session_start.ps1` now writes `logs/CONTINUITY.json` + sprint picker (P0/R/D).
+- [PLAN_INDEX.md](PLAN_INDEX.md) level 4; personal store `BRIKVJ_NEXT_CHAT.md` updated.
+- Evidence: `brikvj_session_start.ps1` → SESSION_BRIEF + CONTINUITY (125 unwired, sprint P0, gap exit 1).
+
 ## User intent (preserved)
 
 - **Resolume-class** nightly VJ: clips, scenes, FX, mapping, perform, Ableton/Patchworks integration.
