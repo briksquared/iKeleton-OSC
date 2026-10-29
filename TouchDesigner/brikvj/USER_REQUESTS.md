@@ -9,6 +9,9 @@ Captured from BRIKVJ / Cursor sessions so nothing is lost when context resets.
 5. **No dialog spam** — user had to close **eleven** newer-tox warnings, then **~ten Error dialogs**; agent must dismiss or prevent, not leave modals.
 6. **Don’t kill TD in loops**; don’t open second TD while user has one open (unless one-shot capture).
 7. **Commit and push everything** (2026-10-29): document user + agent work; save repo before Cursor monthly usage cap; “the whole entire cursor, and everything we've been working on.”
+8. **One TD launch per build** — not ~30 opens; headless/minimized OK when user allows.
+9. **Deeper research passes** — plan bugs, features, code review; find/fix; taxonomy of unwired harvest.
+10. **GPU dialog** (transient) — note if repeats; prefer single instance + NVIDIA perf mode.
 
 ## Non-goals / frustrations (honor)
 

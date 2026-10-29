@@ -1,4 +1,4 @@
-﻿# BRIKVJ gap report (generated 2026-10-29T09:07:24.1551797-05:00)
+﻿# BRIKVJ gap report (generated 2026-10-29T09:08:50.1987606-05:00)
 
 Run: `scripts/brikvj_gap_report.ps1` — then read [NEXT_SESSION_PLAN.md](../NEXT_SESSION_PLAN.md).
 
@@ -7,7 +7,7 @@ Run: `scripts/brikvj_gap_report.ps1` — then read [NEXT_SESSION_PLAN.md](../NEX
 - build.log contains Traceback — open log and fix script
 - Many newer tox — expect skips or dialogs unless td2023/ resaves
 - td_errors.txt has 71 lines — Brioch/audio/mesh; run patch_brikvj_quiet_open + MOTU 3-4
-- iKeleton-OSC git dirty: ## main...origin/main [ahead 12]
+- iKeleton-OSC git dirty: ## main...origin/main [ahead 13]
 
 ## OK (5)
 

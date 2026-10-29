@@ -22,7 +22,9 @@ Then open **`logs/SESSION_BRIEF.md`** (kit or Documents).
 | 3 | [NEXT_SESSION_OPERATIONS.md](NEXT_SESSION_OPERATIONS.md) | **Execute work** (sprints, commands) |
 | 4 | [NEXT_SESSION_PLAN_DEEPER.md](NEXT_SESSION_PLAN_DEEPER.md) | Meta loop — discover unknown work, closure graph |
 | 5 | [NEXT_SESSION_PLAN_DEEPEST.md](NEXT_SESSION_PLAN_DEEPEST.md) | **Execute** — OPEN_WORK_QUEUE Sessions 1–3 |
-| — | [RESEARCH_PASS_PLAN.md](RESEARCH_PASS_PLAN.md) | **Deepest roadmap** — 12 sessions, research protocol |
+| — | [RESEARCH_PASS_PLAN.md](RESEARCH_PASS_PLAN.md) | 12-session roadmap + research protocol |
+| — | [RESEARCH_PASS_PLAN_DEEPER.md](RESEARCH_PASS_PLAN_DEEPER.md) | **Deepest** — taxonomy, transcript, 18 steps, matrix |
+| — | [logs/RESEARCH_TAXONOMY.md](logs/RESEARCH_TAXONOMY.md) | Full unwired categories (`brikvj_research_taxonomy.ps1`) |
 | — | [logs/RESEARCH_PASS.md](logs/RESEARCH_PASS.md) | Auto metrics (`brikvj_research_pass.ps1`) |
 | — | [MASTER_PLAN.md](MASTER_PLAN.md) | Bugs + features + 6-session summary |
 | — | [BUG_REGISTRY.md](BUG_REGISTRY.md) | Bug SSOT |

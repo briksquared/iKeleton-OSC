@@ -14,7 +14,12 @@ $rs = Get-Content (Join-Path $Kit "scripts\brikvj_resolume_stack.py") -Raw
 $sceneN = ([regex]::Matches($rs, '(?m)^\s+\("[^"]+",\s*(?:PARTS|SUITE|GLITCH|GEN|EXTRA)')).Count
 $fxBlock = [regex]::Match($rs, 'FX_DEFS = \((.*?)\n\)', 'Singleline').Groups[1].Value
 $fxN = ([regex]::Matches($fxBlock, '(?m)^\s+\(')).Count
-$megaN = ([regex]::Matches((Get-Content (Join-Path $Kit "scripts\old_brik_vj_mega.py") -Raw), '"brikvj_')).Count
+$megaRaw = Get-Content (Join-Path $Kit "scripts\old_brik_vj_mega.py") -Raw
+$megaBlock = [regex]::Match($megaRaw, 'STEPS = \((.*?)\n\)', 'Singleline').Groups[1].Value
+$megaN = ([regex]::Matches($megaBlock, '"brikvj_[^"]+\.py"')).Count
+& "$PSScriptRoot\brikvj_research_taxonomy.ps1" | Out-Null
+$tax = Get-Content (Join-Path $Kit "logs\RESEARCH_TAXONOMY.md") -Raw -ErrorAction SilentlyContinue
+$taxRows = if ($tax) { [regex]::Matches($tax, '\|\s+\w+\S*\s+\|\s+\d+\s+\|').Count } else { 0 }
 
 $diff = Get-Content (Join-Path $Kit "logs\RESEARCH_DIFF.md") -Raw
 $unwired = if ($diff -match 'Unwired \.tox \((\d+)\)') { [int]$Matches[1] } else { 0 }
@@ -93,9 +98,10 @@ $(if ($gapExit -ne 0) { "**P0** — one mega save (headless/minimized once) then
 ## Doc ladder after this pass
 
 1. RESEARCH_PASS.md (this file)
-2. RESEARCH_PASS_PLAN.md (12-session deep roadmap)
-3. MASTER_PLAN.md
-4. OPEN_WORK_QUEUE.md
+2. RESEARCH_PASS_PLAN.md (12-session roadmap)
+3. RESEARCH_PASS_PLAN_DEEPER.md (taxonomy + transcript + 18-step program)
+4. logs/RESEARCH_TAXONOMY.md ($taxRows categories)
+5. MASTER_PLAN.md
 "@
 
 foreach ($p in @($OutKit, $OutLive)) {

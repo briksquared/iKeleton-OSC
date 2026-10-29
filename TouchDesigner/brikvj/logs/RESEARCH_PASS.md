@@ -1,4 +1,4 @@
-﻿# BRIKVJ research pass (generated 2026-10-29T09:07:24.2763188-05:00)
+﻿# BRIKVJ research pass (generated 2026-10-29T09:08:50.4459011-05:00)
 
 Auto: `scripts/brikvj_research_pass.ps1`. Strategy: [RESEARCH_PASS_PLAN.md](../RESEARCH_PASS_PLAN.md).
 
@@ -8,7 +8,7 @@ Auto: `scripts/brikvj_research_pass.ps1`. Strategy: [RESEARCH_PASS_PLAN.md](../R
 |--------|------:|--------|
 | SCENE_DEFS | 20 | `brikvj_resolume_stack.py` |
 | FX_DEFS | 29 | same |
-| Mega steps | 27 | `old_brik_vj_mega.py` |
+| Mega steps | 26 | `old_brik_vj_mega.py` |
 | harvest_scene_expansion MAX | 14 | `brikvj_harvest_scene_expansion.py` |
 | Live toe bytes | 8764772 | Documents BRIKVJ.toe |
 | Unwired .tox | 123 | RESEARCH_DIFF |
@@ -53,6 +53,7 @@ See [logs/BUG_SCAN.md](BUG_SCAN.md) and [BUG_REGISTRY.md](../BUG_REGISTRY.md).
 ## Doc ladder after this pass
 
 1. RESEARCH_PASS.md (this file)
-2. RESEARCH_PASS_PLAN.md (12-session deep roadmap)
-3. MASTER_PLAN.md
-4. OPEN_WORK_QUEUE.md
+2. RESEARCH_PASS_PLAN.md (12-session roadmap)
+3. RESEARCH_PASS_PLAN_DEEPER.md (taxonomy + transcript + 18-step program)
+4. logs/RESEARCH_TAXONOMY.md (6 categories)
+5. MASTER_PLAN.md

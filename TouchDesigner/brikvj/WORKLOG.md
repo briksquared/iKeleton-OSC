@@ -2,6 +2,12 @@
 
 Chronological record of what was built for **Old Brik V J** on TouchDesigner **2023.12370**, with runtime SSOT in `Documents\TouchDesigner\BRIKVJ\` (see [WHERE_IS_BRIKVJ.md](WHERE_IS_BRIKVJ.md), [REPO_POLICY.md](REPO_POLICY.md)).
 
+## 2026-10-29 — Deeper research pass (v2)
+
+- [RESEARCH_PASS_PLAN_DEEPER.md](RESEARCH_PASS_PLAN_DEEPER.md): transcript themes, 18-step program, integration matrix.
+- `brikvj_research_taxonomy.ps1` → **123 unwired**: hydra_lab **56**, okvj_shared **55**, brioch **3**, other **7**.
+- Evidence: `brikvj_research_pass.ps1` on 2026-10-29.
+
 ## 2026-10-29 — Master plan + bug program
 
 - [MASTER_PLAN.md](MASTER_PLAN.md): 6-session roadmap, feature phases F1–F5, code review checklist, headless build block.
