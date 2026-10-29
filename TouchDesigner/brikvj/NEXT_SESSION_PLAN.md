@@ -18,6 +18,8 @@ Purpose: any new Cursor chat (or agent) can **verify state → discover gaps →
 
 Run with **TouchDesigner closed** unless user explicitly has a session open.
 
+**Step 0 — auto triage:** `scripts/brikvj_gap_report.ps1` → read `logs/GAPS_REPORT.md` (kit + Documents). Fix listed gaps in order; exit code 1 means work remains.
+
 | Step | Command / action | Pass if |
 |------|------------------|---------|
 | Sync kit → Documents | `scripts/sync_scripts_to_documents.ps1` | No copy-to-self error (kit uses repo path when Documents scripts = dst) |
@@ -62,7 +64,15 @@ Log findings in chat with **one line of evidence each** (exit code, byte size, l
 
 Use this when the list above is stale.
 
-### A. Logs (fast)
+### A. Gap report (fastest)
+
+```powershell
+scripts\brikvj_gap_report.ps1
+Get-Content TouchDesigner\brikvj\logs\GAPS_REPORT.md
+# or Documents\TouchDesigner\BRIKVJ\logs\GAPS_REPORT.md
+```
+
+### B. Logs (fast)
 
 ```powershell
 Get-Content Documents\TouchDesigner\BRIKVJ\logs\build.log -Tail 40
@@ -73,7 +83,7 @@ Get-Content Documents\TouchDesigner\BRIKVJ\logs\td_errors.txt -Head 30
 - Traceback in build.log → fix named script, re-run mega step only if possible else full unattended.
 - Many Brioch NoneType errors → audio not routed (audiodevin 3–4, analyseAudio file paths) before blaming harvest.
 
-### B. Harvest research (medium)
+### C. Harvest research (medium)
 
 ```powershell
 scripts\brikvj_refresh_all.ps1          # refresh parts from _sweep3
@@ -85,7 +95,7 @@ scripts\scan_tox_build_versions.ps1     # TOX_BUILDS.json
 - Grep `_sweep3/touchdesigner` for new clones since last sync (user adds GitHub folders over time).
 - **Rule:** no `loadTox` without `td_load_tox()` + build index; prefer `parts/*/td2023/`.
 
-### C. Toe / stack audit (slow, TD closed)
+### D. Toe / stack audit (slow, TD closed)
 
 ```powershell
 scripts\fix_brikvj_brioch_toe.ps1       # no -InjectBuildAutostart unless building
@@ -93,12 +103,12 @@ scripts\audit_brikvj_toe.ps1
 scripts\verify_brikvj_stack.ps1
 ```
 
-### D. Cursor / transcript (context recovery)
+### E. Cursor / transcript (context recovery)
 
 - Transcript: `%USERPROFILE%\.cursor\projects\c-Users-briks-Desktop-GitHub\agent-transcripts\a38c1ae0-2c81-46db-8e9e-4ef553e7f5be.jsonl`
 - Search: `mega`, `dialog`, `kantan`, `RUN_BUILD`, `harvest`, `verify`.
 
-### E. User-facing docs to keep updated
+### F. User-facing docs to keep updated
 
 After substantive work, append [WORKLOG.md](WORKLOG.md) dated section; update [ERRORS.md](ERRORS.md) for new failure modes.
 
@@ -149,7 +159,7 @@ For each candidate .tox: toeexpand → read `.build` → if newer than 2023.1237
 ## 7. Prompt to paste in a new chat
 
 ```text
-Continue BRIKVJ (Old Brik V J). Read TouchDesigner/brikvj/NEXT_SESSION_PLAN.md and AGENTS_HANDOFF.md in briksquared/iKeleton-OSC. Live SSOT is Documents\TouchDesigner\BRIKVJ. Verify stack and logs, then finish P0 items (quiet open, mega build saved, no dialog spam). Sync kit, run unattended mega if TD closed, commit/push to fork. Do not ask me to paste Textport.
+Continue BRIKVJ (Old Brik V J). Pull briksquared/iKeleton-OSC. Run TouchDesigner/brikvj/scripts/brikvj_gap_report.ps1 and read logs/GAPS_REPORT.md. Then follow NEXT_SESSION_PLAN.md P0→P1. Live SSOT: Documents\TouchDesigner\BRIKVJ. Sync kit, unattended mega if TD closed, commit/push fork. Do not ask me to paste Textport.
 ```
 
 ---
