@@ -2,6 +2,12 @@
 
 Chronological record of what was built for **Old Brik V J** on TouchDesigner **2023.12370**, with runtime SSOT in `Documents\TouchDesigner\BRIKVJ\` (see [WHERE_IS_BRIKVJ.md](WHERE_IS_BRIKVJ.md), [REPO_POLICY.md](REPO_POLICY.md)).
 
+## 2026-10-29 — Master plan + bug program
+
+- [MASTER_PLAN.md](MASTER_PLAN.md): 6-session roadmap, feature phases F1–F5, code review checklist, headless build block.
+- [BUG_REGISTRY.md](BUG_REGISTRY.md) + `brikvj_bug_scan.ps1` → `logs/BUG_SCAN.md` (5 rows at scan time).
+- RB-011 GPU, RB-012 Brioch NoneType; ERRORS.md GPU section.
+
 ## 2026-10-29 — Plan execution (no TD launch)
 
 - RB-002: deduped `FX_DEFS`; FX chain wires via `td_top_out` (fixes COMP wire errors).

@@ -75,4 +75,7 @@ def onStart():
     log("Execute DAT " + ex.path + " (LIVE_RACK_ON_START=%s)" % LIVE_RACK_ON_START)
 
 
-install()
+try:
+    install()
+except Exception as ex:
+    log("install failed: " + str(ex))
