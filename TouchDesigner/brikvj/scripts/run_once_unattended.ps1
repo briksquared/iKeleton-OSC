@@ -1,8 +1,12 @@
 ﻿# One TD launch max: build via RUN_BUILD.flag + autostart, poll build.log only, verify once after exit.
 # Does NOT toeexpand in a loop (that was lagging the machine).
+#
+# AGENTS: At most ONE -AllowTouchDesignerLaunch per user request — never retry in a loop on failure.
+# Default (no switch): sync/inject only, REFUSES to start TouchDesigner.exe.
 param(
     [switch]$SkipBriochFix,
-    [switch]$ForceResolumeRebuild
+    [switch]$ForceResolumeRebuild,
+    [switch]$AllowTouchDesignerLaunch
 )
 
 $ErrorActionPreference = "Stop"
@@ -43,6 +47,7 @@ New-Item -ItemType File -Force -Path $Lock | Out-Null
 $dismissProc = $null
 try {
     & "$Here\sync_scripts_to_documents.ps1"
+    & "$Here\patch_brikvj_quiet_open.ps1" 2>&1 | Out-Null
     if (-not $SkipBriochFix -and (Get-Item $Toe).Length -lt 2000000) {
         & "$Here\fix_brikvj_brioch_toe.ps1" -InjectBuildAutostart
     } elseif ((Get-Item $Toe).Length -ge 2000000 -and -not $ForceResolumeRebuild) {
@@ -97,6 +102,15 @@ try {
         $dismissProc = Start-Process -FilePath "powershell.exe" -ArgumentList @(
             "-NoProfile", "-WindowStyle", "Hidden", "-ExecutionPolicy", "Bypass", "-File", $Dismiss
         ) -PassThru
+    }
+
+    if (-not $AllowTouchDesignerLaunch) {
+        Remove-Item $Flag -Force -ErrorAction SilentlyContinue
+        Write-Host ""
+        Write-Host "REFUSED: TouchDesigner was NOT started (missing -AllowTouchDesignerLaunch)."
+        Write-Host "User opens BRIKVJ.toe once when ready, OR paste scripts\TEXTPORT_MEGA.txt in Textport and Save."
+        Write-Host "Agents: never launch TD without the user explicitly asking in the same chat."
+        exit 5
     }
 
     Write-Host "Single unattended TD run (minimized) — polling build.log only..."

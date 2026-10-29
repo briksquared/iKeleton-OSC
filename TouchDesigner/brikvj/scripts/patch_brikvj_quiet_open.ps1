@@ -1,4 +1,4 @@
-# Stop startup error / newer-tox modal spam in Documents BRIKVJ.toe (no TouchDesigner UI).
+﻿# Stop startup error / newer-tox modal spam in Documents BRIKVJ.toe (no TouchDesigner UI).
 $ErrorActionPreference = "Stop"
 $TdBin = "C:\Program Files\Derivative\TouchDesigner\bin"
 $Base = "C:\Users\briks\Documents\TouchDesigner\BRIKVJ"
@@ -25,7 +25,9 @@ Pop-Location
 Remove-Item (Join-Path $Base "RUN_BUILD.flag") -Force -ErrorAction SilentlyContinue
 
 & python (Join-Path $Here "inject_kantan_boot.py") $Toe
+if ($LASTEXITCODE -ne 0) { throw "inject_kantan_boot failed" }
 & python (Join-Path $Here "inject_brikvj_dialog_prefs.py") $Toe
+if ($LASTEXITCODE -ne 0) { throw "inject_brikvj_dialog_prefs failed" }
 
 $strip = @("brikvj_build_autostart", "old_brik_autostart", "brikvj_error_snapshot")
 $tocPath = Join-Path $Base "BRIKVJ.toe.toc"
@@ -59,6 +61,9 @@ autoexportroot 201326609 "" parent()
 "@ -NoNewline
 }
 
+$preCollapse = (Get-Item $Toe).Length
+if ($preCollapse -lt 100000) { throw "Refusing toecollapse — toe too small ($preCollapse B)" }
+
 Push-Location $Base
 $ErrorActionPreference = "Continue"
 & "$TdBin\toecollapse.exe" "BRIKVJ.toe" | Out-Null
@@ -66,4 +71,13 @@ $ErrorActionPreference = "Stop"
 Pop-Location
 Clear-ToeExpandArtifacts $Toe
 
-Write-Host "Quiet-open patch applied -> $((Get-Item $Toe).Length) bytes"
+$final = (Get-Item $Toe).Length
+if ($final -lt 100000) {
+    $bkp = Get-ChildItem (Join-Path $Base "BRIKVJ.toe.bkp*") | Sort-Object Length -Descending | Select-Object -First 1
+    if ($bkp) {
+        Copy-Item $bkp.FullName $Toe -Force
+        throw "toecollapse truncated toe — restored from $($bkp.Name); fix inject scripts and retry"
+    }
+    throw "toecollapse truncated toe ($final B) and no backup found"
+}
+Write-Host "Quiet-open patch applied -> $final bytes"

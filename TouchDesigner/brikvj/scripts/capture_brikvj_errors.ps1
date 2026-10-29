@@ -1,6 +1,7 @@
 ﻿# Offline toe audit + optional one minimized TD open to snapshot op.errors() — no build, no iKeleton paths.
+# Default: no TD launch. Agents use -AllowTouchDesignerLaunch only when user explicitly asked.
 param(
-    [switch]$SkipLaunch
+    [switch]$AllowTouchDesignerLaunch
 )
 
 $ErrorActionPreference = "Stop"
@@ -35,7 +36,7 @@ $report += "audit_brikvj_toe: exit $LASTEXITCODE"
 
 Remove-Item "$Toe.dir", "$Toe.toc" -Recurse -Force -ErrorAction SilentlyContinue
 
-if (-not $SkipLaunch) {
+if ($AllowTouchDesignerLaunch) {
     $running = Get-Process TouchDesigner -ErrorAction SilentlyContinue
     if ($running) {
         $report += "Closing existing TouchDesigner for one-shot error snapshot..."

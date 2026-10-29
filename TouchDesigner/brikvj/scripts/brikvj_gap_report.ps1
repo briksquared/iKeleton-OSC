@@ -23,7 +23,7 @@ else {
 
 if (Get-Process TouchDesigner -ErrorAction SilentlyContinue) {
     Note-Gap "TouchDesigner running — skip unattended build; use capture or wait"
-} else { Note-Ok "TouchDesigner not running — OK for run_once_unattended" }
+} else { Note-Ok "TouchDesigner not running — OK for user Textport build (agents do not auto-launch TD)" }
 
 foreach ($f in @("RUN_BUILD.flag", "logs\build.lock")) {
     $p = Join-Path $BrikHome $f
@@ -88,8 +88,8 @@ $(($ok | ForEach-Object { "- $_" }) -join "`n")
 ``````powershell
 & "$PSScriptRoot\sync_scripts_to_documents.ps1"
 & "$PSScriptRoot\brikvj_gap_report.ps1"
-# if TD closed and gaps include rebuild:
-& "$PSScriptRoot\run_once_unattended.ps1" -ForceResolumeRebuild
+# Rebuild: user opens BRIKVJ.toe → Textport TEXTPORT_MEGA.txt → Save
+# Agents: run_once only if user asked, with -AllowTouchDesignerLaunch
 ``````
 "@
 

@@ -14,13 +14,16 @@ Documents\TouchDesigner\BRIKVJ\scripts\patch_brikvj_quiet_open.ps1
 
 ## Eleven (or many) “Load .tox from newer TouchDesigner build” dialogs
 
-**Cause:** Harvest `.tox` saved on TD 2025+ while you run **2023.12370**. Each `loadTox()` during a build (or some external references) opens a modal until you click OK.
+Also seen as wording about **older/newer TouchDesigner version** when loading a `.tox` — same family of dialogs.
+
+**Cause:** Harvest `.tox` saved on TD 2025+ while you run **2023.12370**. Each `loadTox()` (or embedded references from an old save) opens a modal until you click OK.
 
 **What we do automatically**
 
 - Unattended builds run `dismiss_td_dialogs.ps1` (sends Enter/Esc to TD modals) and refresh `parts/TOX_BUILDS.json`.
 - `td_load_tox()` **skips** newer-than-host files unless `parts/<pack>/td2023/<name>.tox` exists.
-- Fast build tries to set **Preferences → Dialogs → Accept newer .tox** via `brikvj_accept_newer_tox_pref.py`.
+- `patch_brikvj_quiet_open.ps1` sets prefs on **kantan execute1 onStart** (runs early) + `brikvj_dialog_prefs` via `brikvj_td_ui_prefs_snippet.py` (newer **and** older .tox → Accept).
+- Mega step `brikvj_accept_newer_tox_pref.py` applies the same prefs at build time.
 
 **One-time on your machine (stops popups when you open the show file)**
 

@@ -1,34 +1,24 @@
-# Run first in fast build: set TD preference to Accept newer .tox (no modal spam on loadTox).
+# Run first in mega build: set TD preferences (Accept newer/older .tox, errors off modals).
 
 def log(msg):
     print("[BRIKVJ prefs]", msg)
 
 
 def run():
-    tried = []
-    for expr in (
-        "ui.preferences['dialogs.loadtoxfromnewerbuild'].val = 1",
-        "ui.preferences['dialogs.loadtoxfromnewerbuild'] = 1",
-        "ui.preferences['general.loadtoxfromnewerbuild'].val = 2",
-        "ui.preferences['general.loadtoxfromnewerbuild'] = 2",
-    ):
+    from brikvj_td_ui_prefs_snippet import PREF_EXECS
+
+    ok = 0
+    for expr in PREF_EXECS:
         try:
             exec(expr, globals())
-            log("OK " + expr)
-            return
+            ok += 1
         except Exception as ex:
-            tried.append(expr + ": " + str(ex))
-    for name in dir(ui):
-        low = name.lower()
-        if "pref" in low or "dialog" in low:
-            try:
-                p = getattr(ui, name)
-                log("ui." + name + " = " + str(type(p)))
-            except Exception:
-                pass
-    log("Could not set accept-newer-tox pref automatically — run scan_tox_build_versions.ps1 + td2023 resaves")
-    for line in tried[:4]:
-        log(line)
+            log("skip " + expr + ": " + str(ex))
+    try:
+        ui.errorsIn = 0
+    except Exception:
+        pass
+    log("applied %d/%d preference lines" % (ok, len(PREF_EXECS)))
 
 
 run()

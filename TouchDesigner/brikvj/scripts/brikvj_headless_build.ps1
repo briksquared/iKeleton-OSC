@@ -1,4 +1,6 @@
 ﻿# Inject build-on-start (safe toc), open TouchDesigner once, wait for stack + save.
+# AGENTS: requires -AllowTouchDesignerLaunch (user must ask explicitly).
+param([switch]$AllowTouchDesignerLaunch)
 $ErrorActionPreference = "Stop"
 $Td = "C:\Program Files\Derivative\TouchDesigner\bin\TouchDesigner.exe"
 $ToeExpand = "C:\Program Files\Derivative\TouchDesigner\bin\toeexpand.exe"
@@ -56,6 +58,11 @@ $running = Get-Process TouchDesigner -ErrorAction SilentlyContinue
 if ($running) {
     Write-Host "Close TouchDesigner first, then re-run BUILD_STACK.cmd"
     exit 2
+}
+
+if (-not $AllowTouchDesignerLaunch) {
+    Write-Host "REFUSED: TouchDesigner not started. User opens BRIKVJ.toe or paste TEXTPORT_MEGA.txt. Agents need user OK for -AllowTouchDesignerLaunch."
+    exit 5
 }
 
 Write-Host "Opening TouchDesigner — first start runs all-in-one + save (several minutes)..."

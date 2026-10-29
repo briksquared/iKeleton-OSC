@@ -34,7 +34,7 @@ def install_parexec(vj):
     p = proj()
     pe = p.op("tda_mapper_parexec")
     if pe is None:
-        pe = p.create(parexecuteDAT, "tda_mapper_parexec")
+        pe = p.create("parexecuteDAT", "tda_mapper_parexec")
     table = ",\n        ".join(
         "'%s': ('%s', '%s')" % (n, path, pname) for n, path, pname in MAPPING
     )

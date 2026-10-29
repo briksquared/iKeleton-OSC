@@ -8,6 +8,7 @@ $Repo = "C:\Users\briks\Desktop\GitHub\audio\ableton\github\_sweep2\iKeleton-OSC
 & "$PSScriptRoot\brikvj_gap_report.ps1"
 $gapExit = $LASTEXITCODE
 & "$PSScriptRoot\brikvj_research_diff.ps1"
+& "$PSScriptRoot\brikvj_open_work_queue.ps1" 2>&1 | Out-Null
 
 $gap = Get-Content (Join-Path $Kit "logs\GAPS_REPORT.md") -Raw -ErrorAction SilentlyContinue
 $diff = Get-Content (Join-Path $Kit "logs\RESEARCH_DIFF.md") -Raw -ErrorAction SilentlyContinue
@@ -73,10 +74,11 @@ $continuity = @{
     recommended_sprint     = $sprint
     milestones             = $milestones
     read_next              = @(
+        "logs/OPEN_WORK_QUEUE.md",
         "logs/SESSION_BRIEF.md",
         "logs/CONTINUITY.json",
-        "NEXT_SESSION_OPERATIONS.md",
-        "NEXT_SESSION_PLAN_DEEPER.md"
+        "ADD_FEATURES.md",
+        "NEXT_SESSION_OPERATIONS.md"
     )
 }
 $continuityJson = $continuity | ConvertTo-Json -Depth 5

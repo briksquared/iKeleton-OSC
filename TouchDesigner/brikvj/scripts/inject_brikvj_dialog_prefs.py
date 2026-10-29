@@ -8,20 +8,11 @@ from pathlib import Path
 TEMPLATE = Path(
     r"C:\Users\briks\Desktop\GitHub\audio\ableton\github\_sweep3\touchdesigner\td-debug\debug.toe.dir\project1\debug\execute_startup"
 )
-OP_NAME = "brikvj_dialog_prefs"
-ON_START = r"""def onStart():
- _p=("ui.preferences['dialogs.loadtoxfromnewerbuild'].val=1",
- "ui.preferences['general.loadtoxfromnewerbuild'].val=2",
- "ui.preferences['dialogs.errornotify'].val=0",
- "ui.preferences['dialogs.error'].val=0",
- "ui.preferences['general.errornotify'].val=0")
- for _e in _p:
-  try:exec(_e)
-  except Exception:pass
- try:ui.errorsIn=0
- except Exception:pass
- return
-"""
+OP_NAME = "000_brikvj_dialog_prefs"
+
+from brikvj_td_ui_prefs_snippet import dialog_prefs_onstart_only
+
+ON_START = dialog_prefs_onstart_only()
 
 
 def _text_blob(python_source: str) -> bytes:

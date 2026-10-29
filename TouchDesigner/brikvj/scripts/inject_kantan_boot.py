@@ -23,7 +23,13 @@ BOOT = r"""def h():
 """
 
 # Do NOT force-cook the mapper on open — that pops one modal per Brioch cook error.
+# Tiny pref block (execute1.text size limit); full prefs in brikvj_dialog_prefs.
 EXEC_BODY = """def onStart():
+ try:
+  exec("ui.preferences['dialogs.loadtoxfromnewerbuild'].val=1")
+  exec("ui.preferences['general.loadtoxfromnewerbuild'].val=2")
+ except Exception:
+  pass
  return
 
 def create():

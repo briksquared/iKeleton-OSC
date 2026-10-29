@@ -2,6 +2,18 @@
 
 Chronological record of what was built for **Old Brik V J** on TouchDesigner **2023.12370**, with runtime SSOT in `Documents\TouchDesigner\BRIKVJ\` (see [WHERE_IS_BRIKVJ.md](WHERE_IS_BRIKVJ.md), [REPO_POLICY.md](REPO_POLICY.md)).
 
+## 2026-10-29 — Dialog prefs + safe quiet patch
+
+- Restored `BRIKVJ.toe` from `.bkp109` after a failed patch attempt (toe collapse guard added).
+- Re-applied `patch_brikvj_quiet_open.ps1` → **8764772 B**; kantan early Accept-newer prefs + `000_brikvj_dialog_prefs` (newer/older .tox).
+- Agents: **one** TD launch per explicit user ask; no retry loops ([AGENT_TD_POLICY.md](AGENT_TD_POLICY.md)).
+
+## 2026-10-29 — No auto TD launch (user policy)
+
+- [AGENT_TD_POLICY.md](AGENT_TD_POLICY.md): agents must not start TouchDesigner unless user explicitly asks.
+- `run_once_unattended.ps1` / `brikvj_headless_build.ps1` / `capture_brikvj_errors.ps1` require `-AllowTouchDesignerLaunch` to start TD.
+- Fixed `brikvj_tda_mapper_bridge.py` (`create("parexecuteDAT", …)`); [ADD_FEATURES.md](ADD_FEATURES.md) for adding scenes/FX.
+
 ## 2026-10-29 — DEEPER continuity layer
 
 - Added [NEXT_SESSION_PLAN_DEEPER.md](NEXT_SESSION_PLAN_DEEPER.md): autonomous loop, 7-channel discovery engine, closure graph, candidate scoring, end-of-session ritual, anti-patterns.
