@@ -4,7 +4,7 @@
 import json
 import os
 
-ROOT = r"C:\Users\briks\Desktop\GitHub\audio\ableton\github\_sweep2\iKeleton-OSC\TouchDesigner\brikvj"
+ROOT = r"C:\Users\briks\Documents\TouchDesigner\BRIKVJ"
 PARTS = os.path.join(ROOT, "parts")
 EXTRA = os.path.join(PARTS, "extra")
 MANIFEST = os.path.join(PARTS, "PARTS.json")
@@ -38,11 +38,11 @@ def load_part(parent, filename, nicename, folder=None):
         log("MISSING part: " + path)
         return None
     try:
-        t = parent.loadTox(path, customName=nicename)
+        t = td_load_tox(parent, path, nicename)
         log("loaded " + filename + " -> " + t.path)
         return t
     except Exception as ex:
-        log("loadTox failed " + filename + ": " + ex)
+        log("loadTox failed " + filename + ": " + str(ex))
         return None
 
 
@@ -72,7 +72,7 @@ def build():
 
     # --- Audio (MOTU 3–4 rack) ---
     audio = child(vj, "audio", baseCOMP)
-    child(audio, "rack_in", audiodeviceinCHOP).label = "MOTU M4 in 3-4"
+    set_label(child(audio, "rack_in", audiodeviceinCHOP), "MOTU M4 in 3-4")
     analysis = load_part(audio, "audioAnalysisTime.tox", "analysis")
     bands = load_part(audio, "freqbandctrl2.tox", "bands")
     drive = child(vj, "audio_drive", nullCHOP)

@@ -11,15 +11,19 @@ TEMPLATE = Path(
 OP_NAME = "brikvj_build_autostart"
 ON_START = r"""def onStart():
  import os
- F=r'C:/Users/briks/Documents/TouchDesigner/BRIKVJ/RUN_BUILD.flag'
- P=r'C:/Users/briks/Documents/TouchDesigner/BRIKVJ/scripts/old_brik_vj_all_in_one.py'
+ T=r'C:\Users\briks\Documents\TouchDesigner\BRIKVJ'
+ L=T+r'\logs\boot_trace.txt'
+ F=T+r'\RUN_BUILD.flag'
  if not os.path.isfile(F):return
- def _go():
-  if op('/project1/old_brik_vj'):
-   os.remove(F);return
-  exec(compile(open(P,encoding='utf-8').read(),P,'exec'),globals())
-  os.remove(F)
- run(_go,delayMilliSeconds=8000,fromOP=me)
+ open(L,'a').write('2\n')
+ P=T+r'\scripts\old_brik_vj_mega.py'
+ try:exec(compile(open(P,encoding='utf-8').read(),P,'exec'),globals())
+ except Exception:open(L,'a').write('X\n')
+ try:project.save();open(L,'a').write('S\n')
+ except Exception:pass
+ try:os.remove(F)
+ except Exception:pass
+ project.quit(force=True)
  return
 """
 

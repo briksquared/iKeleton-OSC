@@ -1,0 +1,4 @@
+# One line — use with TouchDesigner ALREADY OPEN on Documents\BRIKVJ\BRIKVJ.toe
+# (No second TD, no run_once, no RUN_BUILD.flag)
+
+exec(compile(open(r'C:\Users\briks\Documents\TouchDesigner\BRIKVJ\scripts\old_brik_vj_fast.py', encoding='utf-8').read(), 'old_brik_vj_fast.py', 'exec'), globals())

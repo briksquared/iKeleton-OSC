@@ -1,0 +1,78 @@
+"""One-shot onStart: td_dump_errors.py then quit (no RUN_BUILD, no harvest)."""
+from __future__ import annotations
+
+import shutil
+import sys
+from pathlib import Path
+
+TEMPLATE = Path(
+    r"C:\Users\briks\Desktop\GitHub\audio\ableton\github\_sweep3\touchdesigner\td-debug\debug.toe.dir\project1\debug\execute_startup"
+)
+OP_NAME = "brikvj_error_snapshot"
+STRIP_OPS = ("brikvj_build_autostart", "old_brik_autostart", OP_NAME)
+ON_START = r"""def onStart():
+ P=r'C:/Users/briks/Documents/TouchDesigner/BRIKVJ/scripts/td_dump_errors.py'
+ exec(compile(open(P,encoding='utf-8').read(),P,'exec'),globals())
+ project.quit(force=True)
+ return
+"""
+
+
+def _strip_toc(toc_path: Path) -> None:
+    if not toc_path.is_file():
+        return
+    lines = toc_path.read_bytes().splitlines(keepends=True)
+    keep = []
+    for line in lines:
+        text = line.decode("ascii", errors="ignore")
+        if any(("project1/" + name) in text for name in STRIP_OPS):
+            continue
+        keep.append(line)
+    toc_path.write_bytes(b"".join(keep))
+
+
+def _text_blob(python_source: str) -> bytes:
+    template = TEMPLATE.with_suffix(".text").read_bytes()
+    header = template[:27]
+    target = len(template) - len(header)
+    body = python_source.encode("utf-8")
+    if len(body) > target:
+        raise ValueError("onStart too long ({} > {})".format(len(body), target))
+    if len(body) < target:
+        body += b"\n# " + (b" " * (target - len(body) - 3))
+    return header + body
+
+
+def inject(toe_path: Path) -> None:
+    toe_path = toe_path.resolve()
+    dir_path = Path(str(toe_path) + ".dir")
+    toc_path = Path(str(toe_path) + ".toc")
+    if not dir_path.is_dir():
+        raise SystemExit("Expand first")
+    proj = dir_path / "project1"
+    _strip_toc(toc_path)
+    for old in STRIP_OPS:
+        for suf in (".n", ".parm", ".text"):
+            p = proj / (old + suf)
+            if p.is_file():
+                p.unlink()
+    shutil.copy2(TEMPLATE.with_suffix(".n"), proj / (OP_NAME + ".n"))
+    parm = TEMPLATE.with_suffix(".parm").read_text()
+    if "active 67108864 on" not in parm:
+        parm = parm.replace("?\n", "?\nactive 67108864 on\n", 1)
+    (proj / (OP_NAME + ".parm")).write_text(parm, newline="\n")
+    (proj / (OP_NAME + ".text")).write_bytes(_text_blob(ON_START))
+    rel = "project1/" + OP_NAME
+    data = toc_path.read_bytes()
+    if not data.endswith(b"\n"):
+        data += b"\n"
+    for suffix in (".n", ".parm", ".text"):
+        line = (rel + suffix).encode("ascii") + b"\n"
+        if line not in data:
+            data += line
+    toc_path.write_bytes(data)
+    print("Injected", rel)
+
+
+if __name__ == "__main__":
+    inject(Path(sys.argv[1] if len(sys.argv) > 1 else r"C:\Users\briks\Documents\TouchDesigner\BRIKVJ\BRIKVJ.toe"))

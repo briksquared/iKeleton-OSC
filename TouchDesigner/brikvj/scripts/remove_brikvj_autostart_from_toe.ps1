@@ -38,6 +38,11 @@ foreach ($n in $names) {
     Remove-Item "$proj\$n.n", "$proj\$n.parm", "$proj\$n.text" -Force -ErrorAction SilentlyContinue
 }
 
+$injectPrefs = Join-Path $PSScriptRoot "inject_brikvj_dialog_prefs.py"
+if (Test-Path $injectPrefs) {
+    & python $injectPrefs $Toe
+}
+
 $prev = $ErrorActionPreference
 $ErrorActionPreference = "Continue"
 & "$TdBin\toecollapse.exe" "BRIKVJ.toe" | Out-Null

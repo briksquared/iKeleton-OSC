@@ -1,25 +1,48 @@
 # Build Old Brik V J
 
-Ground truth: **Patchworks** → `patchworks/source/manuals/51-old-brik-vj.md`.
+Perform file: `Documents\TouchDesigner\BRIKVJ\BRIKVJ.toe` (Brioch base, Windows-patched).
 
-## Open
+## Mega build (show + practice + research) — recommended
 
+1. `sync_scripts_to_documents.ps1`
+2. Close TouchDesigner
+3. `run_once_unattended.ps1 -ForceResolumeRebuild` **or** Textport: `TEXTPORT_MEGA.txt`
+
+**26 steps:** resolume stack, harvest scenes, glitch/fluid, lab/Hydra, integrate, broadcast, perform, Ableton/Patchworks hooks, hub index, verify. See [WORKLOG.md](WORKLOG.md).
+
+Lighter path: `TEXTPORT_FAST.txt` (resolume-only). Legacy all-in-one delegates to mega.
+
+## Quiet open (no Error dialog spam)
+
+After any kantan inject that force-cooked the network:
+
+```powershell
+scripts\patch_brikvj_quiet_open.ps1
 ```
-C:\Users\briks\Desktop\GitHub\audio\ableton\github\_sweep2\iKeleton-OSC\TouchDesigner\BRIKVJ.toe
+
+See [ERRORS.md](ERRORS.md).
+
+## Unattended (only when TD is closed)
+
+```powershell
+powershell -ExecutionPolicy Bypass -File TouchDesigner\brikvj\scripts\run_once_unattended.ps1
 ```
 
-Starts as Derivative’s **Setup/Base/NewProject** (empty `/project1`, ~770 bytes). Not Brioch, not iKeleton skeleton.
+One minimized TouchDesigner open. Polls `Documents\TouchDesigner\BRIKVJ\logs\boot_trace.txt` then `build.log`.  
+`fix_brikvj_brioch_toe.ps1` strips old autostart, injects boot DAT + kantan backup hook, collapses once.
 
-## Run once in TouchDesigner
+| Log | Meaning |
+|-----|---------|
+| No `boot_trace` | Execute `onStart` never ran — TD blocked or boot DAT not loaded |
+| `boot_trace` has `1` only | Flag missing or `_go` not scheduled |
+| `boot_trace` has `2`, no `build.log` | all-in-one crashed before first line |
+| `build.log` Traceback | Fix script named in log |
+| `all-in-one finished` | Stack built — verify with `verify_brikvj_stack.ps1` |
 
-1. **Text DAT** → paste `scripts/old_brik_vj_build.py` → **Run Script**.
-2. **Text DAT** → paste `scripts/old_brik_vj_audio.py` → **Run Script**.
-3. **Perform** → output **`perform_out`**.
-4. **Ableton** → `ableton/ABLETON.md`.
-5. **File → Save** `BRIKVJ.toe`.
+## Manual (Textport)
 
-Optional performance copy: `Documents\TouchDesigner\BRIKVJ\`.
+Paste `scripts/TEXTPORT_BUILD.txt` once, then save the project.
 
-## Swap the look
+## Harvest refresh
 
-Replace `old_brik_vj/source/` with your own TOP chain (camera, GLSL, Syphon from Bitwig Grid export, etc.). Keep `old_brik_vj/glitch/out` as the perform feed.
+`scripts\brikvj_refresh_all.ps1` then unattended build above.

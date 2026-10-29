@@ -1,2 +1,6 @@
 scripts/__pycache__/
 *.pyc
+*.toe.dir/
+*.toe.toc
+*.toe.bkp*
+__pycache__/

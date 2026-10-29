@@ -2,12 +2,19 @@
 
 import os
 
-ROOT = r"C:\Users\briks\Desktop\GitHub\audio\ableton\github\_sweep2\iKeleton-OSC\TouchDesigner\brikvj"
+ROOT = r"C:\Users\briks\Documents\TouchDesigner\BRIKVJ"
 GF = os.path.join(ROOT, "parts", "glitch_fluid")
+BUILD_LOG = r"C:\Users\briks\Documents\TouchDesigner\BRIKVJ\logs\build.log"
 
 
 def log(msg):
-    print("[BRIKVJ glitch/fluid]", msg)
+    line = "[BRIKVJ glitch/fluid] " + msg
+    print(line)
+    try:
+        with open(BUILD_LOG, "a", encoding="utf-8") as f:
+            f.write(line + "\n")
+    except Exception:
+        pass
 
 
 def proj():
@@ -21,18 +28,24 @@ def child(parent, name, typ, reuse=True):
 
 
 def load_tox(parent, filename, nicename):
+    if filename in HEAVY_TOX_SKIP:
+        log("SKIP heavy " + filename)
+        return None
     path = os.path.join(GF, filename)
     if not os.path.isfile(path):
         log("MISSING " + path)
         return None
     try:
-        return parent.loadTox(path, customName=nicename)
+        return td_load_tox(parent, path, nicename)
     except Exception as ex:
         log(filename + ": " + str(ex))
         return None
 
 
 def wire(top, idx, src):
+    if src is None:
+        return
+    src = td_top_out(src)
     if src is None:
         return
     try:
@@ -52,10 +65,12 @@ def add_fluid_scenes():
     if scenes is None:
         log("No scenes comp")
         return
+    if scenes.op("fluid_2d") is not None:
+        log("fluid scenes already built in suite — skip")
+        return
     sw = scenes.op("scene_switch")
     fluid_defs = (
         ("fluid_2d", "fluid_2d_solver.tox"),
-        ("fluid_3d", "fluid_3d_grid.tox"),
         ("lysergiq", "lysergiq_fluid.tox"),
         ("flow", "flow_field.tox"),
         ("particles", "particle_life.tox"),
@@ -79,10 +94,12 @@ def add_glitch_fx_chain():
     fx = vj.op("fx") if vj else None
     if fx is None:
         return
-    chain_op = fx.op("out")
-    if chain_op is None:
+    if fx.op("glitch_bank") is not None:
+        log("glitch_bank already present — skip")
         return
-    # Insert before out: find upstream — append parallel glitch_bank
+    if fx.op("crt") is not None or fx.op("tdx_crt") is not None:
+        log("glitch FX already in suite — skip glitch_bank")
+        return
     bank = child(fx, "glitch_bank", baseCOMP)
     defs = (
         ("crt", "tdx_crt.tox"),
@@ -107,12 +124,17 @@ def add_glitch_fx_chain():
     if chain is not None:
         gsw = child(bank, "glitch_switch", switchTOP)
         wire(gsw, 0, chain)
-        # dry = current fx out input — keep simple: glitch_switch out feeds nothing auto; manual wire
         bout = child(bank, "out", nullTOP)
         wire(bout, 0, gsw)
-        log("glitch_bank built — wire glitch_bank/out into fx chain or blend in comper")
+        log("glitch_bank built")
 
 
-add_fluid_scenes()
-add_glitch_fx_chain()
-log("Done — scene_switch indices 7+ for fluids; see glitch_bank under fx")
+try:
+    add_fluid_scenes()
+    add_glitch_fx_chain()
+    log("Done")
+except Exception:
+    import traceback
+
+    log(traceback.format_exc())
+    raise

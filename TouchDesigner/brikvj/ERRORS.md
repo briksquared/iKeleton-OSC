@@ -1,0 +1,32 @@
+# BRIKVJ — common errors
+
+## Ten “Error” dialogs on every open
+
+**Cause:** `mapping/kantanMapper/ui/execute1` was calling `parent().cook(force=True, recurse=True)` on start. That re-cooks Brioch (`analyseAudio`, meshes, etc.) before MOTU audio is ready → TouchDesigner shows one **Error** modal per failing operator.
+
+**Fix (applied in repo):** `patch_brikvj_quiet_open.ps1` or `fix_brikvj_brioch_toe.ps1` — kantan execute is a no-op on start; `brikvj_dialog_prefs` tries to send errors to Textport only; `audiodevin1` → channels **3-4**.
+
+Re-run if popups return after a bad inject:
+
+```powershell
+Documents\TouchDesigner\BRIKVJ\scripts\patch_brikvj_quiet_open.ps1
+```
+
+## Eleven (or many) “Load .tox from newer TouchDesigner build” dialogs
+
+**Cause:** Harvest `.tox` saved on TD 2025+ while you run **2023.12370**. Each `loadTox()` during a build (or some external references) opens a modal until you click OK.
+
+**What we do automatically**
+
+- Unattended builds run `dismiss_td_dialogs.ps1` (sends Enter/Esc to TD modals) and refresh `parts/TOX_BUILDS.json`.
+- `td_load_tox()` **skips** newer-than-host files unless `parts/<pack>/td2023/<name>.tox` exists.
+- Fast build tries to set **Preferences → Dialogs → Accept newer .tox** via `brikvj_accept_newer_tox_pref.py`.
+
+**One-time on your machine (stops popups when you open the show file)**
+
+1. TouchDesigner → **Preferences → Dialogs**
+2. **Load .tox from newer TouchDesigner build** → **Accept** (not Ask)
+
+**Optional:** In TD Textport once: run `scripts/resave_tox_for_td2023.py` to write `parts/*/td2023/*.tox` so those components load silently on 2023.
+
+**Do not** leave `brikvj_build_autostart` in the toe for daily use — it mass-loads harvest `.tox`. Use `remove_brikvj_autostart_from_toe.ps1` after builds.

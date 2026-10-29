@@ -1,0 +1,19 @@
+﻿{
+    "generated":  "2026-10-28T10:46:45.5524494-05:00",
+    "pack":  "research",
+    "files":  [
+                  "djay_pro.tox",
+                  "image_loaders.tox",
+                  "fulldome_sim.tox",
+                  "hydra_td.tox",
+                  "hydra_ojack.tox",
+                  "presetslot.tox",
+                  "presetslotui.tox",
+                  "outputrecording2.tox",
+                  "kodelife_glsl.tox",
+                  "audio_analysis_ss.tox",
+                  "audio_analysis_time.tox",
+                  "tops_stacker_glsl.tox"
+              ],
+    "count":  12
+}

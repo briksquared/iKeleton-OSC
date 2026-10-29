@@ -2,7 +2,7 @@
 
 import os
 
-ROOT = r"C:\Users\briks\Desktop\GitHub\audio\ableton\github\_sweep2\iKeleton-OSC\TouchDesigner\brikvj"
+ROOT = r"C:\Users\briks\Documents\TouchDesigner\BRIKVJ"
 EXTRA = os.path.join(ROOT, "parts", "extra")
 
 
@@ -27,9 +27,9 @@ def load_tox(parent, fn, nice):
         log("MISSING " + path)
         return None
     try:
-        return parent.loadTox(path, customName=nice)
+        return td_load_tox(parent, path, nice)
     except Exception as ex:
-        log("load " + fn + ": " + ex)
+        log("load " + fn + ": " + str(ex))
         return None
 
 

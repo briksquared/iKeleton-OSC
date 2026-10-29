@@ -74,6 +74,15 @@ def build_router():
     if harvest_master is not None:
         wire(sw, 1, harvest_master)
 
+    lab_out = p.op("brikvj_lab/out")
+    if lab_out is not None:
+        try:
+            sw.par.connectinput = max(3, len(sw.inputConnectors))
+        except Exception:
+            pass
+        wire(sw, 2, lab_out)
+        log("Router input 2 = brikvj_lab (research / Hydra)")
+
     n = router.op("out")
     if n is None:
         n = router.create(nullTOP, "out")
@@ -92,11 +101,11 @@ def build_router():
     if perform is None:
         perform = p.create(outTOP, "perform_out")
     wire(perform, 0, n)
-    set_label(perform, "BRIKVJ main (0=Brioch scenes, 1=harvest FX stack)")
+    set_label(perform, "BRIKVJ main (0=Brioch, 1=show stack, 2=lab)")
 
     if km is not None:
         log("Mapping UI: /project1/mapping/kantanMapper")
-    log("Set brikvj_router/source_switch index: 0 nightly Brioch, 1 layered harvest")
+    log("Router source_switch: 0 Brioch, 1 show stack, 2 lab")
 
 
 build_router()

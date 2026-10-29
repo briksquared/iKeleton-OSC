@@ -3,7 +3,7 @@
 
 KICK_THRESH = 0.55
 SCENE_EVERY_FRAMES = 180  # overridden at runtime if TDAbleton BPM available
-GLITCH_SCENE_INDICES = (0, 1, 3, 4, 5, 6, 7, 8, 9, 10, 11)
+GLITCH_SCENE_INDICES = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17)
 
 
 def log(msg):
@@ -90,7 +90,7 @@ def onFrameStart(frame):
             pass
     _last_kick = k
     every = _scene_interval()
-    if frame > 0 and frame % every == 0:
+    if frame > 0 and frame %% every == 0:
         try:
             sw.par.index = random.choice(GLITCH_SCENE_INDICES)
         except Exception:

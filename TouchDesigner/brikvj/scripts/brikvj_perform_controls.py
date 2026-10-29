@@ -7,11 +7,13 @@ BRIKVJ keys (click TD window first):
   0       harvest scene index 9
   [ / ]   scene prev / next (harvest scenes/scene_switch)
   - / =   clip_deck clip_switch prev / next
-  \\       toggle brikvj_router source (0 Brioch / 1 harvest FX)
+  \\       cycle brikvj_router (0 Brioch / 1 show / 2 lab)
   `       toggle old_brik_vj/fx/fx_switch (FX on/off)
   F2      toggle brikvj_autopilot
   F3      toggle brikvj_broadcast/stream_record
   F4      toggle brikvj_broadcast/ingress_switch (0 main / 1 Spout in)
+  F1      enable perform (project enableperform + main window target)
+  o       toggle old_brik_vj/overlay_gen/overlay_switch (generative overlay)
 """
 
 
@@ -53,7 +55,7 @@ def _toggle_switch(path, a=0, b=1):
     except Exception:
         pass
 
-def _bump(path, delta, lo=0, hi=11):
+def _bump(path, delta, lo=0, hi=31):
     sw = _sw(path)
     if not sw:
         return
@@ -101,15 +103,21 @@ def onOffToOn(channel, sampleIndex, val, prev):
     if n in ('7', '8', '9', '0'):
         _set_index(scene, {'7': 6, '8': 7, '9': 8, '0': 9}[n])
     elif n == 'bracketleft':
-        _bump(scene, -1, 0, 11)
+        _bump(scene, -1, 0, 31)
     elif n == 'bracketright':
-        _bump(scene, 1, 0, 11)
+        _bump(scene, 1, 0, 31)
     elif n == 'minus':
         _bump(clips, -1, 0, 7)
     elif n == 'equal':
         _bump(clips, 1, 0, 7)
     elif n == 'backslash':
-        _toggle_switch('/project1/brikvj_router/source_switch', 0, 1)
+        sw = _sw('/project1/brikvj_router/source_switch')
+        if sw:
+            try:
+                i = int(sw.par.index)
+                sw.par.index = (i + 1) % 3
+            except Exception:
+                pass
     elif n == 'quote' or n == 'grave':
         _toggle_switch('/project1/old_brik_vj/fx/fx_switch', 0, 1)
     elif n == 'f2':
@@ -118,6 +126,13 @@ def onOffToOn(channel, sampleIndex, val, prev):
         _toggle_record()
     elif n == 'f4':
         _toggle_switch('/project1/brikvj_broadcast/ingress_switch', 0, 1)
+    elif n == 'f1':
+        try:
+            op('/project1').par.enableperform = 1
+        except Exception:
+            pass
+    elif n == 'o':
+        _toggle_switch('/project1/old_brik_vj/overlay_gen/overlay_switch', 0, 1)
     return
 """
 

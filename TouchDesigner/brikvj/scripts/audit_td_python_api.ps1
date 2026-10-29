@@ -11,6 +11,9 @@ Get-ChildItem $Here -Filter "*.py" | ForEach-Object {
             $bad += "$($_.Name):$n par.label (use set_label)"
         }
         if ($l -match 'runpy\.run_path') { $bad += "$($_.Name):$n runpy without TD globals" }
+        if ($l -match '\.par [a-zA-Z_]+\s*=') { $bad += "$($_.Name):$n .par NAME (missing dot — SyntaxError in TD)" }
+        if ($l -match 'loadTox\([^)]*customName') { $bad += "$($_.Name):$n loadTox customName (use td_load_tox)" }
+        if ($l -match 'audiodeviceinCHOP\)\.label\s*=') { $bad += "$($_.Name):$n audiodeviceinCHOP.label read-only" }
     }
 }
 if ($bad.Count -eq 0) {

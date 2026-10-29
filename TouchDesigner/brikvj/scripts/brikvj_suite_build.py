@@ -3,7 +3,7 @@
 
 import os
 
-ROOT = r"C:\Users\briks\Desktop\GitHub\audio\ableton\github\_sweep2\iKeleton-OSC\TouchDesigner\brikvj"
+ROOT = r"C:\Users\briks\Documents\TouchDesigner\BRIKVJ"
 PARTS = os.path.join(ROOT, "parts")
 EXTRA = os.path.join(PARTS, "extra")
 SUITE = os.path.join(PARTS, "vj_suite")
@@ -12,8 +12,17 @@ MEDIA = r"C:\Users\briks\Documents\TouchDesigner\BRIKVJ\media\clips"
 DEFAULT_CLIP = r"C:\Users\briks\Documents\TouchDesigner\BRIKVJ\testingVideo.mp4"
 
 
+BUILD_LOG = r"C:\Users\briks\Documents\TouchDesigner\BRIKVJ\logs\build.log"
+
+
 def log(msg):
-    print("[BRIKVJ suite]", msg)
+    line = "[BRIKVJ suite] " + msg
+    print(line)
+    try:
+        with open(BUILD_LOG, "a", encoding="utf-8") as f:
+            f.write(line + "\n")
+    except Exception:
+        pass
 
 
 def proj():
@@ -33,20 +42,26 @@ def child(parent, name, typ, reuse=True):
 
 
 def load_tox(parent, folder, filename, nicename):
+    if filename in HEAVY_TOX_SKIP:
+        log("SKIP heavy " + filename)
+        return None
     path = os.path.join(folder, filename)
     if not os.path.isfile(path):
         log("MISSING " + path)
         return None
     try:
-        t = parent.loadTox(path, customName=nicename)
+        t = td_load_tox(parent, path, nicename)
         log("loaded " + filename)
         return t
     except Exception as ex:
-        log("loadTox " + filename + ": " + ex)
+        log("loadTox " + filename + ": " + str(ex))
         return None
 
 
 def wire(top, idx, src):
+    if src is None:
+        return
+    src = td_top_out(src)
     if src is None:
         return
     try:
@@ -59,7 +74,7 @@ def wire(top, idx, src):
 def build_clip_deck(vj):
     """Resolume-style clip columns (movie / still slots)."""
     deck = child(vj, "clip_deck", baseCOMP)
-    deck.label = "Clip players (index on clip_switch)"
+    set_label(deck, "Clip players (index on clip_switch)")
     sw = child(deck, "clip_switch", switchTOP)
     clips = []
     sample = DEFAULT_CLIP if os.path.isfile(DEFAULT_CLIP) else ""
@@ -184,7 +199,7 @@ def build_fx(vj, src):
 
 def build_audio(vj):
     audio = child(vj, "audio", baseCOMP)
-    child(audio, "rack_in", audiodeviceinCHOP).label = "MOTU M4 in 3-4"
+    set_label(child(audio, "rack_in", audiodeviceinCHOP), "MOTU M4 in 3-4")
     load_tox(audio, PARTS, "audioAnalysisTime.tox", "analysis")
     load_tox(audio, PARTS, "freqbandctrl2.tox", "bands")
     load_tox(audio, SUITE, "audio_crossover.tox", "crossover")
@@ -234,4 +249,10 @@ def run():
     log("Save BRIKVJ.toe")
 
 
-run()
+try:
+    run()
+except Exception:
+    import traceback
+
+    log(traceback.format_exc())
+    raise

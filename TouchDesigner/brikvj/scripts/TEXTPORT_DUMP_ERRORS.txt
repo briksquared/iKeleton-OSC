@@ -1,0 +1,1 @@
+exec(compile(open(r'C:\Users\briks\Documents\TouchDesigner\BRIKVJ\scripts\td_dump_errors.py', encoding='utf-8').read(), 'td_dump_errors.py', 'exec'), globals())

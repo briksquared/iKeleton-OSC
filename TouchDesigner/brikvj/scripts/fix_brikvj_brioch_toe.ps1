@@ -1,4 +1,7 @@
 ﻿# Patch Documents\TouchDesigner\BRIKVJ\BRIKVJ.toe (Brioch) for this Windows studio.
+param(
+    [switch]$InjectBuildAutostart
+)
 # Fixes: Mac Loopback device, invalid audio switch index, missing Jeremy mp3, stopped timeline.
 $ErrorActionPreference = "Stop"
 $TdBin = "C:\Program Files\Derivative\TouchDesigner\bin"
@@ -101,6 +104,10 @@ Get-ChildItem $dir -Recurse -Filter "*.parm" | ForEach-Object {
         $c = $c -replace 'device 67108864 com\.rogueamoeba[^\r\n]+', 'device 67108864 ""'
         $changed = $true
     }
+    if ($_.Name -like 'importselect*.parm' -and $c -match 'geometry 67108864 /') {
+        $c = $c -replace 'geometry 67108864 /(\S+)', 'geometry 67108864 $1'
+        $changed = $true
+    }
     if ($changed) { Set-Content $_.FullName $c -NoNewline }
 }
 
@@ -116,7 +123,7 @@ if (Test-Path $midi) {
 
 $tocPath = Join-Path $Base "BRIKVJ.toe.toc"
 if (Test-Path $tocPath) {
-    $strip = @("brikvj_build_autostart", "old_brik_autostart")
+    $strip = @("brikvj_build_autostart", "old_brik_autostart", "brikvj_error_snapshot")
     $text = [Text.Encoding]::ASCII.GetString([IO.File]::ReadAllBytes($tocPath))
     $keep = foreach ($line in ($text -split "`n", 0, "SimpleMatch")) {
         $l = $line.TrimEnd("`r")
@@ -130,10 +137,26 @@ if (Test-Path $tocPath) {
     }
     [IO.File]::WriteAllBytes($tocPath, [Text.Encoding]::ASCII.GetBytes(($keep -join "`n") + "`n"))
 }
-foreach ($n in @("brikvj_build_autostart", "old_brik_autostart")) {
+foreach ($n in @("brikvj_build_autostart", "old_brik_autostart", "brikvj_error_snapshot")) {
     Remove-Item "$dir\project1\$n.n", "$dir\project1\$n.parm", "$dir\project1\$n.text" -Force -ErrorAction SilentlyContinue
     Remove-Item "$dir\project1\mapping\kantanMapper\ui\$n.n", "$dir\project1\mapping\kantanMapper\ui\$n.parm", "$dir\project1\mapping\kantanMapper\ui\$n.text" -Force -ErrorAction SilentlyContinue
 }
+if ($InjectBuildAutostart) {
+    $Inject = Join-Path $PSScriptRoot "inject_brikvj_build_autostart.py"
+    $Kantan = Join-Path $PSScriptRoot "inject_kantan_boot.py"
+    & python $Inject $Toe
+    if ($LASTEXITCODE -ne 0) { Write-Error "inject_brikvj_build_autostart failed" }
+    & python $Kantan $Toe
+    if ($LASTEXITCODE -ne 0) { Write-Warning "inject_kantan_boot skipped or failed (non-fatal)" }
+} else {
+    foreach ($n in @("brikvj_build_autostart", "old_brik_autostart", "brikvj_error_snapshot")) {
+        Remove-Item "$dir\project1\$n.n", "$dir\project1\$n.parm", "$dir\project1\$n.text" -Force -ErrorAction SilentlyContinue
+    }
+}
+$Kantan = Join-Path $PSScriptRoot "inject_kantan_boot.py"
+$Dlg = Join-Path $PSScriptRoot "inject_brikvj_dialog_prefs.py"
+if (Test-Path $Kantan) { & python $Kantan $Toe }
+if (Test-Path $Dlg) { & python $Dlg $Toe }
 $prevEa = $ErrorActionPreference
 $ErrorActionPreference = "Continue"
 & "$TdBin\toecollapse.exe" "BRIKVJ.toe" | Out-Null
@@ -143,7 +166,6 @@ if ((Get-Item $Toe -ErrorAction SilentlyContinue).Length -lt 100000) {
 }
 Remove-Item "$Toe.dir", "$Toe.toc" -Recurse -Force -ErrorAction SilentlyContinue
 Pop-Location
-Copy-Item $Toe "C:\Users\briks\Desktop\GitHub\audio\ableton\github\_sweep2\iKeleton-OSC\TouchDesigner\BRIKVJ.toe" -Force
 Push-Location $Base
 & "$TdBin\toeexpand.exe" "BRIKVJ.toe" | Out-Null
 Pop-Location

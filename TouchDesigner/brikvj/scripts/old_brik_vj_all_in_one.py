@@ -16,51 +16,37 @@ def _log(msg):
     except Exception:
         pass
 if not os.path.isdir(SCRIPTS):
-    SCRIPTS = r"C:\Users\briks\Desktop\GitHub\audio\ableton\github\_sweep2\iKeleton-OSC\TouchDesigner\brikvj\scripts"
+    raise SystemExit("Missing BRIKVJ scripts at " + SCRIPTS + " — run sync_scripts_to_documents.ps1")
 
-STEPS = (
-    "brikvj_suite_build.py",
-    "brikvj_glitch_fluid_layers.py",
-    "old_brik_vj_audio.py",
-    "brikvj_integrate_brioch.py",
-    "brikvj_broadcast_outputs.py",
-    "brikvj_window_setup.py",
-    "brikvj_ableton_link.py",
-    "brikvj_audio_bridge.py",
-    "brikvj_live_levels_drive.py",
-    "brikvj_clip_media_refresh.py",
-    "brikvj_preset_bank.py",
-    "brikvj_tda_mapper_bridge.py",
-    "brikvj_perform_controls.py",
-    "brikvj_project_on_start.py",
-    "brikvj_glitch_autopilot.py",
-    "brikvj_patchworks_audio_routes.py",
-    "brikvj_fx_audio_bind.py",
-    "brikvj_osc_control.py",
-    "brikvj_post_build_verify.py",
-)
+# Legacy entry — delegates to mega stack (show + practice + research).
+MEGA = os.path.join(SCRIPTS, "old_brik_vj_mega.py")
+STEPS = ()  # unused when MEGA exists
 
 try:
     open(LOG, "w").write("build started\n")
+    open(r"C:\Users\briks\Documents\TouchDesigner\BRIKVJ\logs\boot_trace.txt", "a").write("2\n")
 except Exception:
     pass
 
-g = globals()
-_helpers = os.path.join(SCRIPTS, "brikvj_td_helpers.py")
-if os.path.isfile(_helpers):
-    exec(compile(open(_helpers, encoding="utf-8").read(), _helpers, "exec"), g)
-
-for name in STEPS:
-    path = os.path.join(SCRIPTS, name)
-    if not os.path.isfile(path):
-        _log("[Old Brik V J] missing: " + path)
-        continue
-    _log("[Old Brik V J] --- " + name + " ---")
-    try:
-        exec(compile(open(path, encoding="utf-8").read(), path, "exec"), g)
-    except Exception:
-        _log(traceback.format_exc())
-        raise
+if os.path.isfile(MEGA):
+    _log("[Old Brik V J] running mega stack via " + MEGA)
+    exec(compile(open(MEGA, encoding="utf-8").read(), MEGA, "exec"), globals())
+else:
+    g = globals()
+    _helpers = os.path.join(SCRIPTS, "brikvj_td_helpers.py")
+    if os.path.isfile(_helpers):
+        exec(compile(open(_helpers, encoding="utf-8").read(), _helpers, "exec"), g)
+    for name in STEPS:
+        path = os.path.join(SCRIPTS, name)
+        if not os.path.isfile(path):
+            _log("[Old Brik V J] missing: " + path)
+            continue
+        _log("[Old Brik V J] --- " + name + " ---")
+        try:
+            exec(compile(open(path, encoding="utf-8").read(), path, "exec"), g)
+        except Exception:
+            _log(traceback.format_exc())
+            raise
 
 _log("[Old Brik V J] all-in-one finished — save BRIKVJ.toe")
 try:

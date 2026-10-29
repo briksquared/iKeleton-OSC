@@ -22,13 +22,11 @@ BOOT = r"""def h():
  except: pass
 """
 
+# Do NOT force-cook the mapper on open — that pops one modal per Brioch cook error.
 EXEC_BODY = """def onStart():
- run(op('./brikvj_boot').module.h,delayMilliSeconds=3000,fromOP=me)
- parent().cook(force=True, recurse=True)
  return
 
 def create():
- parent().cook(force=True, recurse=True)
  return
 
 def onExit():

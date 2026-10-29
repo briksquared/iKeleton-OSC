@@ -65,7 +65,7 @@ def run():
         merge = vj.create(mathCHOP, "audio_merged")
     try:
         merge.par.scope = "channels"
-        merge.par combine = "add"
+        merge.par.combine = "add"
     except Exception:
         pass
     if brioch:

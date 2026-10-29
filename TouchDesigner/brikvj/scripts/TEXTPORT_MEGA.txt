@@ -1,0 +1,1 @@
+exec(open(r'C:\Users\briks\Documents\TouchDesigner\BRIKVJ\scripts\old_brik_vj_mega.py', encoding='utf-8').read())

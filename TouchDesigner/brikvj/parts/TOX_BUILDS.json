@@ -1,0 +1,480 @@
+﻿{
+    "files":  {
+                  "extra\\outputrecording2.tox":  {
+                                                      "newerThanHost":  false,
+                                                      "build":  "31900"
+                                                  },
+                  "generative\\wispy_tunnel_td.tox":  {
+                                                          "newerThanHost":  false,
+                                                          "build":  "2022.28040"
+                                                      },
+                  "extra\\presetslot.tox":  {
+                                                "newerThanHost":  false,
+                                                "build":  "12220"
+                                            },
+                  "harvest_pick\\ojack-hydra-td_hydra_modulatehue.tox":  {
+                                                                             "newerThanHost":  true,
+                                                                             "build":  "2025.32280"
+                                                                         },
+                  "harvest_pick\\ojack-hydra-td_hydra.tox":  {
+                                                                 "newerThanHost":  true,
+                                                                 "build":  "2025.32280"
+                                                             },
+                  "harvest_pick\\ojack-hydra-td_hydra_repeaty.tox":  {
+                                                                         "newerThanHost":  true,
+                                                                         "build":  "2025.32280"
+                                                                     },
+                  "glitch_fluid\\fluid_3d_grid.tox":  {
+                                                          "newerThanHost":  true,
+                                                          "build":  "2025.32820"
+                                                      },
+                  "glitch_fluid\\displace_fx.tox":  {
+                                                        "newerThanHost":  false,
+                                                        "build":  "2023.12120"
+                                                    },
+                  "harvest_pick\\ojack-hydra-td_hydra_blend.tox":  {
+                                                                       "newerThanHost":  true,
+                                                                       "build":  "2025.32280"
+                                                                   },
+                  "glitch_fluid\\toon_fx_stack.tox":  {
+                                                          "newerThanHost":  true,
+                                                          "build":  "2025.32820"
+                                                      },
+                  "glitch_fluid\\flow_field.tox":  {
+                                                       "newerThanHost":  true,
+                                                       "build":  "2025.32820"
+                                                   },
+                  "generative\\spinpulser.tox":  {
+                                                     "newerThanHost":  false,
+                                                     "build":  "10280"
+                                                 },
+                  "glitch_fluid\\dither.tox":  {
+                                                   "newerThanHost":  true,
+                                                   "build":  "2025.31310"
+                                               },
+                  "harvest_pick\\ojack-hydra-td_hydra_osc.tox":  {
+                                                                     "newerThanHost":  true,
+                                                                     "build":  "2025.32280"
+                                                                 },
+                  "harvest_pick\\brioch-audio-reactive-vjing_meshExhibitDeformed.2.tox":  {
+                                                                                              "newerThanHost":  false,
+                                                                                              "build":  "2022.33910"
+                                                                                          },
+                  "vj_suite\\okvj_glitch_stack.tox":  {
+                                                          "newerThanHost":  true,
+                                                          "build":  "2025.32820"
+                                                      },
+                  "harvest_pick\\ojack-hydra-td_hydra_modulaterepeat.tox":  {
+                                                                                "newerThanHost":  true,
+                                                                                "build":  "2025.32280"
+                                                                            },
+                  "harvest_pick\\ojack-hydra-td_hydra_modulaterepeaty.tox":  {
+                                                                                 "newerThanHost":  true,
+                                                                                 "build":  "2025.32280"
+                                                                             },
+                  "harvest_pick\\ojack-hydra-td_hydra_colorama.tox":  {
+                                                                          "newerThanHost":  true,
+                                                                          "build":  "2025.32280"
+                                                                      },
+                  "vj_suite\\scene_wispy_tunnel.tox":  {
+                                                           "newerThanHost":  false,
+                                                           "build":  "2022.28040"
+                                                       },
+                  "generative\\voice_plasma.tox":  {
+                                                       "newerThanHost":  true,
+                                                       "build":  "2025.32280"
+                                                   },
+                  "extra\\scene_mesh_exhibit_v2.tox":  {
+                                                           "newerThanHost":  false,
+                                                           "build":  "2022.33910"
+                                                       },
+                  "glitch_fluid\\strange_trig.tox":  {
+                                                         "newerThanHost":  true,
+                                                         "build":  "2025.32820"
+                                                     },
+                  "vj_suite\\fx_glass_pass.tox":  {
+                                                      "newerThanHost":  true,
+                                                      "build":  "2025.33230"
+                                                  },
+                  "harvest_pick\\ojack-hydra-td_hydra_modulate.tox":  {
+                                                                          "newerThanHost":  true,
+                                                                          "build":  "2025.32280"
+                                                                      },
+                  "glitch_fluid\\feedback_fx.tox":  {
+                                                        "newerThanHost":  true,
+                                                        "build":  "2025.31810"
+                                                    },
+                  "harvest_pick\\ojack-hydra-td_hydra_add.tox":  {
+                                                                     "newerThanHost":  true,
+                                                                     "build":  "2025.32280"
+                                                                 },
+                  "harvest_pick\\ojack-hydra-td_hydra_b.tox":  {
+                                                                   "newerThanHost":  true,
+                                                                   "build":  "2025.32280"
+                                                               },
+                  "harvest_pick\\ojack-hydra-td_hydra_rotate.tox":  {
+                                                                        "newerThanHost":  true,
+                                                                        "build":  "2025.32280"
+                                                                    },
+                  "vj_suite\\projection_cubemap.tox":  {
+                                                           "newerThanHost":  true,
+                                                           "build":  "2025.32440"
+                                                       },
+                  "harvest_pick\\ojack-hydra-td_hydra_mult.tox":  {
+                                                                      "newerThanHost":  true,
+                                                                      "build":  "2025.32280"
+                                                                  },
+                  "vj_suite\\okvj_dither_dirt.tox":  {
+                                                         "newerThanHost":  true,
+                                                         "build":  "2025.33070"
+                                                     },
+                  "extra\\echo.tox":  {
+                                          "newerThanHost":  false,
+                                          "build":  "16360"
+                                      },
+                  "glitch_fluid\\tdx_modulation.tox":  {
+                                                           "newerThanHost":  true,
+                                                           "build":  "2025.31760"
+                                                       },
+                  "harvest_pick\\ojack-hydra-td_hydra_layer.tox":  {
+                                                                       "newerThanHost":  true,
+                                                                       "build":  "2025.32280"
+                                                                   },
+                  "glitch_fluid\\fluid_like.tox":  {
+                                                       "newerThanHost":  true,
+                                                       "build":  "2025.32820"
+                                                   },
+                  "harvest_pick\\ojack-hydra-td_hydra_repeat.tox":  {
+                                                                        "newerThanHost":  true,
+                                                                        "build":  "2025.32280"
+                                                                    },
+                  "harvest_pick\\ojack-hydra-td_hydra_mask.tox":  {
+                                                                      "newerThanHost":  true,
+                                                                      "build":  "2025.32280"
+                                                                  },
+                  "extra\\colorshift.tox":  {
+                                                "newerThanHost":  false,
+                                                "build":  "12190"
+                                            },
+                  "vj_suite\\fx_spectral_blur.tox":  {
+                                                         "newerThanHost":  true,
+                                                         "build":  "2025.32460"
+                                                     },
+                  "generative\\vintage_stars.tox":  {
+                                                        "newerThanHost":  false,
+                                                        "build":  "2023.11220"
+                                                    },
+                  "vj_suite\\okvj_strobe_stack.tox":  {
+                                                          "newerThanHost":  true,
+                                                          "build":  "2025.32820"
+                                                      },
+                  "glitch_fluid\\lysergiq_fluid.tox":  {
+                                                           "newerThanHost":  true,
+                                                           "build":  "2025.32050"
+                                                       },
+                  "glitch_fluid\\pixel_push.tox":  {
+                                                       "newerThanHost":  false,
+                                                       "build":  "2023.12120"
+                                                   },
+                  "glitch_fluid\\particlize.tox":  {
+                                                       "newerThanHost":  true,
+                                                       "build":  "2025.32820"
+                                                   },
+                  "glitch_fluid\\particle_life.tox":  {
+                                                          "newerThanHost":  true,
+                                                          "build":  "2025.31740"
+                                                      },
+                  "generative\\space_field.tox":  {
+                                                      "newerThanHost":  false,
+                                                      "build":  "2023.11220"
+                                                  },
+                  "harvest_pick\\ojack-hydra-td_hydra_g.tox":  {
+                                                                   "newerThanHost":  true,
+                                                                   "build":  "2025.32280"
+                                                               },
+                  "glitch_fluid\\decimate.tox":  {
+                                                     "newerThanHost":  true,
+                                                     "build":  "2025.31310"
+                                                 },
+                  "harvest_pick\\ojack-hydra-td_hydra_luma.tox":  {
+                                                                      "newerThanHost":  true,
+                                                                      "build":  "2025.32280"
+                                                                  },
+                  "harvest_pick\\ojack-hydra-td_hydra_coords.tox":  {
+                                                                        "newerThanHost":  true,
+                                                                        "build":  "2025.32280"
+                                                                    },
+                  "harvest_pick\\ojack-hydra-td_hydra_modulatekaleid.tox":  {
+                                                                                "newerThanHost":  true,
+                                                                                "build":  "2025.32280"
+                                                                            },
+                  "vj_suite\\clip_image_loaders.tox":  {
+                                                           "newerThanHost":  true,
+                                                           "build":  "2025.32460"
+                                                       },
+                  "glitch_fluid\\gridify.tox":  {
+                                                    "newerThanHost":  false,
+                                                    "build":  "2023.12120"
+                                                },
+                  "harvest_pick\\ojack-hydra-td_hydra_modulaterepeatx.tox":  {
+                                                                                 "newerThanHost":  true,
+                                                                                 "build":  "2025.32280"
+                                                                             },
+                  "generative\\codev2.tox":  {
+                                                 "newerThanHost":  false,
+                                                 "build":  "22580"
+                                             },
+                  "glitch_fluid\\chaser.tox":  {
+                                                   "newerThanHost":  true,
+                                                   "build":  "2025.31550"
+                                               },
+                  "harvest_pick\\ojack-hydra-td_hydra_prev.tox":  {
+                                                                      "newerThanHost":  true,
+                                                                      "build":  "2025.32280"
+                                                                  },
+                  "harvest_pick\\ojack-hydra-td_hydra_r.tox":  {
+                                                                   "newerThanHost":  true,
+                                                                   "build":  "2025.32280"
+                                                               },
+                  "vj_suite\\okvj_displace_stack.tox":  {
+                                                            "newerThanHost":  true,
+                                                            "build":  "2025.32820"
+                                                        },
+                  "vj_suite\\fx_pixel_sorter_pop.tox":  {
+                                                            "newerThanHost":  true,
+                                                            "build":  "2025.33070"
+                                                        },
+                  "vj_suite\\okvj_shader_changer.tox":  {
+                                                            "newerThanHost":  true,
+                                                            "build":  "2025.33070"
+                                                        },
+                  "harvest_pick\\ojack-hydra-td_hydra_a.tox":  {
+                                                                   "newerThanHost":  true,
+                                                                   "build":  "2025.32280"
+                                                               },
+                  "generative\\agent_trails.tox":  {
+                                                       "newerThanHost":  false,
+                                                       "build":  "2023.11220"
+                                                   },
+                  "generative\\audiobandanalysis.tox":  {
+                                                            "newerThanHost":  false,
+                                                            "build":  "10780"
+                                                        },
+                  "harvest_pick\\ojack-hydra-td_hydra_fft.tox":  {
+                                                                     "newerThanHost":  true,
+                                                                     "build":  "2025.32280"
+                                                                 },
+                  "extra\\presetslotui.tox":  {
+                                                  "newerThanHost":  false,
+                                                  "build":  "12220"
+                                              },
+                  "harvest_pick\\ojack-hydra-td_hydra_kaleid.tox":  {
+                                                                        "newerThanHost":  true,
+                                                                        "build":  "2025.32280"
+                                                                    },
+                  "generative\\gater.tox":  {
+                                                "newerThanHost":  false,
+                                                "build":  "10280"
+                                            },
+                  "harvest_pick\\brioch-audio-reactive-vjing_meshExhibitDeformed.tox":  {
+                                                                                            "newerThanHost":  false,
+                                                                                            "build":  "2021.10330"
+                                                                                        },
+                  "vj_suite\\okvj_pixel_sort.tox":  {
+                                                        "newerThanHost":  true,
+                                                        "build":  "2025.33070"
+                                                    },
+                  "harvest_pick\\ojack-hydra-td_hydra_modulatescale.tox":  {
+                                                                               "newerThanHost":  true,
+                                                                               "build":  "2025.32280"
+                                                                           },
+                  "extra\\stutter.tox":  {
+                                             "newerThanHost":  false,
+                                             "build":  "12190"
+                                         },
+                  "glitch_fluid\\tdx_crt.tox":  {
+                                                    "newerThanHost":  true,
+                                                    "build":  "2025.31760"
+                                                },
+                  "harvest_pick\\ojack-hydra-td_hydra_saturate.tox":  {
+                                                                          "newerThanHost":  true,
+                                                                          "build":  "2025.32280"
+                                                                      },
+                  "harvest_pick\\ojack-hydra-td_hydra_noise.tox":  {
+                                                                       "newerThanHost":  true,
+                                                                       "build":  "2025.32280"
+                                                                   },
+                  "vj_suite\\scene_wheels.tox":  {
+                                                     "newerThanHost":  false,
+                                                     "build":  "2022.28040"
+                                                 },
+                  "harvest_pick\\ojack-hydra-td_hydra_pixelate.tox":  {
+                                                                          "newerThanHost":  true,
+                                                                          "build":  "2025.32280"
+                                                                      },
+                  "extra\\fulldome_sim.tox":  {
+                                                  "newerThanHost":  false,
+                                                  "build":  "2022.32120"
+                                              },
+                  "extra\\audiobandanalysis.tox":  {
+                                                       "newerThanHost":  false,
+                                                       "build":  "10780"
+                                                   },
+                  "glitch_fluid\\fluid_2d_solver.tox":  {
+                                                            "newerThanHost":  true,
+                                                            "build":  "2025.32460"
+                                                        },
+                  "vj_suite\\okvj_halftone.tox":  {
+                                                      "newerThanHost":  false,
+                                                      "build":  "2023.12120"
+                                                  },
+                  "glitch_fluid\\tdx_datamosh_alt.tox":  {
+                                                             "newerThanHost":  true,
+                                                             "build":  "2025.31760"
+                                                         },
+                  "harvest_pick\\brioch-audio-reactive-vjing_stroboscope.tox":  {
+                                                                                    "newerThanHost":  false,
+                                                                                    "build":  "2022.33910"
+                                                                                },
+                  "vj_suite\\audio_crossover.tox":  {
+                                                        "newerThanHost":  false,
+                                                        "build":  "2022.28040"
+                                                    },
+                  "extra\\hydra_td.tox":  {
+                                              "newerThanHost":  false,
+                                              "build":  "2023.11510"
+                                          },
+                  "glitch_fluid\\fluid_2d_simple.tox":  {
+                                                            "newerThanHost":  true,
+                                                            "build":  "2025.32460"
+                                                        },
+                  "glitch_fluid\\input_map_strober.tox":  {
+                                                              "newerThanHost":  true,
+                                                              "build":  "2025.33070"
+                                                          },
+                  "harvest_pick\\ojack-hydra-td_hydra_repeatx.tox":  {
+                                                                         "newerThanHost":  true,
+                                                                         "build":  "2025.32280"
+                                                                     },
+                  "generative\\blue_sky.tox":  {
+                                                   "newerThanHost":  false,
+                                                   "build":  "2023.11220"
+                                               },
+                  "harvest_pick\\ojack-hydra-td_hydra_brightness.tox":  {
+                                                                            "newerThanHost":  true,
+                                                                            "build":  "2025.32280"
+                                                                        },
+                  "harvest_pick\\ojack-hydra-td_hydra_hue.tox":  {
+                                                                     "newerThanHost":  true,
+                                                                     "build":  "2025.32280"
+                                                                 },
+                  "harvest_pick\\ojack-hydra-td_hydra_posterize.tox":  {
+                                                                           "newerThanHost":  true,
+                                                                           "build":  "2025.32280"
+                                                                       },
+                  "harvest_pick\\ojack-hydra-td_hydra_modulaterotate.tox":  {
+                                                                                "newerThanHost":  true,
+                                                                                "build":  "2025.32280"
+                                                                            },
+                  "harvest_pick\\ojack-hydra-td_hydra_modulatescrolly.tox":  {
+                                                                                 "newerThanHost":  true,
+                                                                                 "build":  "2025.32280"
+                                                                             },
+                  "glitch_fluid\\fluid_sim.tox":  {
+                                                      "newerThanHost":  false,
+                                                      "build":  "2021.12380"
+                                                  },
+                  "harvest_pick\\ojack-hydra-td_hydra_modulatescrollx.tox":  {
+                                                                                 "newerThanHost":  true,
+                                                                                 "build":  "2025.32280"
+                                                                             },
+                  "generative\\audio_analysis_ss.tox":  {
+                                                            "newerThanHost":  false,
+                                                            "build":  "2023.11220"
+                                                        },
+                  "harvest_pick\\ojack-hydra-td_hydra_gradient.tox":  {
+                                                                          "newerThanHost":  true,
+                                                                          "build":  "2025.32280"
+                                                                      },
+                  "harvest_pick\\ojack-hydra-td_hydra_scale.tox":  {
+                                                                       "newerThanHost":  true,
+                                                                       "build":  "2025.32280"
+                                                                   },
+                  "extra\\codev2.tox":  {
+                                            "newerThanHost":  false,
+                                            "build":  "22580"
+                                        },
+                  "harvest_pick\\ojack-hydra-td_hydra_invert.tox":  {
+                                                                        "newerThanHost":  true,
+                                                                        "build":  "2025.32280"
+                                                                    },
+                  "harvest_pick\\ojack-hydra-td_hydra_diff.tox":  {
+                                                                      "newerThanHost":  true,
+                                                                      "build":  "2025.32280"
+                                                                  },
+                  "glitch_fluid\\strobe_fx.tox":  {
+                                                      "newerThanHost":  false,
+                                                      "build":  "2023.12120"
+                                                  },
+                  "generative\\kodelife_glsl.tox":  {
+                                                        "newerThanHost":  false,
+                                                        "build":  "2023.11220"
+                                                    },
+                  "vj_suite\\okvj_compositor.tox":  {
+                                                        "newerThanHost":  true,
+                                                        "build":  "2025.32820"
+                                                    },
+                  "vj_suite\\scene_paint_marbling.tox":  {
+                                                             "newerThanHost":  false,
+                                                             "build":  "2022.28040"
+                                                         },
+                  "generative\\audio_analysis_time.tox":  {
+                                                              "newerThanHost":  false,
+                                                              "build":  "2023.12370"
+                                                          },
+                  "glitch_fluid\\scene_wispy_tunnel_root.tox":  {
+                                                                    "newerThanHost":  false,
+                                                                    "build":  "2022.28040"
+                                                                },
+                  "harvest_pick\\ojack-hydra-td_hydra_modulatepixelate.tox":  {
+                                                                                  "newerThanHost":  true,
+                                                                                  "build":  "2025.32280"
+                                                                              },
+                  "harvest_pick\\ojack-hydra-td_hydra_color.tox":  {
+                                                                       "newerThanHost":  true,
+                                                                       "build":  "2025.32280"
+                                                                   },
+                  "extra\\bloom.tox":  {
+                                           "newerThanHost":  false,
+                                           "build":  "16360"
+                                       },
+                  "harvest_pick\\ojack-hydra-td_hydra_contrast.tox":  {
+                                                                          "newerThanHost":  true,
+                                                                          "build":  "2025.32280"
+                                                                      },
+                  "vj_suite\\okvj_audio_analysis.tox":  {
+                                                            "newerThanHost":  true,
+                                                            "build":  "2025.33070"
+                                                        },
+                  "generative\\param_smoother.tox":  {
+                                                         "newerThanHost":  false,
+                                                         "build":  "21300"
+                                                     },
+                  "vj_suite\\okvj_feedback_stack.tox":  {
+                                                            "newerThanHost":  true,
+                                                            "build":  "2025.32820"
+                                                        },
+                  "generative\\spiral.tox":  {
+                                                 "newerThanHost":  false,
+                                                 "build":  "55200"
+                                             },
+                  "harvest_pick\\HydraTD_HydraTD.tox":  {
+                                                            "newerThanHost":  false,
+                                                            "build":  "2023.11510"
+                                                        }
+              },
+    "hostBuild":  "2023.12370",
+    "newerCount":  77,
+    "generated":  "2026-10-28T10:17:05.6495392-05:00",
+    "count":  118
+}

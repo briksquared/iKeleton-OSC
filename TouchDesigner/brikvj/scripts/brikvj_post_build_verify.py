@@ -45,7 +45,7 @@ def run():
         for m in opt_missing:
             log("  " + m)
 
-    parts_root = r"C:\Users\briks\Desktop\GitHub\audio\ableton\github\_sweep2\iKeleton-OSC\TouchDesigner\brikvj\parts"
+    parts_root = r"C:\Users\briks\Documents\TouchDesigner\BRIKVJ\parts"
     import os
 
     for sub, label in (

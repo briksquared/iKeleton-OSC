@@ -10,7 +10,10 @@ Personal glitch VJ stack aligned with **Patchworks** on GitHub (`patchworks/sour
 | [scripts/old_brik_vj_build.py](scripts/old_brik_vj_build.py) | Creates `/project1/old_brik_vj` |
 | [scripts/old_brik_vj_audio.py](scripts/old_brik_vj_audio.py) | MOTU M4 channels 3–4 |
 | [components/](components/) | datamosh, feedback, audioAnalysisTime |
-| [BUILD.md](BUILD.md) | Short build steps |
+| [BUILD.md](BUILD.md) | Mega / fast / unattended build |
+| [WORKLOG.md](WORKLOG.md) | Full session history + commands |
+| [USER_REQUESTS.md](USER_REQUESTS.md) | User intent preserved |
+| [AGENTS_HANDOFF.md](AGENTS_HANDOFF.md) | Next agent entry point |
 | [ableton/ABLETON.md](ableton/ABLETON.md) | TDAbleton + your User Library devices |
 
 Patchworks SSOT: `patchworks/source/RIG.md`, `manuals/22-wiring.md`, `manuals/15-motu-m4.md`, `manuals/23-computer.md`.

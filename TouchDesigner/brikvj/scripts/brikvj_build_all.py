@@ -5,7 +5,7 @@
 
 import os
 
-BRIKVJ_ROOT = r"C:\Users\briks\Desktop\GitHub\audio\ableton\github\_sweep2\iKeleton-OSC\TouchDesigner\brikvj"
+BRIKVJ_ROOT = r"C:\Users\briks\Documents\TouchDesigner\BRIKVJ"
 COMP_FOLDER = os.path.join(BRIKVJ_ROOT, "components")
 
 
@@ -36,7 +36,7 @@ def _load_tox(parent, filename, nicename):
         _log("MISSING tox: {}".format(path))
         return None
     try:
-        t = parent.loadTox(path, customName=nicename)
+        t = td_load_tox(parent, path, nicename)
         _log("loaded {} -> {}".format(filename, t.path))
         return t
     except Exception as e:

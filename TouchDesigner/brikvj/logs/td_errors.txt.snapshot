@@ -1,0 +1,71 @@
+/project1/tree1/lsystem1	  Error: (Parameter: Generations)  TypeError: unsupported operand type(s) for *: 'NoneType' and 'int' (/project1/tree1/lsystem1)
+  Error: (Parameter: Angle)  TypeError: unsupported operand type(s) for *: 'NoneType' and 'int' (/project1/tree1/lsystem1)
+  Error: TypeError: float() argument must be a string or a real number, not 'NoneType'
+Context:(Parameter: Random Scale) (/project1/tree1/lsystem1)
+/project1/bloomM	  Error: (Parameter: BeatIntensity)  TypeError: unsupported operand type(s) for *: 'NoneType' and 'float' (/project1/bloomM)
+/project1/bloomM/bloom	  Error: (Parameter: Intensity)  td.tdError: Error in /project1/bloomM parameter Beatintensity (/project1/bloomM/bloom)
+/project1/bloomM/bloom/level2	  Error: (Parameter: Intensity)  td.tdError: Error in /project1/bloomM parameter Beatintensity (/project1/bloomM/bloom)
+/project1/constant4	  Error: (Parameter: const0value)  TypeError: unsupported operand type(s) for *: 'NoneType' and 'NoneType' (/project1/constant4)
+/project1/analyseAudio/audioAnalysis	  Error: TypeError: float() argument must be a string or a real number, not 'NoneType'
+Context:(Parameter: slow moving partials density) (/project1/analyseAudio/audioAnalysis)
+  Error: TypeError: float() argument must be a string or a real number, not 'NoneType'
+Context:(Parameter: fast moving partials density1) (/project1/analyseAudio/audioAnalysis)
+  Error: TypeError: float() argument must be a string or a real number, not 'NoneType'
+Context:(Parameter: Rythm) (/project1/analyseAudio/audioAnalysis)
+  Error: TypeError: float() argument must be a string or a real number, not 'NoneType'
+Context:(Parameter: Snare detection) (/project1/analyseAudio/audioAnalysis)
+  Error: TypeError: float() argument must be a string or a real number, not 'NoneType'
+Context:(Parameter: Kick detection) (/project1/analyseAudio/audioAnalysis)
+  Error: TypeError: float() argument must be a string or a real number, not 'NoneType'
+Context:(Parameter: High) (/project1/analyseAudio/audioAnalysis)
+  Error: TypeError: float() argument must be a string or a real number, not 'NoneType'
+Context:(Parameter: Mid) (/project1/analyseAudio/audioAnalysis)
+  Error: TypeError: float() argument must be a string or a real number, not 'NoneType'
+Context:(Parameter: Low) (/project1/analyseAudio/audioAnalysis)
+/project1/meshParticles/audioAnalysis	  Error: TypeError: float() argument must be a string or a real number, not 'NoneType'
+Context:(Parameter: slow moving partials density) (/project1/meshParticles/audioAnalysis)
+  Error: TypeError: float() argument must be a string or a real number, not 'NoneType'
+Context:(Parameter: fast moving partials density1) (/project1/meshParticles/audioAnalysis)
+  Error: TypeError: float() argument must be a string or a real number, not 'NoneType'
+Context:(Parameter: Rythm) (/project1/meshParticles/audioAnalysis)
+  Error: TypeError: float() argument must be a string or a real number, not 'NoneType'
+Context:(Parameter: Snare detection) (/project1/meshParticles/audioAnalysis)
+  Error: TypeError: float() argument must be a string or a real number, not 'NoneType'
+Context:(Parameter: Kick detection) (/project1/meshParticles/audioAnalysis)
+  Error: TypeError: float() argument must be a string or a real number, not 'NoneType'
+Context:(Parameter: High) (/project1/meshParticles/audioAnalysis)
+  Error: TypeError: float() argument must be a string or a real number, not 'NoneType'
+Context:(Parameter: Mid) (/project1/meshParticles/audioAnalysis)
+  Error: TypeError: float() argument must be a string or a real number, not 'NoneType'
+Context:(Parameter: Low) (/project1/meshParticles/audioAnalysis)
+/project1/meshParticles/importselect1	  Error: Invalid geometry name. (/project1/meshParticles/importselect1)
+/project1/meshParticles/importselect2	  Error: Invalid geometry name. (/project1/meshParticles/importselect2)
+/project1/reactionDiffusion	  Error: (Parameter: Unsharp convolve Offset)  TypeError: unsupported operand type(s) for *: 'NoneType' and 'float' (/project1/reactionDiffusion)
+  Error: (Parameter: UV Weight)  TypeError: unsupported operand type(s) for *: 'NoneType' and 'float' (/project1/reactionDiffusion)
+/project1/reactionDiffusion/unsharp/convolve1	  Error: td.tdError: Error in /project1/reactionDiffusion parameter Offset3
+Context:(Parameter: Offset) (/project1/reactionDiffusion/unsharp/convolve1)
+/project1/reactionDiffusion/displace2	  Error: td.tdError: Error in /project1/reactionDiffusion parameter Uvweight
+Context:(Parameter: UV Weight) (/project1/reactionDiffusion/displace2)
+/project1/meshExhibitDeformed	  Error: (Parameter: Bloom Intensity)  TypeError: unsupported operand type(s) for *: 'NoneType' and 'float' (/project1/meshExhibitDeformed)
+  Error: (Parameter: Bloom Blur Size)  TypeError: unsupported operand type(s) for *: 'NoneType' and 'int' (/project1/meshExhibitDeformed)
+  Error: (Parameter: Noise Translate)  TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType' (/project1/meshExhibitDeformed)
+  Error: (Parameter: Noise Amplitude)  TypeError: unsupported operand type(s) for *: 'NoneType' and 'float' (/project1/meshExhibitDeformed)
+  Error: (Parameter: Noise Harmonics)  TypeError: unsupported operand type(s) for *: 'NoneType' and 'float' (/project1/meshExhibitDeformed)
+  Error: (Parameter: Mesh Rotation)  TypeError: unsupported operand type(s) for *: 'NoneType' and 'int' (/project1/meshExhibitDeformed)
+/project1/meshExhibitDeformed/geo3	  Error: td.tdError: Error in /project1/meshExhibitDeformed parameter R
+Context:(Parameter: Rotate) (/project1/meshExhibitDeformed/geo3)
+/project1/meshExhibitDeformed/geo4	  Error: td.tdError: Error in /project1/meshExhibitDeformed parameter R
+Context:(Parameter: Rotate) (/project1/meshExhibitDeformed/geo4)
+/project1/meshExhibitDeformed/bloom	  Error: td.tdError: Error in /project1/meshExhibitDeformed parameter Blursize
+Context:(Parameter: Blur Size) (/project1/meshExhibitDeformed/bloom)
+/project1/meshExhibitDeformed/bloom/blurUp	  Error: td.tdError: Error in /project1/meshExhibitDeformed parameter Blursize
+Context:(Parameter: Blur Size) (/project1/meshExhibitDeformed/bloom)
+/project1/meshExhibitDeformed/bloom/level2	  Error: td.tdError: Error in /project1/meshExhibitDeformed parameter Intensity
+Context:(Parameter: Intensity) (/project1/meshExhibitDeformed/bloom)
+/project1/meshExhibitDeformed/bloom/blurDown	  Error: td.tdError: Error in /project1/meshExhibitDeformed/bloom parameter Blursize
+Context:(Parameter: Filter Size) (/project1/meshExhibitDeformed/bloom/blurDown)
+/project1/meshExhibitDeformed/noise2	  Error: (Parameter: Amplitude)  td.tdError: Error in /project1/meshExhibitDeformed parameter Amp (/project1/meshExhibitDeformed/noise2)
+/project1/meshExhibitDeformed/noise3	  Error: td.tdError: Error in /project1/meshExhibitDeformed parameter Amp
+Context:(Parameter: Amplitude) (/project1/meshExhibitDeformed/noise3)
+/project1/meshExhibitDeformed/importselect1	  Error: Invalid geometry name. (/project1/meshExhibitDeformed/importselect1)
+/project1/meshExhibitDeformed/importselect2	  Error: Invalid geometry name. (/project1/meshExhibitDeformed/importselect2)

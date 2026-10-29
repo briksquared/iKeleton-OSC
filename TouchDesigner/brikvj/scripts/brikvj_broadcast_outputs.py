@@ -151,6 +151,8 @@ def build():
     except Exception:
         pass
 
+    bus_out = child(bc, "out", nullTOP)
+    wire(bus_out, 0, fan)
     preview = child(bc, "preview", nullTOP)
     wire(preview, 0, fan)
     try:

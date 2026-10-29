@@ -1,7 +1,7 @@
 # Copy harvested .tox into brikvj/parts/ (run after updating _sweep3 clones)
 $ErrorActionPreference = "Stop"
 $Sweep = "C:\Users\briks\Desktop\GitHub\audio\ableton\github\_sweep3\touchdesigner"
-$Out = "C:\Users\briks\Desktop\GitHub\audio\ableton\github\_sweep2\iKeleton-OSC\TouchDesigner\brikvj\parts"
+$Out = "C:\Users\briks\Documents\TouchDesigner\BRIKVJ\parts"
 New-Item -ItemType Directory -Force -Path $Out | Out-Null
 
 $map = @(

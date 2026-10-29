@@ -6,9 +6,10 @@ Click the TouchDesigner window before keys register.
 |-----|--------|
 | **1–6** | Brioch scenes (unchanged) |
 | **7–9, 0** | Harvest `scene_switch` slots 6–9 |
-| **[ / ]** | Previous / next harvest scene (0–11) |
+| **[ / ]** | Previous / next scene (0–31) |
+| **o** | Toggle generative overlay (`overlay_gen/overlay_switch`) |
 | **- / =** | Previous / next clip column (0–7) |
-| **\\** | Toggle `brikvj_router` (0 Brioch / 1 harvest FX stack) |
+| **\\** | Cycle `brikvj_router` (0 Brioch / 1 show stack / 2 research lab) |
 | **`** | Toggle FX chain bypass (`fx_switch`) |
 | **F2** | Toggle `brikvj_autopilot` |
 | **F3** | Toggle stream record (`brikvj_broadcast/stream_record`) |
