@@ -13,6 +13,7 @@ Personal glitch VJ stack aligned with **Patchworks** on GitHub (`patchworks/sour
 | [BUILD.md](BUILD.md) | Mega / fast / unattended build |
 | [WORKLOG.md](WORKLOG.md) | Full session history + commands |
 | [USER_REQUESTS.md](USER_REQUESTS.md) | User intent preserved |
+| [PLAN_INDEX.md](PLAN_INDEX.md) | **Start here** — one command → SESSION_BRIEF |
 | [NEXT_SESSION_PLAN_DEEP.md](NEXT_SESSION_PLAN_DEEP.md) | **Deep** playbook: architecture, research, backlog |
 | [RESEARCH_BACKLOG.md](RESEARCH_BACKLOG.md) | Integrate queue (open/candidate/done) |
 | [NEXT_SESSION_PLAN.md](NEXT_SESSION_PLAN.md) | Short: verify, discover, finish |
