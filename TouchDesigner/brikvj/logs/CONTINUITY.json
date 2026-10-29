@@ -1,21 +1,21 @@
 ﻿{
-    "git_head":  "886b374 fix(brikvj): dialog prefs, one TD launch policy, safe quiet-open patch",
+    "git_head":  "ca601bd fix(brikvj): low-memory mega path and OOM mitigations",
     "touchdesigner_running":  false,
-    "gap_count":  4,
+    "gap_count":  3,
     "mega_save_ok":  true,
     "gap_report_exit":  1,
-    "live_toe_bytes":  8764772,
+    "live_toe_bytes":  9792596,
     "newer_tox_count":  77,
-    "unwired_tox_count":  123,
-    "generated_at":  "2026-10-29T08:33:21.6184524-05:00",
+    "unwired_tox_count":  122,
+    "generated_at":  "2026-10-29T09:31:55.9951678-05:00",
     "read_next":  [
-                      "logs/OPEN_WORK_QUEUE.md",
+                      "logs/HANDOFF_DETAILED_2026-10-29.md",
                       "logs/SESSION_BRIEF.md",
                       "logs/CONTINUITY.json",
-                      "ADD_FEATURES.md",
+                      "logs/ROADMAP_STATUS.md",
                       "NEXT_SESSION_OPERATIONS.md"
                   ],
-    "open_rb_count":  5,
+    "open_rb_count":  6,
     "milestones":  {
                        "M4_harvest":  false,
                        "M5_live":  false,
@@ -24,7 +24,7 @@
                        "M3_show_bus":  true,
                        "M6_kit_clean":  true
                    },
-    "build_traceback":  true,
-    "recommended_sprint":  "Sprint P0",
-    "git_branch_status":  "## main...origin/main [ahead 9]"
+    "build_traceback":  false,
+    "recommended_sprint":  "Sprint R2 — roadmap step 2 (quiet open)",
+    "git_branch_status":  "## main...origin/main [ahead 16]"
 }

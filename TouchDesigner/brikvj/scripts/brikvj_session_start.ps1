@@ -45,9 +45,9 @@ if (Test-Path $buildLog) {
     if ($bl -match 'Traceback') { $buildTraceback = $true }
 }
 
-$sprint = if ($gapExit -ne 0) { "Sprint P0" }
-elseif (-not $megaSaveOk -or $toeLen -lt 2000000) { "Sprint P0" }
-elseif ($buildTraceback) { "Sprint P0" }
+$sprint = if ($buildTraceback -or -not $megaSaveOk -or $toeLen -lt 2000000) { "Sprint P0" }
+elseif ($megaSaveOk -and $toeLen -ge 9000000 -and -not $buildTraceback) { "Sprint R2 — roadmap step 2 (quiet open)" }
+elseif ($gapExit -ne 0) { "Sprint P0 or R (see GAPS_REPORT)" }
 elseif ($tdRun) { "Sprint D or capture-only (TD running)" }
 else { "Sprint R" }
 
@@ -76,10 +76,10 @@ $continuity = @{
     recommended_sprint     = $sprint
     milestones             = $milestones
     read_next              = @(
-        "logs/OPEN_WORK_QUEUE.md",
+        "logs/HANDOFF_DETAILED_2026-10-29.md",
         "logs/SESSION_BRIEF.md",
         "logs/CONTINUITY.json",
-        "ADD_FEATURES.md",
+        "logs/ROADMAP_STATUS.md",
         "NEXT_SESSION_OPERATIONS.md"
     )
 }

@@ -1,24 +1,8 @@
 ﻿{
-    "generated_at":  "2026-10-29T08:33:29.4843087-05:00",
+    "generated_at":  "2026-10-29T09:31:55.4585545-05:00",
     "queue":  [
                   {
-                      "id":  "BLD-001",
-                      "evidence":  "tdError: Unknown operator type. Value:\u0027parexecuteDAT\u0027 Type:\u003cclass \u0027str\u0027\u003e.\r",
-                      "kind":  "build",
-                      "action":  "Fix scripts\\old_brik_vj_mega.py; sync; user Textport TEXTPORT_MEGA.txt + Save (no auto TD launch)",
-                      "priority":  "P0",
-                      "title":  "Mega step failed: old_brik_vj_mega.py"
-                  },
-                  {
                       "id":  "GAP-1",
-                      "evidence":  "build.log contains Traceback — open log and fix script",
-                      "kind":  "gap",
-                      "action":  "See NEXT_SESSION_OPERATIONS.md failure matrix",
-                      "priority":  "P0",
-                      "title":  "build.log contains Traceback — open log and fix script"
-                  },
-                  {
-                      "id":  "GAP-2",
                       "evidence":  "Many newer tox — expect skips or dialogs unless td2023/ resaves",
                       "kind":  "gap",
                       "action":  "See NEXT_SESSION_OPERATIONS.md failure matrix",
@@ -26,7 +10,7 @@
                       "title":  "Many newer tox — expect skips or dialogs unless td2023/ resaves"
                   },
                   {
-                      "id":  "GAP-3",
+                      "id":  "GAP-2",
                       "evidence":  "td_errors.txt has 71 lines — Brioch/audio/mesh; run patch_brikvj_quiet_open + MOTU 3-4",
                       "kind":  "gap",
                       "action":  "See NEXT_SESSION_OPERATIONS.md failure matrix",
@@ -50,14 +34,6 @@
                       "title":  "harvest_pick â†’ second scene bank (14+ slots)"
                   },
                   {
-                      "id":  "RB-004",
-                      "evidence":  "RB-004",
-                      "kind":  "backlog",
-                      "action":  "RESEARCH_BACKLOG + DEEPER §6 scoring",
-                      "priority":  "P1",
-                      "title":  "Lazy Hydra lab (no cook-all on open)"
-                  },
-                  {
                       "id":  "RB-006",
                       "evidence":  "RB-006",
                       "kind":  "backlog",
@@ -74,12 +50,28 @@
                       "title":  "Mac/importselect path audit clean"
                   },
                   {
-                      "id":  "GAP-4",
-                      "evidence":  "iKeleton-OSC git dirty: ## main...origin/main [ahead 9]",
+                      "id":  "RB-011",
+                      "evidence":  "RB-011",
+                      "kind":  "backlog",
+                      "action":  "RESEARCH_BACKLOG + DEEPER §6 scoring",
+                      "priority":  "P1",
+                      "title":  "GPU/driver dialog capture + ERRORS.md playbooks"
+                  },
+                  {
+                      "id":  "RB-012",
+                      "evidence":  "RB-012",
+                      "kind":  "backlog",
+                      "action":  "RESEARCH_BACKLOG + DEEPER §6 scoring",
+                      "priority":  "P1",
+                      "title":  "Brioch tree1/lsystem/bloomM NoneType parms"
+                  },
+                  {
+                      "id":  "GAP-3",
+                      "evidence":  "iKeleton-OSC git dirty: ## main...origin/main [ahead 16]",
                       "kind":  "gap",
                       "action":  "See NEXT_SESSION_OPERATIONS.md failure matrix",
                       "priority":  "P2",
-                      "title":  "iKeleton-OSC git dirty: ## main...origin/main [ahead 9]"
+                      "title":  "iKeleton-OSC git dirty: ## main...origin/main [ahead 16]"
                   },
                   {
                       "id":  "RES-001",
@@ -92,31 +84,16 @@
               ],
     "sessions":  {
                      "session1":  [
-                                      {
-                                          "id":  "BLD-001",
-                                          "evidence":  "tdError: Unknown operator type. Value:\u0027parexecuteDAT\u0027 Type:\u003cclass \u0027str\u0027\u003e.\r",
-                                          "kind":  "build",
-                                          "action":  "Fix scripts\\old_brik_vj_mega.py; sync; user Textport TEXTPORT_MEGA.txt + Save (no auto TD launch)",
-                                          "priority":  "P0",
-                                          "title":  "Mega step failed: old_brik_vj_mega.py"
-                                      },
-                                      {
-                                          "id":  "GAP-1",
-                                          "evidence":  "build.log contains Traceback — open log and fix script",
-                                          "kind":  "gap",
-                                          "action":  "See NEXT_SESSION_OPERATIONS.md failure matrix",
-                                          "priority":  "P0",
-                                          "title":  "build.log contains Traceback — open log and fix script"
-                                      }
+
                                   ],
                      "session3":  [
                                       {
-                                          "id":  "GAP-4",
-                                          "evidence":  "iKeleton-OSC git dirty: ## main...origin/main [ahead 9]",
+                                          "id":  "GAP-3",
+                                          "evidence":  "iKeleton-OSC git dirty: ## main...origin/main [ahead 16]",
                                           "kind":  "gap",
                                           "action":  "See NEXT_SESSION_OPERATIONS.md failure matrix",
                                           "priority":  "P2",
-                                          "title":  "iKeleton-OSC git dirty: ## main...origin/main [ahead 9]"
+                                          "title":  "iKeleton-OSC git dirty: ## main...origin/main [ahead 16]"
                                       },
                                       {
                                           "id":  "RES-001",
@@ -137,7 +114,7 @@
                                   ],
                      "session2":  [
                                       {
-                                          "id":  "GAP-2",
+                                          "id":  "GAP-1",
                                           "evidence":  "Many newer tox — expect skips or dialogs unless td2023/ resaves",
                                           "kind":  "gap",
                                           "action":  "See NEXT_SESSION_OPERATIONS.md failure matrix",
@@ -145,7 +122,7 @@
                                           "title":  "Many newer tox — expect skips or dialogs unless td2023/ resaves"
                                       },
                                       {
-                                          "id":  "GAP-3",
+                                          "id":  "GAP-2",
                                           "evidence":  "td_errors.txt has 71 lines — Brioch/audio/mesh; run patch_brikvj_quiet_open + MOTU 3-4",
                                           "kind":  "gap",
                                           "action":  "See NEXT_SESSION_OPERATIONS.md failure matrix",
@@ -169,14 +146,14 @@
                                           "title":  "harvest_pick â†’ second scene bank (14+ slots)"
                                       },
                                       {
-                                          "id":  "RB-004",
-                                          "evidence":  "RB-004",
+                                          "id":  "RB-006",
+                                          "evidence":  "RB-006",
                                           "kind":  "backlog",
                                           "action":  "RESEARCH_BACKLOG + DEEPER §6 scoring",
                                           "priority":  "P1",
-                                          "title":  "Lazy Hydra lab (no cook-all on open)"
+                                          "title":  "Ableton link without crash"
                                       }
                                   ]
                  },
-    "count":  11
+    "count":  10
 }

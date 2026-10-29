@@ -1,11 +1,11 @@
-﻿# BRIKVJ unwired taxonomy (generated 2026-10-29T09:11:00.1502463-05:00)
+﻿# BRIKVJ unwired taxonomy (generated 2026-10-29T09:31:55.7636204-05:00)
 
-**Total unwired:** 123 — do **not** bulk-wire; use [RESEARCH_PASS_PLAN_DEEPER.md](../RESEARCH_PASS_PLAN_DEEPER.md) scoring.
+**Total unwired:** 122 — do **not** bulk-wire; use [RESEARCH_PASS_PLAN_DEEPER.md](../RESEARCH_PASS_PLAN_DEEPER.md) scoring.
 
 | Category | Count | Integrate via |
 |----------|------:|---------------|
 | hydra_lab | 56 | brikvj_research_lab.py lazy RB-004 |
-| okvj_shared | 55 | FX_DEFS / SCENE_DEFS / td2023 |
+| okvj_shared | 54 | FX_DEFS / SCENE_DEFS / td2023 |
 | other_generative | 7 | score DEEPER section 6 |
 | brioch_pick | 3 | dedupe SCENE_DEFS first |
 | mapping_output | 1 | F5 / broadcast / kantan |
@@ -78,13 +78,12 @@
 - parts/harvest_pick/ojack-hydra-td_hydra_voronoi.tox 
  ### mapping_output (1)
  - parts/vj_suite/projection_cubemap.tox 
- ### okvj_shared (55)
+ ### okvj_shared (54)
  - parts/harvest_pick/okVJ-Shared_analogueWarmthFXStack.tox
 - parts/harvest_pick/okVJ-Shared_audioAnalysis.tox
 - parts/harvest_pick/okVJ-Shared_audioMixer.tox
 - parts/harvest_pick/okVJ-Shared_buttons.tox
 - parts/harvest_pick/okVJ-Shared_chaser.tox
-- parts/harvest_pick/okVJ-Shared_colorizer.tox
 - parts/harvest_pick/okVJ-Shared_compositor.tox
 - parts/harvest_pick/okVJ-Shared_constructOutputMap.tox
 - parts/harvest_pick/okVJ-Shared_createInputMap.tox

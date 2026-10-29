@@ -10,6 +10,11 @@ Runtime logs live under **`C:\Users\briks\Documents\TouchDesigner\BRIKVJ\logs\`*
 | `build.lock` | Present while unattended build runs — remove if stale |
 | `GAPS_REPORT.md` | Output of `brikvj_gap_report.ps1` |
 | `RESEARCH_DIFF.md` | Output of `brikvj_research_diff.ps1` (unwired harvest) |
+| `HANDOFF_DETAILED_2026-10-29.md` | **Primary agent handoff** (paths, OOM, commits) |
+| `INCIDENT_LOG_2026-10-29.md` | Structured incident record |
+| `GIT_COMMIT_MANIFEST_2026-10-29.md` | Fork commit list |
+| `build.log.snapshot` | Kit copy of last successful Documents mega log |
+| `SESSION_BRIEF.md` / `CONTINUITY.json` | `brikvj_session_start.ps1` |
 
 ## Capture (agent / script)
 
@@ -18,11 +23,12 @@ Documents\TouchDesigner\BRIKVJ\scripts\capture_brikvj_errors.ps1
 Documents\TouchDesigner\BRIKVJ\scripts\summarize_td_errors.py
 ```
 
-## Last known build markers (2026-10-28)
+## Last known build markers (2026-10-29)
 
-- Resolume fast path: `FX loaded 30 / 30`, `project.save() OK`
-- Mega path: 26 steps; autostart runs `old_brik_vj_mega.py` when `RUN_BUILD.flag` set
-- Quiet-open patch: kantan `execute1` no longer force-cooks on start
+- Mega path: **26 steps**, `[BRIKVJ mega] project.save() OK`, **no Traceback** (see `build.log.snapshot`)
+- Resolume: **FX loaded 24 / 30**; wire warnings on gater/spinpulser — see INCIDENT_LOG
+- Live toe **9792596 B** (Documents); autostart Execute DATs **removed** from toe
+- OOM (Susanna): use `BRIKVJ_LOW_MEMORY.flag` + `MAX_HYDRA=8` before next mega
 
 Copy tails into this folder manually if you want them in git:
 

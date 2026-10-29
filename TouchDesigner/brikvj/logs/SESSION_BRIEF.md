@@ -1,4 +1,4 @@
-﻿# BRIKVJ SESSION BRIEF (generated 2026-10-29T08:33:21.6184524-05:00)
+﻿# BRIKVJ SESSION BRIEF (generated 2026-10-29T09:31:55.9951678-05:00)
 
 **Read next:** [NEXT_SESSION_OPERATIONS.md](../NEXT_SESSION_OPERATIONS.md) → suggested sprint below.
 
@@ -6,26 +6,26 @@
 
 | Check | Value |
 |-------|-------|
-| Live toe | 8764772 bytes |
+| Live toe | 9792596 bytes |
 | TouchDesigner running | False |
-| Git | ## main...origin/main [ahead 9] |
-| HEAD | 886b374 fix(brikvj): dialog prefs, one TD launch policy, safe quiet-open patch |
-| RESEARCH_BACKLOG open | 5 rows |
+| Git | ## main...origin/main [ahead 16] |
+| HEAD | ca601bd fix(brikvj): low-memory mega path and OOM mitigations |
+| RESEARCH_BACKLOG open | 6 rows |
 | gap_report exit | 1 |
 
 ## Recommended sprint
 
-**Sprint P0** — see NEXT_SESSION_PLAN_DEEPER.md §3 picker.
+**Sprint R2 — roadmap step 2 (quiet open)** — see NEXT_SESSION_PLAN_DEEPER.md §3 picker.
 
 ## CONTINUITY snapshot
 
 | Field | Value |
 |-------|-------|
 | mega_save_ok | True |
-| build_traceback | True |
-| unwired tox | 123 |
+| build_traceback | False |
+| unwired tox | 122 |
 | newer tox | 77 |
-| gaps | 4 |
+| gaps | 3 |
 
 Full JSON: `logs/CONTINUITY.json`
 
@@ -42,20 +42,19 @@ Full JSON: `logs/CONTINUITY.json`
 
 ### GAPS_REPORT (summary)
 
-# BRIKVJ gap report (generated 2026-10-29T08:33:19.9481990-05:00)
+# BRIKVJ gap report (generated 2026-10-29T09:31:55.6592167-05:00)
 
 Run: `scripts/brikvj_gap_report.ps1` — then read [NEXT_SESSION_PLAN.md](../NEXT_SESSION_PLAN.md).
 
-## Gaps (4)
+## Gaps (3)
 
-- build.log contains Traceback — open log and fix script
 - Many newer tox — expect skips or dialogs unless td2023/ resaves
 - td_errors.txt has 71 lines — Brioch/audio/mesh; run patch_brikvj_quiet_open + MOTU 3-4
-- iKeleton-OSC git dirty: ## main...origin/main [ahead 9]
+- iKeleton-OSC git dirty: ## main...origin/main [ahead 16]
 
 ## OK (5)
 
-- Toe 8764772 B — expanded stack likely saved
+- Toe 9792596 B — expanded stack likely saved
 - TouchDesigner not running — OK for user Textport build (agents do not auto-launch TD)
 - Last mega build saved project
 - TOX_BUILDS: 118 indexed, 77 newer than host
@@ -67,14 +66,15 @@ Run: `scripts/brikvj_gap_report.ps1` — then read [NEXT_SESSION_PLAN.md](../NEX
 & "C:\Users\briks\Desktop\GitHub\audio\ableton\github\_sweep2\iKeleton-OSC\TouchDesigner\brikvj\scripts\sync_scripts_to_documents.ps1"
 & "C:\Users\briks\Desktop\GitHub\audio\ableton\github\_sweep2\iKeleton-OSC\TouchDesigner\brikvj\scripts\brikvj_gap_report.ps1"
 # Rebuild: user opens BRIKVJ.toe → Textport TEXTPORT_MEGA.txt → Save
+# Agents: run_once only if user asked, with -AllowTouchDesignerLaunch
 
 ### RESEARCH_DIFF (head)
 
-# BRIKVJ research diff (generated 2026-10-29T08:33:20.1104952-05:00)
+# BRIKVJ research diff (generated 2026-10-29T09:31:55.5797613-05:00)
 
 Auto-generated: **tox on disk not referenced** in loader scripts + **newer-than-2023** paths.
 
-## Unwired .tox (123)
+## Unwired .tox (122)
 
 Use for RESEARCH_BACKLOG candidates. Integrate only after TOX_BUILDS check + td2023 resave if needed.
 

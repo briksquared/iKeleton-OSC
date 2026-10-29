@@ -1,8 +1,8 @@
-﻿# BRIKVJ research diff (generated 2026-10-29T09:10:57.2124302-05:00)
+﻿# BRIKVJ research diff (generated 2026-10-29T09:31:55.5797613-05:00)
 
 Auto-generated: **tox on disk not referenced** in loader scripts + **newer-than-2023** paths.
 
-## Unwired .tox (123)
+## Unwired .tox (122)
 
 Use for RESEARCH_BACKLOG candidates. Integrate only after TOX_BUILDS check + td2023 resave if needed.
 
@@ -70,7 +70,6 @@ Use for RESEARCH_BACKLOG candidates. Integrate only after TOX_BUILDS check + td2
 - parts\harvest_pick\okVJ-Shared_audioMixer.tox
 - parts\harvest_pick\okVJ-Shared_buttons.tox
 - parts\harvest_pick\okVJ-Shared_chaser.tox
-- parts\harvest_pick\okVJ-Shared_colorizer.tox
 - parts\harvest_pick\okVJ-Shared_compositor.tox
 - parts\harvest_pick\okVJ-Shared_constructOutputMap.tox
 - parts\harvest_pick\okVJ-Shared_createInputMap.tox
@@ -85,8 +84,9 @@ Use for RESEARCH_BACKLOG candidates. Integrate only after TOX_BUILDS check + td2
 - parts\harvest_pick\okVJ-Shared_feedback_fx.tox
 - parts\harvest_pick\okVJ-Shared_fluidLike.tox
 - parts\harvest_pick\okVJ-Shared_glitchFXStack.tox
-- parts\harvest_pick\okVJ-Shared_gridify.tox 
-- ... and 43 more (run script locally for full list)
+- parts\harvest_pick\okVJ-Shared_gridify.tox
+- parts\harvest_pick\okVJ-Shared_halftone.tox 
+- ... and 42 more (run script locally for full list)
 
 ## Newer than host (77)
 

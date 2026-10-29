@@ -3,13 +3,9 @@ mega build started
 [BRIKVJ mega] --- brikvj_resolume_stack.py ---
 [BRIKVJ resolume] wire: list index out of range
 [BRIKVJ resolume] wire: list index out of range
-[BRIKVJ resolume] wire: Invalid number or type of arguments. See help for details. Value:type:outTOP path:/project1/old_brik_vj/fx/td_datamosh1/out1 Type:<class 'td.outTOP'>.
-[BRIKVJ resolume] wire: Invalid number or type of arguments. See help for details. Value:type:nullTOP path:/project1/old_brik_vj/fx/kaleidoscope2/null1 Type:<class 'td.nullTOP'>.
-[BRIKVJ resolume] wire: Invalid number or type of arguments. See help for details. Value:type:outTOP path:/project1/old_brik_vj/fx/bayer_dither3/out1 Type:<class 'td.outTOP'>.
-[BRIKVJ resolume] wire: list index out of range
-[BRIKVJ resolume] wire: Invalid number or type of arguments. See help for details. Value:type:nullTOP path:/project1/old_brik_vj/fx/codev3/null1 Type:<class 'td.nullTOP'>.
-[BRIKVJ resolume] wire: Invalid number or type of arguments. See help for details. Value:type:nullTOP path:/project1/old_brik_vj/fx/codev3/null1 Type:<class 'td.nullTOP'>.
-[BRIKVJ resolume] FX loaded 29 / 30
+[BRIKVJ resolume] no TOP in fx gater
+[BRIKVJ resolume] no TOP in fx spinpulser_fx
+[BRIKVJ resolume] FX loaded 24 / 30
 [BRIKVJ resolume] Resolume stack ready — keys: brikvj_perform_controls + KEYBOARD_MAP.md
 [BRIKVJ resolume] Next: integrate_brioch (Brioch vs harvest router → kantanMapper → perform_out)
 [BRIKVJ mega] --- brikvj_harvest_scene_expansion.py ---
@@ -31,18 +27,6 @@ mega build started
 [BRIKVJ mega] --- brikvj_preset_bank.py ---
 [BRIKVJ mega] --- brikvj_osc_control.py ---
 [BRIKVJ mega] --- brikvj_tda_mapper_bridge.py ---
-Traceback (most recent call last):
-  File "C:\Users\briks\Documents\TouchDesigner\BRIKVJ\scripts\old_brik_vj_mega.py", line 68, in <module>
-    exec(compile(open(path, encoding="utf-8").read(), path, "exec"), g)
-  File "C:\Users\briks\Documents\TouchDesigner\BRIKVJ\scripts\brikvj_tda_mapper_bridge.py", line 73, in <module>
-    run()
-  File "C:\Users\briks\Documents\TouchDesigner\BRIKVJ\scripts\brikvj_tda_mapper_bridge.py", line 69, in run
-    install_parexec(vj)
-  File "C:\Users\briks\Documents\TouchDesigner\BRIKVJ\scripts\brikvj_tda_mapper_bridge.py", line 37, in install_parexec
-    pe = p.create(parexecuteDAT, "tda_mapper_parexec")
-                  ^^^^^^^^^^^^^
-NameError: name 'parexecuteDAT' is not defined
-
 [BRIKVJ mega] --- brikvj_patchworks_audio_routes.py ---
 [BRIKVJ mega] --- brikvj_ableton_link.py ---
 [BRIKVJ mega] --- brikvj_fx_audio_bind.py ---

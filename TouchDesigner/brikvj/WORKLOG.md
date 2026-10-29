@@ -2,6 +2,15 @@
 
 Chronological record of what was built for **Old Brik V J** on TouchDesigner **2023.12370**, with runtime SSOT in `Documents\TouchDesigner\BRIKVJ\` (see [WHERE_IS_BRIKVJ.md](WHERE_IS_BRIKVJ.md), [REPO_POLICY.md](REPO_POLICY.md)).
 
+## 2026-10-29 — Handoff pack + fork push (OOM session)
+
+- User: **Susanna OOM** after/during mega; user asked **push everything + very detailed handoffs**.
+- **Evidence:** Documents `build.log` — full 26-step mega, `[BRIKVJ mega] project.save() OK`, no Traceback; toe **9792596 B** after autostart removal.
+- **Shipped:** `BRIKVJ_LOW_MEMORY.flag` mega skips; `MAX_HYDRA=8`; ERRORS/B-OOM-001; commit **ca601bd** on `fork/main`.
+- **Docs added:** `logs/HANDOFF_DETAILED_2026-10-29.md`, `logs/INCIDENT_LOG_2026-10-29.md`, `logs/GIT_COMMIT_MANIFEST_2026-10-29.md`, `logs/build.log.snapshot`.
+- **Not committed:** stale repo-root `TouchDesigner/BRIKVJ.toe` (936 KB) — REPO_POLICY; live toe stays Documents-only.
+- **Next:** Roadmap step 2 — user opens toe once, reports dialog count; no agent TD until asked.
+
 ## 2026-10-29 — Deeper research pass (v2)
 
 - [RESEARCH_PASS_PLAN_DEEPER.md](RESEARCH_PASS_PLAN_DEEPER.md): transcript themes, 18-step program, integration matrix.

@@ -35,6 +35,9 @@ Then open **`logs/SESSION_BRIEF.md`** (kit or Documents).
 | — | [WORKLOG.md](WORKLOG.md) | What already happened |
 | — | [USER_REQUESTS.md](USER_REQUESTS.md) | User intent |
 | — | [AGENTS_HANDOFF.md](AGENTS_HANDOFF.md) | Minimal agent entry |
+| — | [logs/HANDOFF_DETAILED_2026-10-29.md](logs/HANDOFF_DETAILED_2026-10-29.md) | **Full handoff** — OOM, paths, commits, next steps |
+| — | [logs/INCIDENT_LOG_2026-10-29.md](logs/INCIDENT_LOG_2026-10-29.md) | Structured incidents |
+| — | [logs/GIT_COMMIT_MANIFEST_2026-10-29.md](logs/GIT_COMMIT_MANIFEST_2026-10-29.md) | 16 fork commits |
 
 ## Auto-generated logs
 
