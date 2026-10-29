@@ -9,6 +9,7 @@ EXTRA = os.path.join(PARTS, "extra")
 SUITE = os.path.join(PARTS, "vj_suite")
 GLITCH = os.path.join(PARTS, "glitch_fluid")
 GEN = os.path.join(PARTS, "generative")
+HARVEST_PICK = os.path.join(PARTS, "harvest_pick")
 MEDIA = os.path.join(ROOT, "media", "clips")
 DEFAULT_CLIP = os.path.join(ROOT, "testingVideo.mp4")
 BUILD_LOG = os.path.join(ROOT, "logs", "build.log")
@@ -66,6 +67,7 @@ FX_DEFS = (
     (GEN, "spinpulser.tox", "spinpulser_fx"),
     (GLITCH, "tdx_datamosh_alt.tox", "datamosh_alt"),
     (GLITCH, "input_map_strober.tox", "map_strober"),
+    (HARVEST_PICK, "okVJ-Shared_colorizer.tox", "colorizer"),
 )
 
 

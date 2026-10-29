@@ -34,6 +34,20 @@ Also seen as wording about **older/newer TouchDesigner version** when loading a 
 
 **Do not** leave `brikvj_build_autostart` in the toe for daily use — it mass-loads harvest `.tox`. Use `remove_brikvj_autostart_from_toe.ps1` after builds.
 
+## Out of memory (Windows / TouchDesigner)
+
+**Symptom:** “Ran out of memory,” TD freeze, or Susanna/system OOM during or right after mega build.
+
+**What we know:** Full mega loads many TOPs (lab Hydra modules are the worst). Your last run **did** reach `[BRIKVJ mega] project.save() OK` in `logs/build.log` (toe ~9.1 MB) — OOM may be on quit or on next open.
+
+**Mitigations (kit):**
+
+- `brikvj_research_lab.py`: `MAX_HYDRA = 8`, `LAZY_HYDRA` (only index 0 cooks).
+- Create empty file `Documents\TouchDesigner\BRIKVJ\BRIKVJ_LOW_MEMORY.flag` before mega → skips lab, harvest expansion, glitch overlay, extra generative overlay in `old_brik_vj_mega.py`.
+- Close other GPU/RAM apps; one TD instance only.
+
+**Do not** loop unattended builds after OOM — fix flag, sync scripts, one retry when RAM is free.
+
 ## Transient GPU / driver dialog
 
 **Symptom:** Message mentions GPU, OpenGL, driver, or video memory; may appear once and disappear (especially after many TD launches in a row).

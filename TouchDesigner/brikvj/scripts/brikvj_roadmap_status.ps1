@@ -30,6 +30,8 @@ if (Test-Path $buildLog) {
     if ($bl -notmatch "Traceback" -and $bl -match "project\.save\(\) OK") { $buildClean = $true }
 }
 if ($buildClean) { $Steps[0].done = $true }
+$toeSz = if (Test-Path "$Live\BRIKVJ.toe") { (Get-Item "$Live\BRIKVJ.toe").Length } else { 0 }
+if ($toeSz -gt 9000000 -and $buildClean) { $Steps[0].done = $true }
 
 $tdErr = Join-Path $Live "logs\td_errors.txt"
 if (Test-Path $tdErr) {

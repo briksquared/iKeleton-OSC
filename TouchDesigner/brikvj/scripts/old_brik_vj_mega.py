@@ -5,7 +5,7 @@ import traceback
 SCRIPTS = r"C:\Users\briks\Documents\TouchDesigner\BRIKVJ\scripts"
 LOG = r"C:\Users\briks\Documents\TouchDesigner\BRIKVJ\logs\build.log"
 
-STEPS = (
+FULL_STEPS = (
     "brikvj_accept_newer_tox_pref.py",
     "brikvj_resolume_stack.py",
     "brikvj_harvest_scene_expansion.py",
@@ -34,6 +34,16 @@ STEPS = (
     "brikvj_post_build_verify.py",
 )
 
+# Skip heavy lab/harvest when Documents\BRIKVJ\BRIKVJ_LOW_MEMORY.flag exists (OOM on this machine).
+LOW_MEMORY_SKIP = frozenset(
+    {
+        "brikvj_research_lab.py",
+        "brikvj_harvest_scene_expansion.py",
+        "brikvj_glitch_fluid_layers.py",
+        "brikvj_overlay_generative.py",
+    }
+)
+
 
 def _log(msg):
     print(msg)
@@ -57,6 +67,12 @@ g = globals()
 _helpers = os.path.join(SCRIPTS, "brikvj_td_helpers.py")
 if os.path.isfile(_helpers):
     exec(compile(open(_helpers, encoding="utf-8").read(), _helpers, "exec"), g)
+
+_base = os.path.dirname(os.path.dirname(SCRIPTS))
+_low_mem = os.path.isfile(os.path.join(_base, "BRIKVJ_LOW_MEMORY.flag"))
+if _low_mem:
+    _log("[BRIKVJ mega] LOW_MEMORY flag — skipping lab/harvest/glitch overlay steps")
+STEPS = tuple(s for s in FULL_STEPS if not (_low_mem and s in LOW_MEMORY_SKIP))
 
 for name in STEPS:
     path = os.path.join(SCRIPTS, name)

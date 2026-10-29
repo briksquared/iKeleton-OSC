@@ -7,7 +7,8 @@ ROOT = r"C:\Users\briks\Documents\TouchDesigner\BRIKVJ"
 PICK = os.path.join(ROOT, "parts", "harvest_pick")
 RESEARCH = os.path.join(ROOT, "parts", "research")
 EXTRA = os.path.join(ROOT, "parts", "extra")
-MAX_HYDRA = 32
+MAX_HYDRA = 8
+LAZY_HYDRA = True
 
 
 def log(msg):
@@ -94,6 +95,12 @@ def run():
         n = child(slot, "out", nullTOP)
         if t is not None:
             wire(n, 0, t)
+            if LAZY_HYDRA:
+                try:
+                    slot.allowCooking = i == 0
+                    t.allowCooking = i == 0
+                except Exception:
+                    pass
             houts.append(n)
     hsw = child(hydra, "hydra_switch", switchTOP)
     try:

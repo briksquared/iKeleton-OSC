@@ -7,9 +7,9 @@ Living queue for **discover → evaluate → integrate**. Agent updates status w
 | ID | Item | Status | Notes |
 |----|------|--------|-------|
 | RB-001 | td2023 resave for okVJ stacks used in build | open | 132 newer tox in index; dialog risk |
-| RB-002 | Dedupe FX_DEFS in resolume stack | done | unique tox paths; fx chain wires td_top_out |
+| RB-002 | Dedupe FX_DEFS in resolume stack | done | + okVJ colorizer in FX_DEFS (step 5) |
 | RB-003 | harvest_pick → second scene bank (14+ slots) | open | 105 files; filter Hydra + newer |
-| RB-004 | Lazy Hydra lab (no cook-all on open) | open | lab/h_0..h_31 embedded in toe |
+| RB-004 | Lazy Hydra lab (no cook-all on open) | in_progress | allowCooking only index 0 in research_lab.py |
 | RB-005 | TDA mapper bridge smoke test | in_progress | non-fatal mega; parexec type probe |
 | RB-006 | Ableton link without crash | open | avoid live_levels in same run |
 | RB-007 | Mac/importselect path audit clean | open | audit_brikvj_toe failures |
