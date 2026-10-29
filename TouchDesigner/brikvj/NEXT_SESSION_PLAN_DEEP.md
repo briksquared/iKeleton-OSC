@@ -3,7 +3,9 @@
 **Audience:** a new Cursor chat with no memory.  
 **Quick path:** [NEXT_SESSION_PLAN.md](NEXT_SESSION_PLAN.md) (short). **This file:** architecture, discovery trees, research protocol, backlog by subsystem.
 
-**Start command:** `scripts/brikvj_gap_report.ps1` → `logs/GAPS_REPORT.md` → execute sections below in order.
+**Start command:** `scripts/brikvj_gap_report.ps1` → `logs/GAPS_REPORT.md` → `scripts/brikvj_research_diff.ps1` → `logs/RESEARCH_DIFF.md`.
+
+**Deepest command checklist:** [NEXT_SESSION_OPERATIONS.md](NEXT_SESSION_OPERATIONS.md) (sprints, milestones, failure matrix).
 
 ---
 

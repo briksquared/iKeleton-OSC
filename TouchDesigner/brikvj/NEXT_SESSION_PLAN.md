@@ -2,6 +2,7 @@
 
 Purpose: any new Cursor chat (or agent) can **verify state → discover gaps → finish work** without re-deriving context.
 
+- **Operations runbook (commands, sprints):** [NEXT_SESSION_OPERATIONS.md](NEXT_SESSION_OPERATIONS.md)
 - **Deep playbook (architecture, research protocol, backlog):** [NEXT_SESSION_PLAN_DEEP.md](NEXT_SESSION_PLAN_DEEP.md)
 - **Backlog table:** [RESEARCH_BACKLOG.md](RESEARCH_BACKLOG.md)
 - Also: [AGENTS_HANDOFF.md](AGENTS_HANDOFF.md), [WORKLOG.md](WORKLOG.md)

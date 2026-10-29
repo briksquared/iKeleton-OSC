@@ -8,6 +8,8 @@ Runtime logs live under **`C:\Users\briks\Documents\TouchDesigner\BRIKVJ\logs\`*
 | `boot_trace.txt` | Autostart execute milestones (`2`, `S`, `X`, etc.) |
 | `td_errors.txt` | Snapshot from `capture_brikvj_errors.ps1` / `td_dump_errors.py` |
 | `build.lock` | Present while unattended build runs — remove if stale |
+| `GAPS_REPORT.md` | Output of `brikvj_gap_report.ps1` |
+| `RESEARCH_DIFF.md` | Output of `brikvj_research_diff.ps1` (unwired harvest) |
 
 ## Capture (agent / script)
 
