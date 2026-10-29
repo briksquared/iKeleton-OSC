@@ -1,6 +1,6 @@
 # Old Brik V J — feature matrix (vs Resolume / MadMapper / HeavyM)
 
-Counts after `brikvj_refresh_all.ps1` + **`brikvj_suite_build.py`** in TouchDesigner.
+**Stale warning:** recount from `brikvj_resolume_stack.py` after changes. Default build: **`old_brik_vj_mega.py`** (not suite-only).
 
 | Capability | Resolume-like | BRIKVJ source |
 |------------|---------------|---------------|

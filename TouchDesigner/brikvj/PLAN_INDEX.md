@@ -22,6 +22,8 @@ Then open **`logs/SESSION_BRIEF.md`** (kit or Documents).
 | 3 | [NEXT_SESSION_OPERATIONS.md](NEXT_SESSION_OPERATIONS.md) | **Execute work** (sprints, commands) |
 | 4 | [NEXT_SESSION_PLAN_DEEPER.md](NEXT_SESSION_PLAN_DEEPER.md) | Meta loop — discover unknown work, closure graph |
 | 5 | [NEXT_SESSION_PLAN_DEEPEST.md](NEXT_SESSION_PLAN_DEEPEST.md) | **Execute** — OPEN_WORK_QUEUE Sessions 1–3 |
+| — | [MASTER_PLAN.md](MASTER_PLAN.md) | Bugs + features + code review + 6-session roadmap |
+| — | [BUG_REGISTRY.md](BUG_REGISTRY.md) | Bug SSOT |
 | — | [ADD_FEATURES.md](ADD_FEATURES.md) | How to add scenes, FX, lab, mega steps |
 | — | [RESEARCH_BACKLOG.md](RESEARCH_BACKLOG.md) | RB-xxx queue |
 | — | [WORKLOG.md](WORKLOG.md) | What already happened |

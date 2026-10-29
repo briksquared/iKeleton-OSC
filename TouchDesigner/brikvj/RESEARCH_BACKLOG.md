@@ -16,6 +16,8 @@ Living queue for **discover → evaluate → integrate**. Agent updates status w
 | RB-008 | Dedicated BRIKVJ git repo | deferred | REPO_POLICY |
 | RB-009 | px-stream / M4L visual transitions | candidate | max-for-live harvest |
 | RB-010 | okVJ scene changer + autoSaver widgets | candidate | harvest_pick okVJ-Shared_* |
+| RB-011 | GPU/driver dialog capture + ERRORS.md playbooks | open | user saw transient GPU msg |
+| RB-012 | Brioch tree1/lsystem/bloomM NoneType parms | open | td_errors; defer cook until audio |
 
 **Status values:** `open` | `in_progress` | `done` | `rejected` | `candidate`
 

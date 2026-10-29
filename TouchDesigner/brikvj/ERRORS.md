@@ -33,3 +33,16 @@ Also seen as wording about **older/newer TouchDesigner version** when loading a 
 **Optional:** In TD Textport once: run `scripts/resave_tox_for_td2023.py` to write `parts/*/td2023/*.tox` so those components load silently on 2023.
 
 **Do not** leave `brikvj_build_autostart` in the toe for daily use — it mass-loads harvest `.tox`. Use `remove_brikvj_autostart_from_toe.ps1` after builds.
+
+## Transient GPU / driver dialog
+
+**Symptom:** Message mentions GPU, OpenGL, driver, or video memory; may appear once and disappear (especially after many TD launches in a row).
+
+**Likely causes:** NVIDIA TDR timeout, VRAM pressure from heavy TOPs, or hybrid graphics picking the wrong GPU.
+
+**Mitigations:**
+
+1. Only **one** TouchDesigner instance; avoid agent retry loops ([AGENT_TD_POLICY.md](AGENT_TD_POLICY.md)).
+2. Windows **Settings → System → Display → Graphics** → TouchDesigner → **High performance** (NVIDIA).
+3. Update NVIDIA driver; close other GPU-heavy apps before show open.
+4. If it repeats every open: note exact text → [BUG_REGISTRY.md](BUG_REGISTRY.md) B-GPU-001 / RB-011.

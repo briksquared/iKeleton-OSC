@@ -1,0 +1,17 @@
+﻿# BRIKVJ bug scan (generated 2026-10-29T08:38:30.5944943-05:00)
+
+Run: `scripts/brikvj_bug_scan.ps1`. Full registry: [BUG_REGISTRY.md](../BUG_REGISTRY.md).
+
+| ID | Sev | Summary | Fix |
+|----|-----|---------|-----|
+| B-LOG-001 | P0 | build.log Traceback (old_brik_vj_mega.py) | Fix script; one headless/minimized mega save |
+| B-LOG-002 | P1 | resolume wire errors (8 lines) | td_top_out FX chain (RB-002); rebuild |
+| B-TD-001 | P1 | td_errors.txt 71 lines (Brioch analyseAudio/mesh) | MOTU 3-4; quiet open; no force cook |
+| B-TOX-001 | P1 | 77 tox newer than 2023 | td2023 resaves RB-001; Accept pref |
+| B-GPU-001 | P2 | Transient GPU/driver dialog (user report) | One TD instance; NVIDIA perf mode; note exact text if repeats |
+
+## Next code review targets
+
+- `old_brik_vj_mega.py` step list vs `BUILD.md`
+- `brikvj_live_levels_drive.py` (crash history — keep out of mega)
+- `FEATURE_MATRIX.md` stale counts → recount from `brikvj_resolume_stack.py`

@@ -12,7 +12,10 @@ def install():
     p = op("/project1")
     ex = p.op("brikvj_on_start")
     if ex is None:
-        ex = p.create(executeDAT, "brikvj_on_start")
+        ex = td_create_op(p, "brikvj_on_start", "executeDAT", executeDAT)
+        if ex is None:
+            log("skip brikvj_on_start — executeDAT unavailable")
+            return
     try:
         ex.par.start = True
         ex.par.create = True
