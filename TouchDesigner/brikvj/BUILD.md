@@ -5,12 +5,14 @@ Perform file: `Documents\TouchDesigner\BRIKVJ\BRIKVJ.toe` (Brioch base, Windows-
 ## Mega build (show + practice + research) — recommended
 
 1. `sync_scripts_to_documents.ps1`
-2. Close TouchDesigner
-3. `run_once_unattended.ps1 -ForceResolumeRebuild` **or** Textport: `TEXTPORT_MEGA.txt`
+2. Open `BRIKVJ.toe` when **you** want → Textport: `TEXTPORT_MEGA.txt` → Save  
+   Optional one-shot unattended: only if you ask the agent → `run_once_unattended.ps1 -ForceResolumeRebuild -AllowTouchDesignerLaunch` (TD closed). See [AGENT_TD_POLICY.md](AGENT_TD_POLICY.md).
 
 **26 steps:** resolume stack, harvest scenes, glitch/fluid, lab/Hydra, integrate, broadcast, perform, Ableton/Patchworks hooks, hub index, verify. See [WORKLOG.md](WORKLOG.md).
 
 Lighter path: `TEXTPORT_FAST.txt` (resolume-only). Legacy all-in-one delegates to mega.
+
+**Adding features:** [ADD_FEATURES.md](ADD_FEATURES.md).
 
 ## Quiet open (no Error dialog spam)
 

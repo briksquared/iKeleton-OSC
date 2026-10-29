@@ -2,6 +2,13 @@
 
 Chronological record of what was built for **Old Brik V J** on TouchDesigner **2023.12370**, with runtime SSOT in `Documents\TouchDesigner\BRIKVJ\` (see [WHERE_IS_BRIKVJ.md](WHERE_IS_BRIKVJ.md), [REPO_POLICY.md](REPO_POLICY.md)).
 
+## 2026-10-29 — Plan execution (no TD launch)
+
+- RB-002: deduped `FX_DEFS`; FX chain wires via `td_top_out` (fixes COMP wire errors).
+- `brikvj_tda_mapper_bridge.py`: `td_create_op` + try/except (no mega Traceback).
+- Scripts synced to Documents; `compileall` exit 0.
+- **Pending user:** one Textport mega save to refresh `build.log` without Traceback.
+
 ## 2026-10-29 — Dialog prefs + safe quiet patch
 
 - Restored `BRIKVJ.toe` from `.bkp109` after a failed patch attempt (toe collapse guard added).

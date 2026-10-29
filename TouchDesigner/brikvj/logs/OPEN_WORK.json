@@ -1,0 +1,182 @@
+﻿{
+    "generated_at":  "2026-10-29T08:33:29.4843087-05:00",
+    "queue":  [
+                  {
+                      "id":  "BLD-001",
+                      "evidence":  "tdError: Unknown operator type. Value:\u0027parexecuteDAT\u0027 Type:\u003cclass \u0027str\u0027\u003e.\r",
+                      "kind":  "build",
+                      "action":  "Fix scripts\\old_brik_vj_mega.py; sync; user Textport TEXTPORT_MEGA.txt + Save (no auto TD launch)",
+                      "priority":  "P0",
+                      "title":  "Mega step failed: old_brik_vj_mega.py"
+                  },
+                  {
+                      "id":  "GAP-1",
+                      "evidence":  "build.log contains Traceback — open log and fix script",
+                      "kind":  "gap",
+                      "action":  "See NEXT_SESSION_OPERATIONS.md failure matrix",
+                      "priority":  "P0",
+                      "title":  "build.log contains Traceback — open log and fix script"
+                  },
+                  {
+                      "id":  "GAP-2",
+                      "evidence":  "Many newer tox — expect skips or dialogs unless td2023/ resaves",
+                      "kind":  "gap",
+                      "action":  "See NEXT_SESSION_OPERATIONS.md failure matrix",
+                      "priority":  "P1",
+                      "title":  "Many newer tox — expect skips or dialogs unless td2023/ resaves"
+                  },
+                  {
+                      "id":  "GAP-3",
+                      "evidence":  "td_errors.txt has 71 lines — Brioch/audio/mesh; run patch_brikvj_quiet_open + MOTU 3-4",
+                      "kind":  "gap",
+                      "action":  "See NEXT_SESSION_OPERATIONS.md failure matrix",
+                      "priority":  "P1",
+                      "title":  "td_errors.txt has 71 lines — Brioch/audio/mesh; run patch_brikvj_quiet_open + MOTU 3-4"
+                  },
+                  {
+                      "id":  "RB-001",
+                      "evidence":  "RB-001",
+                      "kind":  "backlog",
+                      "action":  "RESEARCH_BACKLOG + DEEPER §6 scoring",
+                      "priority":  "P1",
+                      "title":  "td2023 resave for okVJ stacks used in build"
+                  },
+                  {
+                      "id":  "RB-003",
+                      "evidence":  "RB-003",
+                      "kind":  "backlog",
+                      "action":  "RESEARCH_BACKLOG + DEEPER §6 scoring",
+                      "priority":  "P1",
+                      "title":  "harvest_pick â†’ second scene bank (14+ slots)"
+                  },
+                  {
+                      "id":  "RB-004",
+                      "evidence":  "RB-004",
+                      "kind":  "backlog",
+                      "action":  "RESEARCH_BACKLOG + DEEPER §6 scoring",
+                      "priority":  "P1",
+                      "title":  "Lazy Hydra lab (no cook-all on open)"
+                  },
+                  {
+                      "id":  "RB-006",
+                      "evidence":  "RB-006",
+                      "kind":  "backlog",
+                      "action":  "RESEARCH_BACKLOG + DEEPER §6 scoring",
+                      "priority":  "P1",
+                      "title":  "Ableton link without crash"
+                  },
+                  {
+                      "id":  "RB-007",
+                      "evidence":  "RB-007",
+                      "kind":  "backlog",
+                      "action":  "RESEARCH_BACKLOG + DEEPER §6 scoring",
+                      "priority":  "P1",
+                      "title":  "Mac/importselect path audit clean"
+                  },
+                  {
+                      "id":  "GAP-4",
+                      "evidence":  "iKeleton-OSC git dirty: ## main...origin/main [ahead 9]",
+                      "kind":  "gap",
+                      "action":  "See NEXT_SESSION_OPERATIONS.md failure matrix",
+                      "priority":  "P2",
+                      "title":  "iKeleton-OSC git dirty: ## main...origin/main [ahead 9]"
+                  },
+                  {
+                      "id":  "RES-001",
+                      "evidence":  "RESEARCH_DIFF.md",
+                      "kind":  "integrate",
+                      "action":  "parts\\harvest_pick\\brioch-audio-reactive-vjing_meshExhibitDeformed.2.tox; parts\\harvest_pick\\brioch-audio-reactive-vjing_meshExhibitDeformed.tox; parts\\harvest_pick\\brioch-audio-reactive-vjing_stroboscope.tox; parts\\harvest_pick\\HydraTD_HydraTD.tox; parts\\harvest_pick\\ojack-hydra-td_hydra.tox; parts\\harvest_pick\\ojack-hydra-td_hydra_a.tox; parts\\harvest_pick\\ojack-hydra-td_hydra_add.tox; parts\\harvest_pick\\ojack-hydra-td_hydra_b.tox",
+                      "priority":  "P2",
+                      "title":  "Wire scored unwired tox (sample)"
+                  }
+              ],
+    "sessions":  {
+                     "session1":  [
+                                      {
+                                          "id":  "BLD-001",
+                                          "evidence":  "tdError: Unknown operator type. Value:\u0027parexecuteDAT\u0027 Type:\u003cclass \u0027str\u0027\u003e.\r",
+                                          "kind":  "build",
+                                          "action":  "Fix scripts\\old_brik_vj_mega.py; sync; user Textport TEXTPORT_MEGA.txt + Save (no auto TD launch)",
+                                          "priority":  "P0",
+                                          "title":  "Mega step failed: old_brik_vj_mega.py"
+                                      },
+                                      {
+                                          "id":  "GAP-1",
+                                          "evidence":  "build.log contains Traceback — open log and fix script",
+                                          "kind":  "gap",
+                                          "action":  "See NEXT_SESSION_OPERATIONS.md failure matrix",
+                                          "priority":  "P0",
+                                          "title":  "build.log contains Traceback — open log and fix script"
+                                      }
+                                  ],
+                     "session3":  [
+                                      {
+                                          "id":  "GAP-4",
+                                          "evidence":  "iKeleton-OSC git dirty: ## main...origin/main [ahead 9]",
+                                          "kind":  "gap",
+                                          "action":  "See NEXT_SESSION_OPERATIONS.md failure matrix",
+                                          "priority":  "P2",
+                                          "title":  "iKeleton-OSC git dirty: ## main...origin/main [ahead 9]"
+                                      },
+                                      {
+                                          "id":  "RES-001",
+                                          "evidence":  "RESEARCH_DIFF.md",
+                                          "kind":  "integrate",
+                                          "action":  "parts\\harvest_pick\\brioch-audio-reactive-vjing_meshExhibitDeformed.2.tox; parts\\harvest_pick\\brioch-audio-reactive-vjing_meshExhibitDeformed.tox; parts\\harvest_pick\\brioch-audio-reactive-vjing_stroboscope.tox; parts\\harvest_pick\\HydraTD_HydraTD.tox; parts\\harvest_pick\\ojack-hydra-td_hydra.tox; parts\\harvest_pick\\ojack-hydra-td_hydra_a.tox; parts\\harvest_pick\\ojack-hydra-td_hydra_add.tox; parts\\harvest_pick\\ojack-hydra-td_hydra_b.tox",
+                                          "priority":  "P2",
+                                          "title":  "Wire scored unwired tox (sample)"
+                                      },
+                                      {
+                                          "id":  "DISC-001",
+                                          "evidence":  "WORKLOG entry",
+                                          "kind":  "discovery",
+                                          "action":  "transcript + USER_REQUESTS diff",
+                                          "priority":  "P2",
+                                          "title":  "DEEPER §4 discovery pass"
+                                      }
+                                  ],
+                     "session2":  [
+                                      {
+                                          "id":  "GAP-2",
+                                          "evidence":  "Many newer tox — expect skips or dialogs unless td2023/ resaves",
+                                          "kind":  "gap",
+                                          "action":  "See NEXT_SESSION_OPERATIONS.md failure matrix",
+                                          "priority":  "P1",
+                                          "title":  "Many newer tox — expect skips or dialogs unless td2023/ resaves"
+                                      },
+                                      {
+                                          "id":  "GAP-3",
+                                          "evidence":  "td_errors.txt has 71 lines — Brioch/audio/mesh; run patch_brikvj_quiet_open + MOTU 3-4",
+                                          "kind":  "gap",
+                                          "action":  "See NEXT_SESSION_OPERATIONS.md failure matrix",
+                                          "priority":  "P1",
+                                          "title":  "td_errors.txt has 71 lines — Brioch/audio/mesh; run patch_brikvj_quiet_open + MOTU 3-4"
+                                      },
+                                      {
+                                          "id":  "RB-001",
+                                          "evidence":  "RB-001",
+                                          "kind":  "backlog",
+                                          "action":  "RESEARCH_BACKLOG + DEEPER §6 scoring",
+                                          "priority":  "P1",
+                                          "title":  "td2023 resave for okVJ stacks used in build"
+                                      },
+                                      {
+                                          "id":  "RB-003",
+                                          "evidence":  "RB-003",
+                                          "kind":  "backlog",
+                                          "action":  "RESEARCH_BACKLOG + DEEPER §6 scoring",
+                                          "priority":  "P1",
+                                          "title":  "harvest_pick â†’ second scene bank (14+ slots)"
+                                      },
+                                      {
+                                          "id":  "RB-004",
+                                          "evidence":  "RB-004",
+                                          "kind":  "backlog",
+                                          "action":  "RESEARCH_BACKLOG + DEEPER §6 scoring",
+                                          "priority":  "P1",
+                                          "title":  "Lazy Hydra lab (no cook-all on open)"
+                                      }
+                                  ]
+                 },
+    "count":  11
+}

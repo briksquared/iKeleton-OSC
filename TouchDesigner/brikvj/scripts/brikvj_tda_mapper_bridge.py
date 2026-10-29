@@ -34,7 +34,16 @@ def install_parexec(vj):
     p = proj()
     pe = p.op("tda_mapper_parexec")
     if pe is None:
-        pe = p.create("parexecuteDAT", "tda_mapper_parexec")
+        pe = td_create_op(
+            p,
+            "tda_mapper_parexec",
+            "parexecuteDAT",
+            "parameterexecuteDAT",
+            "parExecuteDAT",
+        )
+    if pe is None:
+        log("skip parexec DAT — type not available in this TD build")
+        return
     table = ",\n        ".join(
         "'%s': ('%s', '%s')" % (n, path, pname) for n, path, pname in MAPPING
     )
@@ -70,4 +79,7 @@ def run():
     log("Live: TDA_Mapper.amxd → Custom Par Scene/Clip/Router/FxBypass/Autopilot on old_brik_vj")
 
 
-run()
+try:
+    run()
+except Exception as ex:
+    log("bridge skipped: " + str(ex))

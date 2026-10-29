@@ -1,20 +1,21 @@
 ﻿{
-    "git_head":  "95b08ee docs(brikvj): PLAN_INDEX and brikvj_session_start unified brief",
+    "git_head":  "886b374 fix(brikvj): dialog prefs, one TD launch policy, safe quiet-open patch",
     "touchdesigner_running":  false,
     "gap_count":  4,
     "mega_save_ok":  true,
     "gap_report_exit":  1,
-    "live_toe_bytes":  6201628,
+    "live_toe_bytes":  8764772,
     "newer_tox_count":  77,
-    "unwired_tox_count":  125,
-    "generated_at":  "2026-10-29T08:09:38.8713338-05:00",
+    "unwired_tox_count":  123,
+    "generated_at":  "2026-10-29T08:33:21.6184524-05:00",
     "read_next":  [
+                      "logs/OPEN_WORK_QUEUE.md",
                       "logs/SESSION_BRIEF.md",
                       "logs/CONTINUITY.json",
-                      "NEXT_SESSION_OPERATIONS.md",
-                      "NEXT_SESSION_PLAN_DEEPER.md"
+                      "ADD_FEATURES.md",
+                      "NEXT_SESSION_OPERATIONS.md"
                   ],
-    "open_rb_count":  7,
+    "open_rb_count":  5,
     "milestones":  {
                        "M4_harvest":  false,
                        "M5_live":  false,
@@ -25,5 +26,5 @@
                    },
     "build_traceback":  true,
     "recommended_sprint":  "Sprint P0",
-    "git_branch_status":  "## main...origin/main [ahead 7]"
+    "git_branch_status":  "## main...origin/main [ahead 9]"
 }

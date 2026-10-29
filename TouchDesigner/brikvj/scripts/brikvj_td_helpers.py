@@ -162,6 +162,22 @@ def td_load_tox(parent, path, nicename=None):
     return t
 
 
+def td_create_op(parent, name, *type_names):
+    """Create OP in TD Textport/exec context; tries type objects then TD type strings."""
+    for tn in type_names:
+        obj = globals().get(tn)
+        if obj is not None:
+            try:
+                return parent.create(obj, name)
+            except Exception:
+                pass
+        try:
+            return parent.create(tn, name)
+        except Exception:
+            pass
+    return None
+
+
 def set_label(o, text):
     if o is None:
         return

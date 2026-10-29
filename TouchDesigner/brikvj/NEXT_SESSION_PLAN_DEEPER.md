@@ -283,6 +283,7 @@ Keep **CONTINUITY.json** schema backward-compatible; add fields, do not rename w
 | Ask user to paste Textport | `capture_brikvj_errors.ps1`, read logs |
 | Push `origin` (gwangyu) | `git push fork main` |
 | Run mega with TD open + user performing | gap report flag; ask or Sprint D |
+| **Launch TouchDesigner repeatedly** | **FORBIDDEN** — AGENT_TD_POLICY; user Textport or one `-AllowTouchDesignerLaunch` per explicit ask |
 | Wire `brikvj_live_levels_drive` casually | Sprint A, one bridge, WORKLOG crash note |
 | Touch Media Stack / VPN / Chrome launcher | user explicit ask only |
 | Claim quiet open without kantan text or user confirm | read inject + patch evidence |

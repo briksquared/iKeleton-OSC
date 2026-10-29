@@ -51,12 +51,14 @@ You do **not** need M5 for local VJ; user wants M1–M4 + research lab usable.
 
 ### Sprint P0 — Stop the pain (30–90 min)
 
+**Agents:** see [AGENT_TD_POLICY.md](AGENT_TD_POLICY.md) — no TD launch unless user asked.
+
 ```powershell
 .\patch_brikvj_quiet_open.ps1
-# TD closed:
-.\run_once_unattended.ps1 -ForceResolumeRebuild
-.\remove_brikvj_autostart_from_toe.ps1
-..\scripts\verify_brikvj_stack.ps1   # from repo; or Documents copy
+.\sync_scripts_to_documents.ps1
+# User (or agent only if user said "run unattended once"):
+# .\run_once_unattended.ps1 -ForceResolumeRebuild -AllowTouchDesignerLaunch
+# Or user with TD already open: Textport → TEXTPORT_MEGA.txt → Save
 .\brikvj_gap_report.ps1
 ```
 

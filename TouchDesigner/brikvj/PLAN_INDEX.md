@@ -1,5 +1,7 @@
 # BRIKVJ — master plan index
 
+**Agents:** [AGENT_TD_POLICY.md](AGENT_TD_POLICY.md) — do not launch TouchDesigner without an explicit user ask.
+
 **Single command for the next chat:**
 
 ```powershell
@@ -18,7 +20,9 @@ Then open **`logs/SESSION_BRIEF.md`** (kit or Documents).
 | 1 | [NEXT_SESSION_PLAN.md](NEXT_SESSION_PLAN.md) | Quick triage only |
 | 2 | [NEXT_SESSION_PLAN_DEEP.md](NEXT_SESSION_PLAN_DEEP.md) | Understand system + research protocol |
 | 3 | [NEXT_SESSION_OPERATIONS.md](NEXT_SESSION_OPERATIONS.md) | **Execute work** (sprints, commands) |
-| 4 | [NEXT_SESSION_PLAN_DEEPER.md](NEXT_SESSION_PLAN_DEEPER.md) | **Meta loop** — discover unknown work, closure graph, end ritual |
+| 4 | [NEXT_SESSION_PLAN_DEEPER.md](NEXT_SESSION_PLAN_DEEPER.md) | Meta loop — discover unknown work, closure graph |
+| 5 | [NEXT_SESSION_PLAN_DEEPEST.md](NEXT_SESSION_PLAN_DEEPEST.md) | **Execute** — OPEN_WORK_QUEUE Sessions 1–3 |
+| — | [ADD_FEATURES.md](ADD_FEATURES.md) | How to add scenes, FX, lab, mega steps |
 | — | [RESEARCH_BACKLOG.md](RESEARCH_BACKLOG.md) | RB-xxx queue |
 | — | [WORKLOG.md](WORKLOG.md) | What already happened |
 | — | [USER_REQUESTS.md](USER_REQUESTS.md) | User intent |
@@ -32,6 +36,7 @@ Then open **`logs/SESSION_BRIEF.md`** (kit or Documents).
 | [logs/GAPS_REPORT.md](logs/GAPS_REPORT.md) | `brikvj_gap_report.ps1` |
 | [logs/RESEARCH_DIFF.md](logs/RESEARCH_DIFF.md) | `brikvj_research_diff.ps1` |
 | [logs/CONTINUITY.json](logs/CONTINUITY.json) | `brikvj_session_start.ps1` (schema: [logs/CONTINUITY.schema.md](logs/CONTINUITY.schema.md)) |
+| [logs/OPEN_WORK_QUEUE.md](logs/OPEN_WORK_QUEUE.md) | `brikvj_open_work_queue.ps1` |
 
 ## Human / live paths
 

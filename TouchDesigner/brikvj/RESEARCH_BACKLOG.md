@@ -7,10 +7,10 @@ Living queue for **discover → evaluate → integrate**. Agent updates status w
 | ID | Item | Status | Notes |
 |----|------|--------|-------|
 | RB-001 | td2023 resave for okVJ stacks used in build | open | 132 newer tox in index; dialog risk |
-| RB-002 | Dedupe FX_DEFS in resolume stack | open | build.log wire warnings |
+| RB-002 | Dedupe FX_DEFS in resolume stack | done | unique tox paths; fx chain wires td_top_out |
 | RB-003 | harvest_pick → second scene bank (14+ slots) | open | 105 files; filter Hydra + newer |
 | RB-004 | Lazy Hydra lab (no cook-all on open) | open | lab/h_0..h_31 embedded in toe |
-| RB-005 | TDA mapper bridge smoke test | open | mega step; verify with Live |
+| RB-005 | TDA mapper bridge smoke test | in_progress | non-fatal mega; parexec type probe |
 | RB-006 | Ableton link without crash | open | avoid live_levels in same run |
 | RB-007 | Mac/importselect path audit clean | open | audit_brikvj_toe failures |
 | RB-008 | Dedicated BRIKVJ git repo | deferred | REPO_POLICY |

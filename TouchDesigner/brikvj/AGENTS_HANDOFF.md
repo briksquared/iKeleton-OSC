@@ -1,12 +1,14 @@
 # Agent handoff — BRIKVJ
 
+**Read first:** [AGENT_TD_POLICY.md](AGENT_TD_POLICY.md) — **never launch TouchDesigner unless the user explicitly asked in this message.**
+
 Run **`scripts/brikvj_session_start.ps1`** → read **`logs/SESSION_BRIEF.md`** + **`logs/CONTINUITY.json`**.
 
-Read: [NEXT_SESSION_PLAN_DEEPER.md](NEXT_SESSION_PLAN_DEEPER.md) (meta loop), [NEXT_SESSION_OPERATIONS.md](NEXT_SESSION_OPERATIONS.md) (commands), [WORKLOG.md](WORKLOG.md), [USER_REQUESTS.md](USER_REQUESTS.md), [ERRORS.md](ERRORS.md), [WHERE_IS_BRIKVJ.md](WHERE_IS_BRIKVJ.md).
+Read: [NEXT_SESSION_PLAN_DEEPEST.md](NEXT_SESSION_PLAN_DEEPEST.md), [ADD_FEATURES.md](ADD_FEATURES.md), [WORKLOG.md](WORKLOG.md), [USER_REQUESTS.md](USER_REQUESTS.md), [ERRORS.md](ERRORS.md).
 
 ## One-line state
 
-Git kit under `TouchDesigner/brikvj/`; live show file **`Documents\TouchDesigner\BRIKVJ\BRIKVJ.toe`** (~6 MB mega + quiet-open patch). Build with **`old_brik_vj_mega.py`** or **`run_once_unattended.ps1 -ForceResolumeRebuild`** (TD closed).
+Git kit under `TouchDesigner/brikvj/`; live show file **`Documents\TouchDesigner\BRIKVJ\BRIKVJ.toe`** (~6 MB). Rebuild: user Textport **`TEXTPORT_MEGA.txt`** + Save, or **`run_once_unattended.ps1 -AllowTouchDesignerLaunch`** only when user asked.
 
 ## If user sees popups on open
 

@@ -1,8 +1,8 @@
-﻿# BRIKVJ research diff (generated 2026-10-29T08:09:38.4617377-05:00)
+﻿# BRIKVJ research diff (generated 2026-10-29T08:33:20.1104952-05:00)
 
 Auto-generated: **tox on disk not referenced** in loader scripts + **newer-than-2023** paths.
 
-## Unwired .tox (125)
+## Unwired .tox (123)
 
 Use for RESEARCH_BACKLOG candidates. Integrate only after TOX_BUILDS check + td2023 resave if needed.
 
@@ -86,7 +86,7 @@ Use for RESEARCH_BACKLOG candidates. Integrate only after TOX_BUILDS check + td2
 - parts\harvest_pick\okVJ-Shared_fluidLike.tox
 - parts\harvest_pick\okVJ-Shared_glitchFXStack.tox
 - parts\harvest_pick\okVJ-Shared_gridify.tox 
-- ... and 45 more (run script locally for full list)
+- ... and 43 more (run script locally for full list)
 
 ## Newer than host (77)
 

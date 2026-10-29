@@ -49,8 +49,8 @@ FX_DEFS = (
     (GLITCH, "toon_fx_stack.tox", "toon_stack"),
     (GLITCH, "displace_fx.tox", "ok_disp"),
     (GLITCH, "dither.tox", "ok_dirt"),
-    (PARTS, "kaleidoscope.tox", "k_half"),
-    (EXTRA, "bloom.tox", "spec_blur"),
+    (SUITE, "okvj_halftone.tox", "k_half"),
+    (SUITE, "fx_spectral_blur.tox", "spec_blur"),
     (GLITCH, "tdx_crt.tox", "tdx_crt"),
     (GLITCH, "tdx_modulation.tox", "tdx_mod"),
     (GLITCH, "strobe_fx.tox", "strobe_fx"),
@@ -60,7 +60,6 @@ FX_DEFS = (
     (GLITCH, "particlize.tox", "particlize"),
     (GLITCH, "fluid_like.tox", "fluid_like"),
     (GLITCH, "gridify.tox", "gridify"),
-    (GLITCH, "dither.tox", "dither_fx"),
     (EXTRA, "colorshift.tox", "colorshift"),
     (EXTRA, "codev2.tox", "codev2"),
     (GEN, "gater.tox", "gater"),
@@ -201,7 +200,11 @@ def build_fx(vj, src):
         t = load_tox(fx, folder, fn, name)
         if t is None:
             continue
-        wire(t, 0, chain)
+        dest = td_top_out(t)
+        if dest is None:
+            log("no TOP in fx " + name)
+            continue
+        wire(dest, 0, chain)
         chain = td_top_out(t) or chain
         loaded += 1
     bypass = child(fx, "bypass", nullTOP)
