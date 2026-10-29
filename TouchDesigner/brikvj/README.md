@@ -13,7 +13,8 @@ Personal glitch VJ stack aligned with **Patchworks** on GitHub (`patchworks/sour
 | [BUILD.md](BUILD.md) | Mega / fast / unattended build |
 | [WORKLOG.md](WORKLOG.md) | Full session history + commands |
 | [USER_REQUESTS.md](USER_REQUESTS.md) | User intent preserved |
-| [AGENTS_HANDOFF.md](AGENTS_HANDOFF.md) | Next agent entry point |
+| [NEXT_SESSION_PLAN.md](NEXT_SESSION_PLAN.md) | New chat: verify, discover gaps, finish |
+| [AGENTS_HANDOFF.md](AGENTS_HANDOFF.md) | Short agent entry point |
 | [ableton/ABLETON.md](ableton/ABLETON.md) | TDAbleton + your User Library devices |
 
 Patchworks SSOT: `patchworks/source/RIG.md`, `manuals/22-wiring.md`, `manuals/15-motu-m4.md`, `manuals/23-computer.md`.

@@ -1,6 +1,6 @@
 # Agent handoff — BRIKVJ
 
-Read first: [WORKLOG.md](WORKLOG.md), [USER_REQUESTS.md](USER_REQUESTS.md), [ERRORS.md](ERRORS.md), [WHERE_IS_BRIKVJ.md](WHERE_IS_BRIKVJ.md).
+Read first: **[NEXT_SESSION_PLAN.md](NEXT_SESSION_PLAN.md)** (verify → discover → finish), then [WORKLOG.md](WORKLOG.md), [USER_REQUESTS.md](USER_REQUESTS.md), [ERRORS.md](ERRORS.md), [WHERE_IS_BRIKVJ.md](WHERE_IS_BRIKVJ.md).
 
 ## One-line state
 
