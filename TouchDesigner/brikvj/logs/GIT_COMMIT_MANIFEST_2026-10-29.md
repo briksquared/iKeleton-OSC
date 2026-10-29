@@ -23,7 +23,9 @@ Baseline: **16 commits** ahead of `origin/main` (upstream `gwangyu-lee/iKeleton-
 | 15 | 0e2dca4 | 2026-10-29 | docs(brikvj): BRIKVJ_ROADMAP consolidated index and roadmap status |
 | 16 | ca601bd | 2026-10-29 | fix(brikvj): low-memory mega path and OOM mitigations |
 
-**Follow-on commit (this handoff push):** docs + refreshed logs — see `git log -1` after push.
+| 17 | 00dcb0c | 2026-10-29 | docs(brikvj): detailed handoff, incident log, and refreshed session logs |
+
+**Follow-on:** `TouchDesigner/.gitignore` ignores stale root `BRIKVJ.toe` if committed after manifest.
 
 **Files intentionally not in git:**
 
