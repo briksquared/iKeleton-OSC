@@ -9,10 +9,11 @@
 ## 0. Bootstrap every session
 
 ```powershell
-TouchDesigner/brikvj/scripts/brikvj_session_start.ps1
+TouchDesigner/brikvj/scripts/brikvj_research_pass.ps1
+# or full: brikvj_session_start.ps1
 ```
 
-Read: `logs/OPEN_WORK_QUEUE.md` → `logs/BUG_SCAN.md` → [BUG_REGISTRY.md](BUG_REGISTRY.md) → [MASTER_PLAN.md](MASTER_PLAN.md) (this file).
+Read: `logs/RESEARCH_PASS.md` → `logs/OPEN_WORK_QUEUE.md` → `logs/BUG_SCAN.md` → [RESEARCH_PASS_PLAN.md](RESEARCH_PASS_PLAN.md) (12-session deep) → this file.
 
 **TD launches:** user allows **one** minimized/headless-style run per build ([AGENT_TD_POLICY.md](AGENT_TD_POLICY.md)). No `-help` probes on `TouchDesigner.exe`.
 

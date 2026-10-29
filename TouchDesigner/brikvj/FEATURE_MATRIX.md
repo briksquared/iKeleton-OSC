@@ -4,10 +4,10 @@
 
 | Capability | Resolume-like | BRIKVJ source |
 |------------|---------------|---------------|
-| **Audio-reactive scenes** | Columns | Brioch **6** in `.toe` + **7** harvested scene `.tox` in suite build |
+| **Audio-reactive scenes** | Columns | Brioch **6** in `.toe` + **20** `SCENE_DEFS` + up to **14** harvest expansion |
 | **Clip / media players** | Clip deck | **8** `moviefilein` slots (`clip_deck/clip_switch`) + TDDjay `imageLoaders` |
 | **Layer A/B crossfade** | Layers | TDX `comper.tox` + okVJ `compositor.tox` |
-| **Master FX chain** | Effects | **15+** serial FX (feedback, kaleid, datamosh, bloom, stutter, okVJ stacks, spectral blur) + **fx_switch** bypass |
+| **Master FX chain** | Effects | **29** `FX_DEFS` serial (see RESEARCH_PASS.md) + **fx_switch** bypass |
 | **Projection mapping** | Output slices | Brioch **kantanMapper** + TDX **cubeMap2Projection** + fulldome sim |
 | **Live tempo / levels** | — | TDAbleton M4L + `rack_in` MOTU 3–4 |
 | **Preset / scene memory** | Cues | tekt `presetslot` + okVJ UI widgets (optional) |

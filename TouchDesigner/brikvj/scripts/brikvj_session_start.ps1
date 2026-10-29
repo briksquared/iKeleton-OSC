@@ -10,6 +10,7 @@ $gapExit = $LASTEXITCODE
 & "$PSScriptRoot\brikvj_research_diff.ps1"
 & "$PSScriptRoot\brikvj_open_work_queue.ps1" 2>&1 | Out-Null
 & "$PSScriptRoot\brikvj_bug_scan.ps1" 2>&1 | Out-Null
+& "$PSScriptRoot\brikvj_research_pass.ps1" 2>&1 | Out-Null
 
 $gap = Get-Content (Join-Path $Kit "logs\GAPS_REPORT.md") -Raw -ErrorAction SilentlyContinue
 $diff = Get-Content (Join-Path $Kit "logs\RESEARCH_DIFF.md") -Raw -ErrorAction SilentlyContinue

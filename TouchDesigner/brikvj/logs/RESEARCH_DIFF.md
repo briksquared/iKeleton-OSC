@@ -1,4 +1,4 @@
-﻿# BRIKVJ research diff (generated 2026-10-29T08:33:20.1104952-05:00)
+﻿# BRIKVJ research diff (generated 2026-10-29T09:07:22.7663602-05:00)
 
 Auto-generated: **tox on disk not referenced** in loader scripts + **newer-than-2023** paths.
 
